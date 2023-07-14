@@ -24,10 +24,10 @@ const RestaurantItemCategory = ({ itemCategory, btnVeg }) => {
       </button>
       {isVisible && (
         <div>
-          {itemCategory.itemCards.map((item) => (<div key={item.card.info.id}>
+          {itemCategory.itemCards.map((item, index) => (<div key={item.card.info.id}>
               { btnVeg ?
                 (<RestaurentVegMenuItem item={item.card.info} />)
-                : (<RestaurentMenuItem item={item.card.info} />)
+                : (<RestaurentMenuItem item={item.card.info} itemLength = {itemCategory.itemCards.length} index = {index} />)
               }
             </div>
           ))}

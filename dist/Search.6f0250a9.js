@@ -602,7 +602,7 @@ const Search = ()=>{
     const [searchApi, setSearchApi] = (0, _react.useState)([
         "1"
     ]);
-    const [searchText, setSearchText] = (0, _react.useState)();
+    const [searchText, setSearchText] = (0, _react.useState)("");
     const [searchByApi, setSearchByApi] = (0, _react.useState)([]);
     const [searchByData, setSearchByData] = (0, _react.useState)([]);
     const [searchByRes, setSearchByRes] = (0, _react.useState)([]);
@@ -766,7 +766,7 @@ const Search = ()=>{
                             lineNumber: 109,
                             columnNumber: 26
                         }, undefined),
-                        searchText == undefined ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        searchText == "" || searchByData != undefined ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "_1VxLu",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchSuggestDefault.default), {
                                 searchApi: searchApi,
@@ -783,7 +783,7 @@ const Search = ()=>{
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "Search_wrapper__lQvnw _1cEc4",
-                            children: searchText == undefined ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchByPopularCuiDefault.default), {
+                            children: searchText == "" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchByPopularCuiDefault.default), {
                                 popularCusi: popularCusi,
                                 selectClick: selectClick
                             }, void 0, false, {
@@ -814,7 +814,7 @@ const Search = ()=>{
         columnNumber: 9
     }, undefined);
 };
-_s(Search, "f2nx4fOGAlJvZ8LDLurCK6A/Y4k=");
+_s(Search, "ECR7Jjd5lldiBNq2maQ5MUwCX9w=");
 _c = Search;
 exports.default = Search;
 var _c;
@@ -1166,14 +1166,14 @@ const SearchBy = ({ searchByData , searchByRes  })=>{
                 searchByData: searchByData
             }, void 0, false, {
                 fileName: "src/components/SearchBy.js",
-                lineNumber: 34,
-                columnNumber: 18
+                lineNumber: 35,
+                columnNumber: 21
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchByRestaurantDefault.default), {
                 searchByRes: searchByRes
             }, void 0, false, {
                 fileName: "src/components/SearchBy.js",
-                lineNumber: 35,
-                columnNumber: 18
+                lineNumber: 37,
+                columnNumber: 21
             }, undefined)
         ]
     }, void 0, true, {
@@ -1211,364 +1211,370 @@ var _vegePngDefault = parcelHelpers.interopDefault(_vegePng);
 var _nonvegPng = require("../utils/nonveg.png");
 var _nonvegPngDefault = parcelHelpers.interopDefault(_nonvegPng);
 const SearchByDish = ({ searchByData  })=>{
-    console.log(searchByData);
+    // console.log(searchByData);
     return searchByData == undefined ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: searchByData.map((card)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "Search_widgetsV2__27BBR Search_widgets__3o_bA",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "styles_container__2GTLR styles_containerV2__1_U51",
+        children: searchByData.map((card, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: card?.card?.card["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.Dish" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "Search_widgetsV2__27BBR Search_widgets__3o_bA",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "styles_containerInner__2Q_JM styles_containerInnerV2__2yjT5",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/restaurents/" + card?.card?.card?.restaurant?.info?.id,
-                                className: "styles_restaurant__20fB8",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "styles_restaurantName__5VIQZ styles_restaurantNameBold__2OmFY",
-                                                children: [
-                                                    "By ",
-                                                    card?.card?.card?.restaurant?.info?.name
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/components/SearchByDish.js",
-                                                lineNumber: 18,
-                                                columnNumber: 33
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "styles_restaurantMeta__2yx7V",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "styles_restaurantMetaRatingStar__8olHv icon-star",
-                                                                children: "★"
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/SearchByDish.js",
-                                                                lineNumber: 21,
-                                                                columnNumber: 41
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "styles_restaurantMetaRating__3MhTg",
-                                                                children: card?.card?.card?.restaurant?.info?.avgRatingString
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/SearchByDish.js",
-                                                                lineNumber: 22,
-                                                                columnNumber: 41
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/components/SearchByDish.js",
-                                                        lineNumber: 20,
-                                                        columnNumber: 37
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        className: "styles_restaurantMetaDot__usB4d"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/SearchByDish.js",
-                                                        lineNumber: 24,
-                                                        columnNumber: 37
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        children: card?.card?.card?.restaurant?.info?.sla.slaString
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/SearchByDish.js",
-                                                        lineNumber: 25,
-                                                        columnNumber: 37
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/components/SearchByDish.js",
-                                                lineNumber: 19,
-                                                columnNumber: 33
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/SearchByDish.js",
-                                        lineNumber: 17,
-                                        columnNumber: 29
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                        width: "28",
-                                        height: "28",
-                                        viewBox: "0 0 24 24",
-                                        fill: "none",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                            fillRule: "evenodd",
-                                            clipRule: "evenodd",
-                                            d: "M13.2307 5.53999C12.9769 5.28615 12.5653 5.28615 12.3115 5.53999C12.0576 5.79383 12.0576 6.20539 12.3115 6.45923L17.2019 11.3496L5.39414 11.3496C5.03516 11.3496 4.74414 11.6406 4.74414 11.9996C4.74414 12.3586 5.03516 12.6496 5.39414 12.6496L17.2019 12.6496L12.3115 17.54C12.0576 17.7938 12.0576 18.2054 12.3115 18.4592C12.5653 18.7131 12.9769 18.7131 13.2307 18.4592L18.949 12.741C19.3584 12.3315 19.3584 11.6677 18.949 11.2583L13.2307 5.53999Z",
-                                            fill: "#868891"
-                                        }, void 0, false, {
-                                            fileName: "src/components/SearchByDish.js",
-                                            lineNumber: 29,
-                                            columnNumber: 33
-                                        }, undefined)
-                                    }, void 0, false, {
-                                        fileName: "src/components/SearchByDish.js",
-                                        lineNumber: 28,
-                                        columnNumber: 29
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/SearchByDish.js",
-                                lineNumber: 16,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "styles_divider__3zP03"
-                            }, void 0, false, {
-                                fileName: "src/components/SearchByDish.js",
-                                lineNumber: 32,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "styles_container__-kShr",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "styles_item__3_NEA styles_hasImage__3OsYt",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                                className: "ScreenReaderOnly_screenReaderOnly___ww-V",
-                                                children: card?.card?.card?.info?.description
-                                            }, void 0, false, {
-                                                fileName: "src/components/SearchByDish.js",
-                                                lineNumber: 36,
-                                                columnNumber: 37
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "styles_detailsContainer__22vh8",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                                className: "styles_icon__m6Ujp styles_itemIcon__1LXTw icon-NonVeg",
-                                                                role: "presentation",
-                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                    className: "res_card_img",
-                                                                    children: card?.card?.card?.info?.isVeg ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                                        src: (0, _vegePngDefault.default)
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/SearchByDish.js",
-                                                                        lineNumber: 42,
-                                                                        columnNumber: 114
-                                                                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                                        src: (0, _nonvegPngDefault.default)
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/SearchByDish.js",
-                                                                        lineNumber: 42,
-                                                                        columnNumber: 136
-                                                                    }, undefined)
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/SearchByDish.js",
-                                                                    lineNumber: 42,
-                                                                    columnNumber: 49
-                                                                }, undefined)
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/SearchByDish.js",
-                                                                lineNumber: 41,
-                                                                columnNumber: 45
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "styles_ribbon__3tZ21 styles_itemRibbon__353Fy",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                        className: "styles_ribbonStar__1cZQq icon-star",
-                                                                        children: "★ "
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/SearchByDish.js",
-                                                                        lineNumber: 45,
-                                                                        columnNumber: 49
-                                                                    }, undefined),
-                                                                    "BESTSELLER"
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/components/SearchByDish.js",
-                                                                lineNumber: 44,
-                                                                columnNumber: 45
-                                                            }, undefined)
-                                                        ]
-                                                    }, void 0, true, {
-                                                        fileName: "src/components/SearchByDish.js",
-                                                        lineNumber: 40,
-                                                        columnNumber: 41
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "styles_itemName__hLfgz",
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                                                            className: "styles_itemNameText__3ZmZZ",
-                                                            children: card?.card?.card?.info?.name
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/SearchByDish.js",
-                                                            lineNumber: 50,
-                                                            columnNumber: 45
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/SearchByDish.js",
-                                                        lineNumber: 49,
-                                                        columnNumber: 41
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "styles_itemPortionContainer__1u_tj",
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                            className: "styles_price__2xrhD styles_itemPrice__1Nrpd styles_s__66zLz",
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                className: "rupee",
-                                                                children: card?.card?.card?.info?.price / 100
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/SearchByDish.js",
-                                                                lineNumber: 54,
-                                                                columnNumber: 49
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/SearchByDish.js",
-                                                            lineNumber: 53,
-                                                            columnNumber: 45
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/SearchByDish.js",
-                                                        lineNumber: 52,
-                                                        columnNumber: 41
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "styles_itemDesc__3vhM0 styles_hasMoreText__3fWkR",
-                                                        children: card?.card?.card?.info?.description
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/SearchByDish.js",
-                                                        lineNumber: 57,
-                                                        columnNumber: 41
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                        className: "styles_itemDescButton__3Z6iB",
-                                                        children: "More"
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/SearchByDish.js",
-                                                        lineNumber: 58,
-                                                        columnNumber: 41
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "src/components/SearchByDish.js",
-                                                lineNumber: 39,
-                                                columnNumber: 37
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "styles_itemImageContainer__3Czsd",
-                                                children: [
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                            className: "styles_itemImage__3CsDL",
-                                                            "aria-label": "See more information about Biryani",
-                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                                                alt: "Biryani",
-                                                                className: "styles_itemImage__3CsDL",
-                                                                loading: "lazy",
-                                                                width: "256",
-                                                                src: `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/${card?.card?.card?.info?.imageId}`
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/SearchByDish.js",
-                                                                lineNumber: 63,
-                                                                columnNumber: 49
-                                                            }, undefined)
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/SearchByDish.js",
-                                                            lineNumber: 62,
-                                                            columnNumber: 45
-                                                        }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/SearchByDish.js",
-                                                        lineNumber: 61,
-                                                        columnNumber: 41
-                                                    }, undefined),
-                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                        className: "styles_itemAddButton",
-                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                            className: "_3L1X9 _2IhbV",
+                        className: "styles_container__2GTLR styles_containerV2__1_U51",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "styles_containerInner__2Q_JM styles_containerInnerV2__2yjT5",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/restaurents/" + card?.card?.card?.restaurant?.info?.id,
+                                    className: "styles_restaurant__20fB8",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "styles_restaurantName__5VIQZ styles_restaurantNameBold__2OmFY",
+                                                    children: [
+                                                        "By ",
+                                                        card?.card?.card?.restaurant?.info?.name
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/SearchByDish.js",
+                                                    lineNumber: 21,
+                                                    columnNumber: 45
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "styles_restaurantMeta__2yx7V",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                             children: [
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                    className: "_1RPOp",
-                                                                    children: "ADD"
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    className: "styles_restaurantMetaRatingStar__8olHv icon-star",
+                                                                    children: "★"
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/SearchByDish.js",
-                                                                    lineNumber: 68,
-                                                                    columnNumber: 49
+                                                                    lineNumber: 24,
+                                                                    columnNumber: 53
                                                                 }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                    className: "_1ds9T _2WdfZ _4aKW6",
-                                                                    children: "+"
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    className: "styles_restaurantMetaRating__3MhTg",
+                                                                    children: card?.card?.card?.restaurant?.info?.avgRatingString
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/SearchByDish.js",
-                                                                    lineNumber: 69,
-                                                                    columnNumber: 49
-                                                                }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                    className: "_29Y5Z _20vNm _4aKW6"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/SearchByDish.js",
-                                                                    lineNumber: 70,
-                                                                    columnNumber: 49
-                                                                }, undefined),
-                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                    className: "_2zAXs _2quy- _4aKW6",
-                                                                    children: "0"
-                                                                }, void 0, false, {
-                                                                    fileName: "src/components/SearchByDish.js",
-                                                                    lineNumber: 71,
-                                                                    columnNumber: 49
+                                                                    lineNumber: 25,
+                                                                    columnNumber: 53
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/components/SearchByDish.js",
-                                                            lineNumber: 67,
-                                                            columnNumber: 45
+                                                            lineNumber: 23,
+                                                            columnNumber: 49
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                            className: "styles_restaurantMetaDot__usB4d"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/SearchByDish.js",
+                                                            lineNumber: 27,
+                                                            columnNumber: 49
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            children: card?.card?.card?.restaurant?.info?.sla.slaString
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/SearchByDish.js",
+                                                            lineNumber: 28,
+                                                            columnNumber: 49
                                                         }, undefined)
-                                                    }, void 0, false, {
-                                                        fileName: "src/components/SearchByDish.js",
-                                                        lineNumber: 66,
-                                                        columnNumber: 41
-                                                    }, undefined)
-                                                ]
-                                            }, void 0, true, {
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/SearchByDish.js",
+                                                    lineNumber: 22,
+                                                    columnNumber: 45
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/SearchByDish.js",
+                                            lineNumber: 20,
+                                            columnNumber: 41
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                            width: "28",
+                                            height: "28",
+                                            viewBox: "0 0 24 24",
+                                            fill: "none",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                fillRule: "evenodd",
+                                                clipRule: "evenodd",
+                                                d: "M13.2307 5.53999C12.9769 5.28615 12.5653 5.28615 12.3115 5.53999C12.0576 5.79383 12.0576 6.20539 12.3115 6.45923L17.2019 11.3496L5.39414 11.3496C5.03516 11.3496 4.74414 11.6406 4.74414 11.9996C4.74414 12.3586 5.03516 12.6496 5.39414 12.6496L17.2019 12.6496L12.3115 17.54C12.0576 17.7938 12.0576 18.2054 12.3115 18.4592C12.5653 18.7131 12.9769 18.7131 13.2307 18.4592L18.949 12.741C19.3584 12.3315 19.3584 11.6677 18.949 11.2583L13.2307 5.53999Z",
+                                                fill: "#868891"
+                                            }, void 0, false, {
                                                 fileName: "src/components/SearchByDish.js",
-                                                lineNumber: 60,
-                                                columnNumber: 37
+                                                lineNumber: 32,
+                                                columnNumber: 45
                                             }, undefined)
-                                        ]
-                                    }, void 0, true, {
+                                        }, void 0, false, {
+                                            fileName: "src/components/SearchByDish.js",
+                                            lineNumber: 31,
+                                            columnNumber: 41
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/SearchByDish.js",
+                                    lineNumber: 19,
+                                    columnNumber: 37
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "styles_divider__3zP03"
+                                }, void 0, false, {
+                                    fileName: "src/components/SearchByDish.js",
+                                    lineNumber: 35,
+                                    columnNumber: 37
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "styles_container__-kShr",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "styles_item__3_NEA styles_hasImage__3OsYt",
+                                            children: [
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                    className: "ScreenReaderOnly_screenReaderOnly___ww-V",
+                                                    children: card?.card?.card?.info?.description
+                                                }, void 0, false, {
+                                                    fileName: "src/components/SearchByDish.js",
+                                                    lineNumber: 39,
+                                                    columnNumber: 49
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "styles_detailsContainer__22vh8",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                                                                    className: "styles_icon__m6Ujp styles_itemIcon__1LXTw icon-NonVeg",
+                                                                    role: "presentation",
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                        className: "res_card_img",
+                                                                        children: card?.card?.card?.info?.isVeg ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                            src: (0, _vegePngDefault.default)
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/SearchByDish.js",
+                                                                            lineNumber: 45,
+                                                                            columnNumber: 126
+                                                                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                            src: (0, _nonvegPngDefault.default)
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/SearchByDish.js",
+                                                                            lineNumber: 45,
+                                                                            columnNumber: 148
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/SearchByDish.js",
+                                                                        lineNumber: 45,
+                                                                        columnNumber: 61
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/SearchByDish.js",
+                                                                    lineNumber: 44,
+                                                                    columnNumber: 57
+                                                                }, undefined),
+                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    className: "styles_ribbon__3tZ21 styles_itemRibbon__353Fy",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                            className: "styles_ribbonStar__1cZQq icon-star",
+                                                                            children: "★ "
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/SearchByDish.js",
+                                                                            lineNumber: 48,
+                                                                            columnNumber: 61
+                                                                        }, undefined),
+                                                                        "BESTSELLER"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "src/components/SearchByDish.js",
+                                                                    lineNumber: 47,
+                                                                    columnNumber: 57
+                                                                }, undefined)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "src/components/SearchByDish.js",
+                                                            lineNumber: 43,
+                                                            columnNumber: 53
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "styles_itemName__hLfgz",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                                                className: "styles_itemNameText__3ZmZZ",
+                                                                children: card?.card?.card?.info?.name
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/SearchByDish.js",
+                                                                lineNumber: 53,
+                                                                columnNumber: 57
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/SearchByDish.js",
+                                                            lineNumber: 52,
+                                                            columnNumber: 53
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "styles_itemPortionContainer__1u_tj",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                className: "styles_price__2xrhD styles_itemPrice__1Nrpd styles_s__66zLz",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                    className: "rupee",
+                                                                    children: card?.card?.card?.info?.price / 100
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/SearchByDish.js",
+                                                                    lineNumber: 57,
+                                                                    columnNumber: 61
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/SearchByDish.js",
+                                                                lineNumber: 56,
+                                                                columnNumber: 57
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/SearchByDish.js",
+                                                            lineNumber: 55,
+                                                            columnNumber: 53
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "styles_itemDesc__3vhM0 styles_hasMoreText__3fWkR",
+                                                            children: card?.card?.card?.info?.description
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/SearchByDish.js",
+                                                            lineNumber: 60,
+                                                            columnNumber: 53
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                            className: "styles_itemDescButton__3Z6iB",
+                                                            children: "More"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/SearchByDish.js",
+                                                            lineNumber: 61,
+                                                            columnNumber: 53
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/SearchByDish.js",
+                                                    lineNumber: 42,
+                                                    columnNumber: 49
+                                                }, undefined),
+                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "styles_itemImageContainer__3Czsd",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                                className: "styles_itemImage__3CsDL",
+                                                                "aria-label": "See more information about Biryani",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                    alt: "Dish Logo",
+                                                                    className: "styles_itemImage__3CsDL",
+                                                                    loading: "lazy",
+                                                                    width: "256",
+                                                                    src: `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/${card?.card?.card?.info?.imageId}`
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/SearchByDish.js",
+                                                                    lineNumber: 66,
+                                                                    columnNumber: 61
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/SearchByDish.js",
+                                                                lineNumber: 65,
+                                                                columnNumber: 57
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/SearchByDish.js",
+                                                            lineNumber: 64,
+                                                            columnNumber: 53
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            className: "styles_itemAddButton",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "_3L1X9 _2IhbV",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                        className: "_1RPOp",
+                                                                        children: "ADD"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/SearchByDish.js",
+                                                                        lineNumber: 71,
+                                                                        columnNumber: 61
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                        className: "_1ds9T _2WdfZ _4aKW6",
+                                                                        children: "+"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/SearchByDish.js",
+                                                                        lineNumber: 72,
+                                                                        columnNumber: 61
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                        className: "_29Y5Z _20vNm _4aKW6"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/SearchByDish.js",
+                                                                        lineNumber: 73,
+                                                                        columnNumber: 61
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                        className: "_2zAXs _2quy- _4aKW6",
+                                                                        children: "0"
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/SearchByDish.js",
+                                                                        lineNumber: 74,
+                                                                        columnNumber: 61
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/SearchByDish.js",
+                                                                lineNumber: 70,
+                                                                columnNumber: 57
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/SearchByDish.js",
+                                                            lineNumber: 69,
+                                                            columnNumber: 53
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/SearchByDish.js",
+                                                    lineNumber: 63,
+                                                    columnNumber: 49
+                                                }, undefined)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "src/components/SearchByDish.js",
+                                            lineNumber: 38,
+                                            columnNumber: 45
+                                        }, undefined)
+                                    }, void 0, false, {
                                         fileName: "src/components/SearchByDish.js",
-                                        lineNumber: 35,
-                                        columnNumber: 33
+                                        lineNumber: 37,
+                                        columnNumber: 41
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/SearchByDish.js",
-                                    lineNumber: 34,
-                                    columnNumber: 29
+                                    lineNumber: 36,
+                                    columnNumber: 37
                                 }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/SearchByDish.js",
-                                lineNumber: 33,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/SearchByDish.js",
+                            lineNumber: 18,
+                            columnNumber: 33
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/components/SearchByDish.js",
-                        lineNumber: 15,
-                        columnNumber: 21
+                        lineNumber: 17,
+                        columnNumber: 29
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/SearchByDish.js",
-                    lineNumber: 14,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
+                    lineNumber: 16,
+                    columnNumber: 26
+                }, undefined) : ""
+            }, index, false, {
                 fileName: "src/components/SearchByDish.js",
-                lineNumber: 13,
-                columnNumber: 13
+                lineNumber: 14,
+                columnNumber: 17
             }, undefined))
     }, void 0, false, {
         fileName: "src/components/SearchByDish.js",
-        lineNumber: 11,
+        lineNumber: 12,
         columnNumber: 9
     }, undefined);
 };
@@ -1602,6 +1608,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 const SearchByRestaurant = ({ searchByRes  })=>{
+    // console.log(searchByRes);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: searchByRes.map((card)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "Search_widgetsV2__27BBR Search_widgets__3o_bA",
@@ -1625,17 +1632,17 @@ const SearchByRestaurant = ({ searchByRes  })=>{
                                             src: `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_264,h_288,c_fill/${card?.card?.card?.info?.cloudinaryImageId}`
                                         }, void 0, false, {
                                             fileName: "src/components/SearchByRestaurant.js",
-                                            lineNumber: 13,
+                                            lineNumber: 16,
                                             columnNumber: 41
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/SearchByRestaurant.js",
-                                        lineNumber: 12,
+                                        lineNumber: 15,
                                         columnNumber: 37
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/SearchByRestaurant.js",
-                                    lineNumber: 11,
+                                    lineNumber: 14,
                                     columnNumber: 33
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1648,12 +1655,12 @@ const SearchByRestaurant = ({ searchByRes  })=>{
                                                 children: card?.card?.card?.info?.name
                                             }, void 0, false, {
                                                 fileName: "src/components/SearchByRestaurant.js",
-                                                lineNumber: 18,
+                                                lineNumber: 21,
                                                 columnNumber: 41
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/SearchByRestaurant.js",
-                                            lineNumber: 17,
+                                            lineNumber: 20,
                                             columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1666,7 +1673,7 @@ const SearchByRestaurant = ({ searchByRes  })=>{
                                                             children: "★"
                                                         }, void 0, false, {
                                                             fileName: "src/components/SearchByRestaurant.js",
-                                                            lineNumber: 22,
+                                                            lineNumber: 25,
                                                             columnNumber: 45
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -1674,47 +1681,47 @@ const SearchByRestaurant = ({ searchByRes  })=>{
                                                             children: card?.card?.card?.info?.avgRatingString
                                                         }, void 0, false, {
                                                             fileName: "src/components/SearchByRestaurant.js",
-                                                            lineNumber: 23,
+                                                            lineNumber: 26,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/SearchByRestaurant.js",
-                                                    lineNumber: 21,
+                                                    lineNumber: 24,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     className: "styles_restaurantMetaDot__1AKA9"
                                                 }, void 0, false, {
                                                     fileName: "src/components/SearchByRestaurant.js",
-                                                    lineNumber: 25,
+                                                    lineNumber: 28,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     children: card?.card?.card?.info?.sla?.slaString
                                                 }, void 0, false, {
                                                     fileName: "src/components/SearchByRestaurant.js",
-                                                    lineNumber: 26,
+                                                    lineNumber: 29,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                     className: "styles_restaurantMetaDot__1AKA9"
                                                 }, void 0, false, {
                                                     fileName: "src/components/SearchByRestaurant.js",
-                                                    lineNumber: 27,
+                                                    lineNumber: 30,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     children: card?.card?.card?.info?.costForTwoMessage
                                                 }, void 0, false, {
                                                     fileName: "src/components/SearchByRestaurant.js",
-                                                    lineNumber: 28,
+                                                    lineNumber: 31,
                                                     columnNumber: 41
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/SearchByRestaurant.js",
-                                            lineNumber: 20,
+                                            lineNumber: 23,
                                             columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1723,44 +1730,44 @@ const SearchByRestaurant = ({ searchByRes  })=>{
                                                 children: card?.card?.card?.info?.cuisines.join(", ")
                                             }, void 0, false, {
                                                 fileName: "src/components/SearchByRestaurant.js",
-                                                lineNumber: 31,
+                                                lineNumber: 34,
                                                 columnNumber: 41
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/SearchByRestaurant.js",
-                                            lineNumber: 30,
+                                            lineNumber: 33,
                                             columnNumber: 37
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/SearchByRestaurant.js",
-                                    lineNumber: 16,
+                                    lineNumber: 19,
                                     columnNumber: 33
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/SearchByRestaurant.js",
-                            lineNumber: 10,
+                            lineNumber: 13,
                             columnNumber: 29
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/SearchByRestaurant.js",
-                        lineNumber: 9,
+                        lineNumber: 12,
                         columnNumber: 25
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/SearchByRestaurant.js",
-                    lineNumber: 8,
+                    lineNumber: 11,
                     columnNumber: 21
                 }, undefined)
-            }, void 0, false, {
+            }, card?.card?.card?.info?.id, false, {
                 fileName: "src/components/SearchByRestaurant.js",
-                lineNumber: 7,
+                lineNumber: 10,
                 columnNumber: 17
             }, undefined))
     }, void 0, false, {
         fileName: "src/components/SearchByRestaurant.js",
-        lineNumber: 5,
+        lineNumber: 8,
         columnNumber: 12
     }, undefined);
 };

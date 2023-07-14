@@ -31,8 +31,11 @@ const SearchBy = ({ searchByData, searchByRes}) => {
                 </div>
             </div>
             { btnContain == "Dishes" ?
-                (<SearchByDish searchByData={searchByData} />) :
-                (<SearchByRestaurant searchByRes={searchByRes} />)
+                (
+                    <SearchByDish searchByData={searchByData} />
+                ) : (
+                    <SearchByRestaurant searchByRes={searchByRes} />
+                )
             }
         </div>
     )

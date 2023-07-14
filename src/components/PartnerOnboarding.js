@@ -22,14 +22,20 @@ const PartnerOnboarding = ({ helpQues }) => {
             </button>
             {isVisible && (
                 <div>
-                    <div className="_1YEKM">{Que?.description}</div>
-                    <a rel="noopener noreferrer" target="_blank" href={Que?.hyperLink} className="_7bf5B">{Que?.hyperLinkText}</a>
-                    <div className="GM_Lh">
-                        <button className="_2aDLa">
-                            <a className="_1vMNs" href={`mailto:shubhanggpandey@gmail.com?subject=Who should I contact if I need help &amp; support in getting onboarded?`} target="blank">{Que?.options[0]?.type}</a>
-                            <div className="_1tK48">{Que?.options[0]?.waitTime}</div>
-                        </button>
-                    </div>
+                    {Que?.description == null ? ("")
+                            : (<div className="_1YEKM">{Que?.description}</div>)
+                        }
+                        {Que?.hyperLinkText == null ? ("")
+                            : (<a rel="noopener noreferrer" target="_blank" href={Que?.hyperLink} className="_7bf5B">{Que?.hyperLinkText}</a>)
+                        }
+                        {Que?.options.length == 0 ? ("")
+                            : (<div className="GM_Lh">
+                                <button className="_2aDLa">
+                                    <a className="_1vMNs" href={`mailto:shubhanggpandey@gmail.com?subject=Who should I contact if I need help &amp; support in getting onboarded?`} target="blank">{Que?.options[0]?.type}</a>
+                                    <div className="_1tK48">{Que?.options[0]?.waitTime}</div>
+                                </button>
+                            </div>)
+                        }
                 </div>
             )}
             </div>)

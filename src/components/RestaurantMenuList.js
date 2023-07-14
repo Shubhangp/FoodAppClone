@@ -15,7 +15,9 @@ const RestaurantMenuList = (props) => {
                     ) : (
                         <RestaurantItemCategory itemCategory={item} btnVeg={btnVeg} />
                     )}
-                    <div className="main_border"></div>
+                    {menu.length == index + 1 ? ("")
+                        :(<div className="main_border"></div>)
+                    }
                 </div>
             ))}
         </div>

@@ -7,7 +7,7 @@ const Search = () => {
 
     const [popularCusi, setPopularCusi] = useState([]);
     const [searchApi, setSearchApi] = useState(["1"]);
-    const [searchText, setSearchText] = useState();
+    const [searchText, setSearchText] = useState("");
     const [searchByApi, setSearchByApi] = useState([]);
     const [searchByData, setSearchByData] = useState([]);
     const [searchByRes, setSearchByRes] = useState([]);
@@ -108,13 +108,13 @@ const Search = () => {
                     { searchByData == undefined ? ("") :
                         (<SearchBy searchByData={searchByData} searchByRes={searchByRes} />)
                     }
-                    { searchText == undefined ? ("") :
+                    { searchText == "" || searchByData != undefined ? ("") :
                         (<div className="_1VxLu">
                             <SearchSuggest searchApi={searchApi} suggestionClick={suggestionClick}/>
                         </div>)
                     }
                     <div className="Search_wrapper__lQvnw _1cEc4">
-                        { searchText == undefined ?
+                        { searchText == "" ?
                             (<SearchByPopularCui popularCusi={popularCusi} selectClick={selectClick}/>)
                             : ("")
                         }

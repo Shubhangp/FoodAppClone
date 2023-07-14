@@ -980,15 +980,15 @@ const Legal = ({ helpQues  })=>{
                     }, undefined),
                     isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            Que?.description == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "_1YEKM",
                                 children: Que?.description
                             }, void 0, false, {
                                 fileName: "src/components/Legal.js",
-                                lineNumber: 25,
-                                columnNumber: 25
+                                lineNumber: 26,
+                                columnNumber: 32
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            Que?.hyperLinkText == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                 rel: "noopener noreferrer",
                                 target: "_blank",
                                 href: Que?.hyperLink,
@@ -996,10 +996,10 @@ const Legal = ({ helpQues  })=>{
                                 children: Que?.hyperLinkText
                             }, void 0, false, {
                                 fileName: "src/components/Legal.js",
-                                lineNumber: 26,
-                                columnNumber: 25
+                                lineNumber: 29,
+                                columnNumber: 32
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            Que?.options.length == 0 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "GM_Lh",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     className: "_2aDLa",
@@ -1011,27 +1011,27 @@ const Legal = ({ helpQues  })=>{
                                             children: Que?.options[0]?.type
                                         }, void 0, false, {
                                             fileName: "src/components/Legal.js",
-                                            lineNumber: 29,
-                                            columnNumber: 33
+                                            lineNumber: 34,
+                                            columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "_1tK48",
                                             children: Que?.options[0]?.waitTime
                                         }, void 0, false, {
                                             fileName: "src/components/Legal.js",
-                                            lineNumber: 30,
-                                            columnNumber: 33
+                                            lineNumber: 35,
+                                            columnNumber: 37
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Legal.js",
-                                    lineNumber: 28,
-                                    columnNumber: 29
+                                    lineNumber: 33,
+                                    columnNumber: 33
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Legal.js",
-                                lineNumber: 27,
-                                columnNumber: 25
+                                lineNumber: 32,
+                                columnNumber: 32
                             }, undefined)
                         ]
                     }, void 0, true, {
@@ -1082,6 +1082,7 @@ const Faqs = ({ helpQues  })=>{
     const toggleView = ()=>{
         setIsVisible(!isVisible);
     };
+    console.log(helpQues);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: helpQues.map((Que)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "_3rl8Q",
@@ -1094,7 +1095,7 @@ const Faqs = ({ helpQues  })=>{
                                 children: Que?.title
                             }, void 0, false, {
                                 fileName: "src/components/Faqs.js",
-                                lineNumber: 16,
+                                lineNumber: 18,
                                 columnNumber: 21
                             }, undefined),
                             isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
@@ -1102,33 +1103,33 @@ const Faqs = ({ helpQues  })=>{
                                 className: "_1VUPm"
                             }, void 0, false, {
                                 fileName: "src/components/Faqs.js",
-                                lineNumber: 18,
+                                lineNumber: 20,
                                 columnNumber: 25
                             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
                                 onClick: toggleView,
                                 className: "_1VUPm"
                             }, void 0, false, {
                                 fileName: "src/components/Faqs.js",
-                                lineNumber: 20,
+                                lineNumber: 22,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Faqs.js",
-                        lineNumber: 15,
+                        lineNumber: 17,
                         columnNumber: 17
                     }, undefined),
                     isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            Que?.description == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "_1YEKM",
                                 children: Que?.description
                             }, void 0, false, {
                                 fileName: "src/components/Faqs.js",
-                                lineNumber: 25,
-                                columnNumber: 25
+                                lineNumber: 28,
+                                columnNumber: 32
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            Que?.hyperLinkText == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                 rel: "noopener noreferrer",
                                 target: "_blank",
                                 href: Que?.hyperLink,
@@ -1136,10 +1137,10 @@ const Faqs = ({ helpQues  })=>{
                                 children: Que?.hyperLinkText
                             }, void 0, false, {
                                 fileName: "src/components/Faqs.js",
-                                lineNumber: 26,
-                                columnNumber: 25
+                                lineNumber: 31,
+                                columnNumber: 32
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            Que?.options.length == 0 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "GM_Lh",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     className: "_2aDLa",
@@ -1151,43 +1152,43 @@ const Faqs = ({ helpQues  })=>{
                                             children: Que?.options[0]?.type
                                         }, void 0, false, {
                                             fileName: "src/components/Faqs.js",
-                                            lineNumber: 29,
-                                            columnNumber: 33
+                                            lineNumber: 36,
+                                            columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "_1tK48",
                                             children: Que?.options[0]?.waitTime
                                         }, void 0, false, {
                                             fileName: "src/components/Faqs.js",
-                                            lineNumber: 30,
-                                            columnNumber: 33
+                                            lineNumber: 37,
+                                            columnNumber: 37
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Faqs.js",
-                                    lineNumber: 28,
-                                    columnNumber: 29
+                                    lineNumber: 35,
+                                    columnNumber: 33
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Faqs.js",
-                                lineNumber: 27,
-                                columnNumber: 25
+                                lineNumber: 34,
+                                columnNumber: 32
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Faqs.js",
-                        lineNumber: 24,
+                        lineNumber: 26,
                         columnNumber: 21
                     }, undefined)
                 ]
             }, Que.id, true, {
                 fileName: "src/components/Faqs.js",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 13
             }, undefined))
     }, void 0, false, {
         fileName: "src/components/Faqs.js",
-        lineNumber: 12,
+        lineNumber: 14,
         columnNumber: 12
     }, undefined);
 };
@@ -1260,15 +1261,15 @@ const PartnerOnboarding = ({ helpQues  })=>{
                     }, undefined),
                     isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            Que?.description == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "_1YEKM",
                                 children: Que?.description
                             }, void 0, false, {
                                 fileName: "src/components/PartnerOnboarding.js",
-                                lineNumber: 25,
-                                columnNumber: 21
+                                lineNumber: 26,
+                                columnNumber: 32
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                            Que?.hyperLinkText == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                 rel: "noopener noreferrer",
                                 target: "_blank",
                                 href: Que?.hyperLink,
@@ -1276,10 +1277,10 @@ const PartnerOnboarding = ({ helpQues  })=>{
                                 children: Que?.hyperLinkText
                             }, void 0, false, {
                                 fileName: "src/components/PartnerOnboarding.js",
-                                lineNumber: 26,
-                                columnNumber: 21
+                                lineNumber: 29,
+                                columnNumber: 32
                             }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            Que?.options.length == 0 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "GM_Lh",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     className: "_2aDLa",
@@ -1291,27 +1292,27 @@ const PartnerOnboarding = ({ helpQues  })=>{
                                             children: Que?.options[0]?.type
                                         }, void 0, false, {
                                             fileName: "src/components/PartnerOnboarding.js",
-                                            lineNumber: 29,
-                                            columnNumber: 29
+                                            lineNumber: 34,
+                                            columnNumber: 37
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "_1tK48",
                                             children: Que?.options[0]?.waitTime
                                         }, void 0, false, {
                                             fileName: "src/components/PartnerOnboarding.js",
-                                            lineNumber: 30,
-                                            columnNumber: 29
+                                            lineNumber: 35,
+                                            columnNumber: 37
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/PartnerOnboarding.js",
-                                    lineNumber: 28,
-                                    columnNumber: 25
+                                    lineNumber: 33,
+                                    columnNumber: 33
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/PartnerOnboarding.js",
-                                lineNumber: 27,
-                                columnNumber: 21
+                                lineNumber: 32,
+                                columnNumber: 32
                             }, undefined)
                         ]
                     }, void 0, true, {

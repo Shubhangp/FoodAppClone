@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import vege from "../utils/vege.png";
 import nonveg from "../utils/nonveg.png";
 
-const RestaurentMenuItem = ({item}) => {
+const RestaurentMenuItem = ({ item, itemLength, index }) => {
     const [count, setCount] = useState(0);
 
     if(count < 0) {
@@ -59,7 +59,9 @@ const RestaurentMenuItem = ({item}) => {
                             </div>
                         </div>
                     </div>
-                    <div className="styles_divider"></div>
+                    { itemLength == index + 1 ? ("")
+                        :(<div className="styles_divider"></div>)
+                    }
                 </div>
             </div>
     )

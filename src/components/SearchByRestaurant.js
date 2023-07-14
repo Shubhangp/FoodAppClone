@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const SearchByRestaurant = ({ searchByRes }) => {
+
+    // console.log(searchByRes);
+
     return(<div>
             {searchByRes.map((card) => (
-                <div className="Search_widgetsV2__27BBR Search_widgets__3o_bA">
+                <div className="Search_widgetsV2__27BBR Search_widgets__3o_bA" key={card?.card?.card?.info?.id}>
                     <div className="styles_container__zEwGm">
                         <div className="styles_restaurantListItem__1lOsF">
                             <Link className="styles_container__fLC0R" to={"/restaurents/" + card?.card?.card?.info?.id} role="button">

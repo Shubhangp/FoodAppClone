@@ -17590,12 +17590,12 @@ const RestaurantMenuList = (props)=>{
                         lineNumber: 16,
                         columnNumber: 25
                     }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    menu.length == index + 1 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "main_border"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantMenuList.js",
-                        lineNumber: 18,
-                        columnNumber: 21
+                        lineNumber: 19,
+                        columnNumber: 27
                     }, undefined)
                 ]
             }, index, true, {
@@ -17684,7 +17684,7 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
                 columnNumber: 7
             }, undefined),
             isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: itemCategory.itemCards.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: itemCategory.itemCards.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: btnVeg ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentVegMenuItemDefault.default), {
                             item: item.card.info
                         }, void 0, false, {
@@ -17692,7 +17692,9 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
                             lineNumber: 29,
                             columnNumber: 18
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentMenuItemDefault.default), {
-                            item: item.card.info
+                            item: item.card.info,
+                            itemLength: itemCategory.itemCards.length,
+                            index: index
                         }, void 0, false, {
                             fileName: "src/components/RestaurantItemCategory.js",
                             lineNumber: 30,
@@ -17701,7 +17703,7 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
                     }, item.card.info.id, false, {
                         fileName: "src/components/RestaurantItemCategory.js",
                         lineNumber: 27,
-                        columnNumber: 50
+                        columnNumber: 57
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/RestaurantItemCategory.js",
@@ -17743,7 +17745,7 @@ var _vegePngDefault = parcelHelpers.interopDefault(_vegePng);
 var _nonvegPng = require("../utils/nonveg.png");
 var _nonvegPngDefault = parcelHelpers.interopDefault(_nonvegPng);
 var _s = $RefreshSig$();
-const RestaurentMenuItem = ({ item  })=>{
+const RestaurentMenuItem = ({ item , itemLength , index  })=>{
     _s();
     const [count, setCount] = (0, _react.useState)(0);
     if (count < 0) setCount(0);
@@ -17953,12 +17955,12 @@ const RestaurentMenuItem = ({ item  })=>{
                     lineNumber: 18,
                     columnNumber: 21
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                itemLength == index + 1 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "styles_divider"
                 }, void 0, false, {
                     fileName: "src/components/RestaurentMenuItem.js",
-                    lineNumber: 62,
-                    columnNumber: 21
+                    lineNumber: 63,
+                    columnNumber: 27
                 }, undefined)
             ]
         }, void 0, true, {
@@ -18316,7 +18318,7 @@ $RefreshReg$(_c, "RestaurantNestedItemCategory");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./RestaurantNestedItemCategoryMenu":"6MGIT"}],"6MGIT":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurantNestedItemCategoryMenu":"6MGIT","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6MGIT":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9ad0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
