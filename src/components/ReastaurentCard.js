@@ -27,7 +27,20 @@ const ReastaurentCard = (props) => {
                 <QuickView />
             </div>
         </div>
-    )
+    );
+};
+
+export const withPromotedLabel = (ReastaurentCard) => {
+    return (props) => {
+        return(
+            <div>
+                <div class="IJsqo">
+                    <div class="_1kXWW">Promoted</div>
+                </div>
+                <ReastaurentCard {...props} />
+            </div>
+        )
+    }
 }
 
 export default ReastaurentCard;

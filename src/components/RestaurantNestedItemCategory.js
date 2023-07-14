@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
-import RestaurantNestedItemCategoryMenu from "./RestaurantItemCategory";
+import RestaurantItemCategory from "./RestaurantItemCategory";
 
 
 const RestaurantNestedItemCategory = ({ nestedCategory }) => {
@@ -21,7 +21,7 @@ const RestaurantNestedItemCategory = ({ nestedCategory }) => {
         <div>
           {nestedCategory.categories.map((category, index) => (
             <div key={index}>
-              <RestaurantNestedItemCategoryMenu itemCategory={category} />
+              <RestaurantItemCategory itemCategory={category} />
             </div>
           ))}
         </div>

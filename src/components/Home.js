@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ReastaurentCard from "./ReastaurentCard";
+import ReastaurentCard, { withPromotedLabel } from "./ReastaurentCard";
 import OfferCard from "./OfferCard";
 import ShimmerHome from "./ShimmerHome";
 import MoreShimmerHome from "./MoreShimmerHome";
@@ -24,6 +24,8 @@ const Body = () => {
     const [loading, setLoading] = useState(true);
 
     const [sortBy, setSortBy] = useState("RELEVANCE");
+
+    const RestaurantCardPromoted = withPromotedLabel(ReastaurentCard);
 
     const [btnSort, setBtnSort] = React.useState(true);
     const [btnSort1, setBtnSort1] = React.useState(false);
@@ -184,8 +186,13 @@ const Body = () => {
                                     <Link
                                         className="card_link"
                                         key={restaurant.data.data.id}
-                                        to={"/restaurents/" + restaurant.data.data.id}> 
-                                        <ReastaurentCard resObj={restaurant}/> 
+                                        to={"/restaurents/" + restaurant.data.data.id}
+                                    >
+                                        {restaurant.data.data.promoted ? (
+                                            <RestaurantCardPromoted resObj={restaurant} />
+                                        ) : (
+                                            <ReastaurentCard resObj={restaurant} />)
+                                        }
                                     </Link>
                                 </div>))
                             }
