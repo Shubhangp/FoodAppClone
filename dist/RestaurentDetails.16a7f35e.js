@@ -17642,12 +17642,6 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
     const toggleView = ()=>{
         setIsVisible(!isVisible);
     };
-    // console.log(itemCategory);
-    // let noOfVeg = itemCategory.itemCards.map((item) => (item.card.info.itemAttribute.vegClassifier == "VEG"))
-    // noOfVeg.map((item) => (
-    //   item == true ? console.log(item) : "")
-    // )
-    // console.log(noOfVeg);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "main_container",
         children: [
@@ -17665,7 +17659,7 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantItemCategory.js",
-                        lineNumber: 25,
+                        lineNumber: 16,
                         columnNumber: 9
                     }, undefined),
                     isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
@@ -17673,20 +17667,20 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
                         className: "cursor-pointer"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantItemCategory.js",
-                        lineNumber: 29,
+                        lineNumber: 20,
                         columnNumber: 11
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
                         onClick: toggleView,
                         className: "cursor-pointer"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantItemCategory.js",
-                        lineNumber: 31,
+                        lineNumber: 22,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantItemCategory.js",
-                lineNumber: 24,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -17695,29 +17689,29 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
                             item: item.card.info
                         }, void 0, false, {
                             fileName: "src/components/RestaurantItemCategory.js",
-                            lineNumber: 38,
+                            lineNumber: 29,
                             columnNumber: 18
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentMenuItemDefault.default), {
                             item: item.card.info
                         }, void 0, false, {
                             fileName: "src/components/RestaurantItemCategory.js",
-                            lineNumber: 39,
+                            lineNumber: 30,
                             columnNumber: 20
                         }, undefined)
                     }, item.card.info.id, false, {
                         fileName: "src/components/RestaurantItemCategory.js",
-                        lineNumber: 36,
+                        lineNumber: 27,
                         columnNumber: 50
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/RestaurantItemCategory.js",
-                lineNumber: 35,
+                lineNumber: 26,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantItemCategory.js",
-        lineNumber: 23,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
@@ -18264,62 +18258,54 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
-var _sl = require("react-icons/sl");
-var _restaurantItemCategory = require("./RestaurantItemCategory");
-var _restaurantItemCategoryDefault = parcelHelpers.interopDefault(_restaurantItemCategory);
-var _s = $RefreshSig$();
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _restaurantNestedItemCategoryMenu = require("./RestaurantNestedItemCategoryMenu");
+var _restaurantNestedItemCategoryMenuDefault = parcelHelpers.interopDefault(_restaurantNestedItemCategoryMenu);
 const RestaurantNestedItemCategory = ({ nestedCategory  })=>{
-    _s();
-    const [isVisible, setIsVisible] = (0, _react.useState)(true);
-    const toggleView = ()=>{
-        setIsVisible(!isVisible);
-    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "p-5",
+        className: "main_container",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex items-center justify-between",
+                className: "styles_header styles_headerMain ",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                    className: "font-bold text-lg cursor-pointer",
-                    onClick: toggleView,
+                    className: "styles_headerNestedTitle",
                     children: nestedCategory.title
                 }, void 0, false, {
                     fileName: "src/components/RestaurantNestedItemCategory.js",
-                    lineNumber: 16,
+                    lineNumber: 11,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/RestaurantNestedItemCategory.js",
-                lineNumber: 15,
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined),
-            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: nestedCategory.categories.map((category, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantItemCategoryDefault.default), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantNestedItemCategoryMenuDefault.default), {
                             itemCategory: category
                         }, void 0, false, {
                             fileName: "src/components/RestaurantNestedItemCategory.js",
-                            lineNumber: 24,
-                            columnNumber: 15
+                            lineNumber: 18,
+                            columnNumber: 13
                         }, undefined)
                     }, index, false, {
                         fileName: "src/components/RestaurantNestedItemCategory.js",
-                        lineNumber: 23,
-                        columnNumber: 13
+                        lineNumber: 17,
+                        columnNumber: 11
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/RestaurantNestedItemCategory.js",
-                lineNumber: 21,
-                columnNumber: 9
+                lineNumber: 15,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantNestedItemCategory.js",
-        lineNumber: 14,
+        lineNumber: 9,
         columnNumber: 5
     }, undefined);
 };
-_s(RestaurantNestedItemCategory, "C45KFF5iQHXNkju7O/pllv86QL4=");
 _c = RestaurantNestedItemCategory;
 exports.default = RestaurantNestedItemCategory;
 var _c;
@@ -18330,6 +18316,120 @@ $RefreshReg$(_c, "RestaurantNestedItemCategory");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-icons/sl":"42kOd","./RestaurantItemCategory":"lbCQn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","2mLi7"], null, "parcelRequire8442")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./RestaurantNestedItemCategoryMenu":"6MGIT"}],"6MGIT":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9ad0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9ad0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _restaurentMenuItem = require("./RestaurentMenuItem");
+var _restaurentMenuItemDefault = parcelHelpers.interopDefault(_restaurentMenuItem);
+var _restaurentVegMenuItem = require("./RestaurentVegMenuItem");
+var _restaurentVegMenuItemDefault = parcelHelpers.interopDefault(_restaurentVegMenuItem);
+var _sl = require("react-icons/sl");
+var _s = $RefreshSig$();
+const RestaurantNestedItemCategoryMenu = ({ itemCategory , btnVeg  })=>{
+    _s();
+    const [isVisible, setIsVisible] = (0, _react.useState)(false);
+    const toggleView = ()=>{
+        setIsVisible(!isVisible);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "main_container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "styles_header",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                        onClick: toggleView,
+                        className: "styles_headerTitle",
+                        children: [
+                            itemCategory.title,
+                            " (",
+                            btnVeg ? itemCategory.itemCards.length : itemCategory.itemCards.length,
+                            ")"
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, undefined),
+                    isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
+                        onClick: toggleView,
+                        className: "cursor-pointer"
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
+                        lineNumber: 20,
+                        columnNumber: 11
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
+                        onClick: toggleView,
+                        className: "cursor-pointer"
+                    }, void 0, false, {
+                        fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
+                        lineNumber: 22,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: isVisible ? "styles_divider styles_dividerFull" : "styles_divider"
+            }, void 0, false, {
+                fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
+                lineNumber: 25,
+                columnNumber: 7
+            }, undefined),
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: itemCategory.itemCards.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: btnVeg ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentVegMenuItemDefault.default), {
+                            item: item.card.info
+                        }, void 0, false, {
+                            fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
+                            lineNumber: 30,
+                            columnNumber: 18
+                        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentMenuItemDefault.default), {
+                            item: item.card.info
+                        }, void 0, false, {
+                            fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
+                            lineNumber: 31,
+                            columnNumber: 20
+                        }, undefined)
+                    }, item.card.info.id, false, {
+                        fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
+                        lineNumber: 28,
+                        columnNumber: 50
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
+                lineNumber: 27,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
+        lineNumber: 14,
+        columnNumber: 5
+    }, undefined);
+};
+_s(RestaurantNestedItemCategoryMenu, "QjDZesRvLCmcrZLxgN677nXnVLA=");
+_c = RestaurantNestedItemCategoryMenu;
+exports.default = RestaurantNestedItemCategoryMenu;
+var _c;
+$RefreshReg$(_c, "RestaurantNestedItemCategoryMenu");
+
+  $parcel$ReactRefreshHelpers$9ad0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurentMenuItem":"jRMF5","./RestaurentVegMenuItem":"30e4r","react-icons/sl":"42kOd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","2mLi7"], null, "parcelRequire8442")
 
 //# sourceMappingURL=RestaurentDetails.16a7f35e.js.map

@@ -1346,17 +1346,25 @@ li {
   margin: 24px auto;
 }
 
-.main_container {
-  margin: 24px 8px 16px 16px;
-  position: relative;
-}
-
 .styles_header {
   width: 100%;
   justify-content: space-between;
   padding-right: 16px;
   font-size: 1.15rem;
   display: flex;
+}
+
+.styles_headerTitle {
+  color: #282c3f;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.2;
+  transition: all .2s;
+}
+
+.main_container {
+  margin: 24px 8px 16px 16px;
+  position: relative;
 }
 
 .styles_headerMain {
@@ -1381,6 +1389,20 @@ li {
   height: .5px;
   border-bottom: .5px solid #d3d3d3;
   margin: 20px 0;
+}
+
+.styles_dividerFull {
+  animation: .4s ease-in-out forwards styles_openMenuDivider;
+}
+
+@keyframes styles_openMenuDivider {
+  0% {
+    width: 100%;
+  }
+
+  100% {
+    width: 14%;
+  }
 }
 
 .styles_item {

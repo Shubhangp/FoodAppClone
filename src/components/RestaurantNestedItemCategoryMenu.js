@@ -3,8 +3,8 @@ import RestaurentMenuItem from "./RestaurentMenuItem";
 import RestaurentVegMenuItem from "./RestaurentVegMenuItem";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
-const RestaurantItemCategory = ({ itemCategory, btnVeg }) => {
-  const [isVisible, setIsVisible] = useState(true);
+const RestaurantNestedItemCategoryMenu = ({ itemCategory, btnVeg }) => {
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleView = () => {
     setIsVisible(!isVisible);
@@ -12,8 +12,8 @@ const RestaurantItemCategory = ({ itemCategory, btnVeg }) => {
 
   return (
     <div className="main_container">
-      <button className="styles_header styles_headerMain">
-        <h3 onClick={toggleView} className="styles_headerNestedTitle">
+      <button className="styles_header">
+        <h3 onClick={toggleView} className="styles_headerTitle">
           {itemCategory.title} ({ btnVeg ? (itemCategory.itemCards.length) : (itemCategory.itemCards.length) })
         </h3>
         {isVisible ? (
@@ -22,6 +22,7 @@ const RestaurantItemCategory = ({ itemCategory, btnVeg }) => {
           <SlArrowDown onClick={toggleView} className="cursor-pointer" />
         )}
       </button>
+      <div class={isVisible ? "styles_divider styles_dividerFull" : "styles_divider" }></div>
       {isVisible && (
         <div>
           {itemCategory.itemCards.map((item) => (<div key={item.card.info.id}>
@@ -37,4 +38,4 @@ const RestaurantItemCategory = ({ itemCategory, btnVeg }) => {
   );
 };
 
-export default RestaurantItemCategory
+export default RestaurantNestedItemCategoryMenu;

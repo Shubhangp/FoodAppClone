@@ -1,31 +1,24 @@
-import { useState } from "react";
-import { SlArrowDown, SlArrowUp } from "react-icons/sl";
-import RestaurantItemCategory from "./RestaurantItemCategory";
+import React from "react";
+import RestaurantNestedItemCategoryMenu from "./RestaurantNestedItemCategoryMenu";
 
 
 const RestaurantNestedItemCategory = ({ nestedCategory }) => {
-  const [isVisible, setIsVisible] = useState(true);
 
-  const toggleView = () => {
-    setIsVisible(!isVisible);
-  };
   
   return (
-    <div className="p-5">
-      <div className="flex items-center justify-between">
-        <h3 className="font-bold text-lg cursor-pointer" onClick={toggleView}>
+    <div className="main_container">
+      <div className="styles_header styles_headerMain ">
+        <h3 className="styles_headerNestedTitle">
           {nestedCategory.title}
         </h3>
       </div>
-      {isVisible && (
-        <div>
-          {nestedCategory.categories.map((category, index) => (
-            <div key={index}>
-              <RestaurantItemCategory itemCategory={category} />
-            </div>
-          ))}
-        </div>
-      )}
+      <div>
+        {nestedCategory.categories.map((category, index) => (
+          <div key={index}>
+            <RestaurantNestedItemCategoryMenu itemCategory={category} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
