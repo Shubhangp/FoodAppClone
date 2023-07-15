@@ -228,16 +228,6 @@ header svg:not(:root) {
   transform: translate(-50%, -50%);
 }
 
-.PJaej {
-  color: #ffa700;
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 600;
-  position: absolute;
-  top: 26px;
-  right: -24px;
-}
-
 .OnlineHedader {
   margin-left: 20px;
 }
@@ -2418,6 +2408,7 @@ li {
 
 ._1QBzC {
   height: 48px;
+  cursor: pointer;
   justify-content: center;
   align-items: center;
   padding-right: 13px;

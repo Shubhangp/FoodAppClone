@@ -659,6 +659,10 @@ const Search = ()=>{
     function selectClick(e) {
         setSearchText(e);
     }
+    function backClick() {
+        setSearchText("");
+        setSearchByData(undefined);
+    }
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "nDVxx",
         children: [
@@ -670,8 +674,9 @@ const Search = ()=>{
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "_1QBzC",
                             children: [
-                                searchByData == undefined ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                searchByData == undefined ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "_38OJP _2EyGE",
+                                    onClick: ()=>backClick(),
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                                         className: "_16EzP",
                                         viewBox: "0 0 22 24",
@@ -682,17 +687,17 @@ const Search = ()=>{
                                             fill: "#535766"
                                         }, void 0, false, {
                                             fileName: "src/components/Search.js",
-                                            lineNumber: 86,
+                                            lineNumber: 91,
                                             columnNumber: 41
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Search.js",
-                                        lineNumber: 85,
+                                        lineNumber: 90,
                                         columnNumber: 37
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Search.js",
-                                    lineNumber: 84,
+                                    lineNumber: 89,
                                     columnNumber: 34
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -707,12 +712,12 @@ const Search = ()=>{
                                         onChange: (e)=>setSearchText(e.target.value)
                                     }, "input-text", false, {
                                         fileName: "src/components/Search.js",
-                                        lineNumber: 91,
+                                        lineNumber: 96,
                                         columnNumber: 33
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Search.js",
-                                    lineNumber: 90,
+                                    lineNumber: 95,
                                     columnNumber: 29
                                 }, undefined),
                                 searchText == "" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -729,22 +734,22 @@ const Search = ()=>{
                                                 d: "M17.6671481,17.1391632 L22.7253317,22.1973467 L20.9226784,24 L15.7041226,18.7814442 C14.1158488,19.8024478 12.225761,20.3946935 10.1973467,20.3946935 C4.56550765,20.3946935 0,15.8291858 0,10.1973467 C0,4.56550765 4.56550765,0 10.1973467,0 C15.8291858,0 20.3946935,4.56550765 20.3946935,10.1973467 C20.3946935,12.8789625 19.3595949,15.3188181 17.6671481,17.1391632 Z M10.1973467,17.8453568 C14.4212261,17.8453568 17.8453568,14.4212261 17.8453568,10.1973467 C17.8453568,5.97346742 14.4212261,2.54933669 10.1973467,2.54933669 C5.97346742,2.54933669 2.54933669,5.97346742 2.54933669,10.1973467 C2.54933669,14.4212261 5.97346742,17.8453568 10.1973467,17.8453568 Z"
                                             }, void 0, false, {
                                                 fileName: "src/components/Search.js",
-                                                lineNumber: 105,
+                                                lineNumber: 110,
                                                 columnNumber: 45
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Search.js",
-                                            lineNumber: 104,
+                                            lineNumber: 109,
                                             columnNumber: 41
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Search.js",
-                                        lineNumber: 103,
+                                        lineNumber: 108,
                                         columnNumber: 37
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Search.js",
-                                    lineNumber: 102,
+                                    lineNumber: 107,
                                     columnNumber: 34
                                 }, undefined) : "",
                                 searchText == "" ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -765,48 +770,48 @@ const Search = ()=>{
                                                     strokeWidth: "1"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Search.js",
-                                                    lineNumber: 116,
+                                                    lineNumber: 121,
                                                     columnNumber: 49
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Search.js",
-                                                lineNumber: 115,
+                                                lineNumber: 120,
                                                 columnNumber: 45
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Search.js",
-                                            lineNumber: 114,
+                                            lineNumber: 119,
                                             columnNumber: 41
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Search.js",
-                                        lineNumber: 113,
+                                        lineNumber: 118,
                                         columnNumber: 37
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Search.js",
-                                    lineNumber: 112,
+                                    lineNumber: 117,
                                     columnNumber: 35
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 82,
+                            lineNumber: 87,
                             columnNumber: 25
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Search.js",
-                        lineNumber: 81,
+                        lineNumber: 86,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Search.js",
-                    lineNumber: 80,
+                    lineNumber: 85,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Search.js",
-                lineNumber: 79,
+                lineNumber: 84,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -819,7 +824,7 @@ const Search = ()=>{
                             searchByRes: searchByRes
                         }, void 0, false, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 129,
+                            lineNumber: 134,
                             columnNumber: 26
                         }, undefined),
                         searchText == "" || searchByData != undefined ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -829,12 +834,12 @@ const Search = ()=>{
                                 suggestionClick: suggestionClick
                             }, void 0, false, {
                                 fileName: "src/components/Search.js",
-                                lineNumber: 133,
+                                lineNumber: 138,
                                 columnNumber: 29
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 132,
+                            lineNumber: 137,
                             columnNumber: 26
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -844,29 +849,29 @@ const Search = ()=>{
                                 selectClick: selectClick
                             }, void 0, false, {
                                 fileName: "src/components/Search.js",
-                                lineNumber: 138,
+                                lineNumber: 143,
                                 columnNumber: 30
                             }, undefined) : ""
                         }, void 0, false, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 136,
+                            lineNumber: 141,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Search.js",
-                    lineNumber: 127,
+                    lineNumber: 132,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Search.js",
-                lineNumber: 126,
+                lineNumber: 131,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Search.js",
-        lineNumber: 78,
+        lineNumber: 83,
         columnNumber: 9
     }, undefined);
 };

@@ -74,6 +74,11 @@ const Search = () => {
         setSearchText(e);
     }
 
+    function backClick(){
+        setSearchText("");
+        setSearchByData(undefined);
+    }
+
     return(
         <div className="nDVxx">
             <div className="rbcmH">
@@ -81,11 +86,11 @@ const Search = () => {
                     <form>
                         <div className="_1QBzC">
                             {searchByData == undefined ? ("") :
-                                (<button className="_38OJP _2EyGE">
+                                (<div className="_38OJP _2EyGE" onClick={() => backClick()}>
                                     <svg className="_16EzP" viewBox="0 0 22 24" height="20" width="20">
                                         <path d="M16.7806341,2.29035615 C17.3106478,1.84800244 18.0989073,1.91906491 18.541261,2.4490786 C18.9541245,2.94375805 18.9197454,3.66339831 18.4824058,4.11680172 L18.3825386,4.20970553 L9.2,11.8720308 L18.3310359,19.4913284 C18.8257555,19.9041438 18.9207068,20.6183204 18.5715601,21.142665 L18.4899294,21.2519399 C18.077114,21.7466594 17.3629373,21.8416107 16.8385928,21.4924641 L16.7293179,21.4108334 L6.44914097,12.8326086 C5.88775027,12.3641599 5.85262408,11.5262778 6.34379605,11.011602 L6.44904776,10.9131814 L16.7806341,2.29035615 Z" fill="#535766"></path>
                                     </svg>
-                                </button>)
+                                </div>)
                             }
                             <div className="_2O4-3">
                                 <input 
