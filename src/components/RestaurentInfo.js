@@ -2,7 +2,7 @@ import React from 'react';
 import { AiFillStar } from "react-icons/ai";
 
 const RestaurantInfo = (props) => {
-    const { info } = props;
+    const { info, showOutlet } = props;
 
     // console.log(info.info);
     
@@ -21,7 +21,7 @@ const RestaurantInfo = (props) => {
                         <p className='RestaurantNameAddress_lastMile'>{sla.lastMileTravelString}</p>
                         <div className="RestaurantOutletSelector_wrapper">
                             <button className="RestaurantOutletSelector_address">
-                                <span className="RestaurantOutletSelector_outletIcon">▾</span>
+                                <span className="RestaurantOutletSelector_outletIcon" onClick={() => showOutlet()}>▾</span>
                             </button>
                         </div>
                     </div>

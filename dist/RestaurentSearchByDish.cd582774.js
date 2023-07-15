@@ -639,7 +639,7 @@ const RestaurentSearchByDish = ({ clickSearch , menu , info , searchText , setSe
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                                 type: "text",
                                                 className: "_3afzg",
-                                                placeholder: `Search in ${name}`,
+                                                placeholder: `Search in ${name} (only lowercase awolled e.g.-paneer)`,
                                                 value: searchText,
                                                 onChange: (e)=>{
                                                     setSearchText(e.target.value);
@@ -695,7 +695,27 @@ const RestaurentSearchByDish = ({ clickSearch , menu , info , searchText , setSe
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                             className: "_3u-Kn",
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: "oESCA icon-close"
+                                                className: "oESCA icon-close",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    width: "19",
+                                                    height: "19",
+                                                    viewBox: "0 0 24 24",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                        d: "M17.0251484,0.288798437 C17.5090218,-0.114571204 18.2292627,-0.0967643175 18.6927565,0.350826444 C19.189357,0.830387975 19.2031698,1.62172366 18.7236083,2.11832416 L18.7236083,2.11832416 L11.274,9.831 L18.7236083,17.5450054 C19.2031698,18.0416059 19.189357,18.8329416 18.6927565,19.3125031 C18.2292627,19.7600939 17.5090218,19.7779007 17.0251484,19.3745311 L16.9252588,19.2816513 L9.537,11.631 L2.14917595,19.2816513 L2.04928636,19.3745311 C1.56541292,19.7779007 0.845172034,19.7600939 0.381678232,19.3125031 C-0.114922271,18.8329416 -0.128735086,18.0416059 0.350826444,17.5450054 L0.350826444,17.5450054 L7.799,9.831 L0.350826444,2.11832416 C-0.128735086,1.62172366 -0.114922271,0.830387975 0.381678232,0.350826444 C0.845172034,-0.0967643175 1.56541292,-0.114571204 2.04928636,0.288798437 L2.14917595,0.381678232 L9.537,8.032 L16.9252588,0.381678232 Z",
+                                                        fill: "#535766",
+                                                        fillRule: "nonzero",
+                                                        stroke: "none",
+                                                        strokeWidth: "1"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/RestaurentSearchByDish.js",
+                                                        lineNumber: 46,
+                                                        columnNumber: 53
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/RestaurentSearchByDish.js",
+                                                    lineNumber: 45,
+                                                    columnNumber: 49
+                                                }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/RestaurentSearchByDish.js",
                                                 lineNumber: 44,
@@ -733,24 +753,24 @@ const RestaurentSearchByDish = ({ clickSearch , menu , info , searchText , setSe
                                     nestedCategory: item
                                 }, void 0, false, {
                                     fileName: "src/components/RestaurentSearchByDish.js",
-                                    lineNumber: 56,
+                                    lineNumber: 60,
                                     columnNumber: 41
                                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentSearchCategoryDefault.default), {
                                     searchCategory: item,
                                     searchText: searchText
                                 }, void 0, false, {
                                     fileName: "src/components/RestaurentSearchByDish.js",
-                                    lineNumber: 58,
+                                    lineNumber: 62,
                                     columnNumber: 41
                                 }, undefined)
                             }, index, false, {
                                 fileName: "src/components/RestaurentSearchByDish.js",
-                                lineNumber: 54,
+                                lineNumber: 58,
                                 columnNumber: 33
                             }, undefined))
                     }, void 0, false, {
                         fileName: "src/components/RestaurentSearchByDish.js",
-                        lineNumber: 52,
+                        lineNumber: 56,
                         columnNumber: 26
                     }, undefined) : ""
                 ]
@@ -801,18 +821,18 @@ const RestaurantNestedSearchCategory = ({ nestedCategory  })=>{
                     searchCategory: category
                 }, void 0, false, {
                     fileName: "src/components/RestaurantNestedSearchCategory.js",
-                    lineNumber: 9,
-                    columnNumber: 15
+                    lineNumber: 10,
+                    columnNumber: 13
                 }, undefined)
             }, index, false, {
                 fileName: "src/components/RestaurantNestedSearchCategory.js",
-                lineNumber: 8,
-                columnNumber: 13
+                lineNumber: 9,
+                columnNumber: 11
             }, undefined))
     }, void 0, false, {
         fileName: "src/components/RestaurantNestedSearchCategory.js",
-        lineNumber: 6,
-        columnNumber: 9
+        lineNumber: 7,
+        columnNumber: 7
     }, undefined);
 };
 _c = RestaurantNestedSearchCategory;
@@ -844,7 +864,7 @@ const RestaurentSearchCategory = ({ searchCategory , searchText  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "main_container",
         children: searchCategory.itemCards.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: item?.card?.info.name.toLowerCase().includes(searchText.toLowerCase()) ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentSearchMapDefault.default), {
+                children: item?.card?.info.name.toLowerCase().includes(searchText) ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentSearchMapDefault.default), {
                     item: item.card.info
                 }, void 0, false, {
                     fileName: "src/components/RestaurentSearchCategory.js",

@@ -11,7 +11,7 @@ const RestaurantMenuList = (props) => {
             {menu.map((item, index) => (
                 <div key={index}>
                     {item.categories ? (
-                        <RestaurantNestedItemCategory nestedCategory={item} />
+                        <RestaurantNestedItemCategory nestedCategory={item} btnVeg={btnVeg} />
                     ) : (
                         <RestaurantItemCategory itemCategory={item} btnVeg={btnVeg} />
                     )}

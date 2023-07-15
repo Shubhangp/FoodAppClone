@@ -5,7 +5,7 @@ const SearchByRestaurant = ({ searchByRes }) => {
 
     // console.log(searchByRes);
 
-    return(<div>
+    return(<div className="search_card_res">
             {searchByRes.map((card) => (
                 <div className="Search_widgetsV2__27BBR Search_widgets__3o_bA" key={card?.card?.card?.info?.id}>
                     <div className="styles_container__zEwGm">

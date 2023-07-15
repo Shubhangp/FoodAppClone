@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import useRestaurent from "../utils/useRestaurent"
 const RestaurentSearchByDish = lazy(() => import("./RestaurentSearchByDish"));
@@ -9,7 +9,9 @@ import RestaurantOffer from "./RestaurantOffer";
 import RestaurantVegBtn from "./RestaurantVegBtn";
 import ShimmerRestaurantPage from "./ShimmerRestaurantPage";
 import RestaurantMenuList from "./RestaurantMenuList";
-import { useState } from "react";
+const RestaurentOutlet = lazy(() => import("./RestaurentOutlet"));
+const RestaurentNoOutlet = lazy(() => import("./RestaurentNoOutlet"));
+import { useState, useEffect } from "react";
 
 const RestaurantDetails = () => {
 
@@ -18,23 +20,40 @@ const RestaurantDetails = () => {
   
   const restaurant = useRestaurent(resId);/* Passing resId to Custom Hooks to fetch restaurant details and returns it */
   
-  // console.log(restaurant);
-  
   const [btnVeg, setBtnVeg] = useState(false);
 
   const [btnSearch, setBtnSearch] = useState(false);
 
   const [searchText, setSearchText] = useState("");
 
-  const [header , setHeader] = useState(false);
+  const [header, setHeader] = useState(false);
+
+  const [outlet, setOutlet] = useState([]);
+
+  const [btnOutlet, setBtnOutlet] = useState(false);
+
+  useEffect(() => {
+    fetchOutlet();
+  }, [btnOutlet]);
+
+  const fetchOutlet = async () => {
+      const response = await fetch(`https://www.swiggy.com/dapi/menu/other-outlets?menuId=${resId}&lat=12.9351929&lng=77.62448069999999`);
+      var dataOutlet = await response.json();
+      // console.log(dataOutlet);
+      setOutlet(dataOutlet?.data?.otherOutlets);
+  }
   
-    function vegClick(){
-      setBtnVeg(btnVeg => !btnVeg);
+  function vegClick(){
+    setBtnVeg(btnVeg => !btnVeg);
   }
 
   function clickSearch(){
     setBtnSearch(btnSearch => !btnSearch);
     setSearchText("");
+  }
+
+  function showOutlet(){
+    setBtnOutlet(btnOutlet => !btnOutlet);
   }
 
   const changeHeader = () => {
@@ -53,7 +72,7 @@ const RestaurantDetails = () => {
   return (
     <div>
       <div className={btnSearch ? "res-seach" : "res-seach res_search_click"}>
-        <Suspense fallback={<h1>Loading...</h1>}>
+        <Suspense fallback={<h1></h1>}>
           <RestaurentSearchByDish 
             clickSearch={clickSearch} 
             menu={restaurant.menu} 
@@ -67,12 +86,24 @@ const RestaurantDetails = () => {
         <AddressRestaurant info = {restaurant} />
         <div>
           <RestaurantMenuHeader info = {restaurant} clickSearch={clickSearch} header = {header} />
-          <RestaurentInfo info = {restaurant} />
+          <RestaurentInfo info = {restaurant} showOutlet={showOutlet} outlet = {outlet} />
           <RestaurantOffer offer = {restaurant.offer} />
           <RestaurantVegBtn vegClick={vegClick} btnVeg={btnVeg} />
           <RestaurantMenuList menu={restaurant.menu} btnVeg={btnVeg} />
         </div>
       </div>
+      { outlet == undefined ? 
+        (<div>
+          {btnOutlet &&
+            <Suspense fallback={<h1></h1>}><RestaurentNoOutlet setBtnOutlet = {setBtnOutlet} info = {restaurant} /></Suspense>}
+        </div>)
+        :(<div>
+          {btnOutlet && 
+            <Suspense fallback={<h1></h1>}>
+              <RestaurentOutlet outlet = {outlet} setBtnOutlet = {setBtnOutlet} info = {restaurant} />
+            </Suspense>}
+        </div>)
+      }
     </div>
   );
 };

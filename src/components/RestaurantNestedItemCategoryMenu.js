@@ -22,7 +22,7 @@ const RestaurantNestedItemCategoryMenu = ({ itemCategory, btnVeg }) => {
           <SlArrowDown onClick={toggleView} className="cursor-pointer" />
         )}
       </button>
-      <div class={isVisible ? "styles_divider styles_dividerFull" : "styles_divider" }></div>
+      <div className={isVisible ? "styles_divider styles_dividerFull" : "styles_divider" }></div>
       {isVisible && (
         <div>
           {itemCategory.itemCards.map((item) => (<div key={item.card.info.id}>

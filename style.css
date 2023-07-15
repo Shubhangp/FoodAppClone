@@ -1802,6 +1802,158 @@ li{
         border-bottom: 16px solid #f1f1f6;
 }
 
+.BaseModal_content{
+    z-index: 1001;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 280px;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    border-radius: 5px;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.15);
+    opacity: 0;
+    max-width: 90%;
+}
+
+.BaseModal_content__show{
+    -webkit-animation: BaseModal_fadeIn__2TH7g .1s ease-in forwards;
+    animation: BaseModal_fadeIn__2TH7g .1s ease-in forwards;
+}
+
+@keyframes BaseModal_fadeIn__2TH7g{
+    0% {
+        -webkit-transform: translate3d(-50%,-50%,0) scale(.5);
+        transform: translate3d(-50%,-50%,0) scale(.5);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-50%,-50%,0) scale(1);
+        transform: translate3d(-50%,-50%,0) scale(1);
+        opacity: 1;
+    }
+}
+
+.RestaurantOutlet_header{
+    background: #f2f6fc;
+    height: 150px;
+    box-shadow: 0 1px 0 0 #e9e9eb;
+    padding: 24px 16px 0;
+}
+
+.RestaurantOutlet_headerImage{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-bottom: 18px;
+    background: #eef0f5;
+}
+
+.ScreenReaderOnly_screenReaderOnly{
+    position: absolute;
+    clip: rect(0,0,0,0);
+    display: block;
+    font-size: 1px;
+    line-height: 1px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 1px;
+    width: 1px;
+}
+
+.RestaurantOutlet_headerTitle{
+    color: #3d4152;
+    font-size: 1.07rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.RestaurantOutlet_headerDescription{
+    color: #7e808c;
+    font-size: .93rem;
+    line-height: 1.7;
+}
+
+.RestaurantOutlet_list{
+    background: #fff;
+}
+
+@media (min-width: 640px){
+    .RestaurantOutlet_list{
+        max-height: 500px;
+        overflow: scroll;
+    }
+}
+
+.RestaurantOutlet_listItem{
+    padding: 18px 16px;
+    border-bottom: 1px solid #e9e9eb;
+    color: #686b78;
+    font-size: .85rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.RestaurantOutlet_listItemTable{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.RestaurantOutlet_listItemAddress{
+    display: table-cell;
+    vertical-align: middle;
+    color: #5d8ed5;
+    font-weight: 500;
+    font-size: 1rem;
+    width: 60%;
+}
+
+.RestaurantOutlet_listItemRating{
+    display: table-cell;
+    vertical-align: middle;
+    width: 15%;
+    text-align: right;
+}
+
+.RestaurantOutlet_listItemRatingIcon{
+    font-size: 10px;
+    margin-right: 5px;
+}
+
+.RestaurantOutlet_listItemSLA{
+    display: table-cell;
+    vertical-align: middle;
+    width: 25%;
+    text-align: right;
+}
+
+.BaseModal_overlay{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    background: rgba(40,44,62,.6);
+    -webkit-animation: BaseModal_opacityAnimate__e8O90 .3s;
+    animation: BaseModal_opacityAnimate__e8O90 .3s;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: opacity;
+    contain: content;
+}
+
+
 /* Location Search */
 
 .not_show_loction{
@@ -1894,10 +2046,6 @@ li{
     float: left;
     color: #3d4152;
     cursor: pointer;
-}
-
-.icon-close:before {
-    content: "\274C";
 }
 
 ._2Joay {
@@ -2488,6 +2636,41 @@ li{
     justify-content: center;
 }
 
+._38OJP {
+    padding: 14px 12px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 0;
+    outline: none;
+}
+
+._2EyGE {
+    animation: l5Czt .3s ease-in;
+}
+
+@keyframes l5Czt {
+    0% {
+        transform: translateX(-150%);
+        width: 10px;
+    }
+    
+    100% {
+        transform: translateX(0);
+        width: 40px;
+    }
+}
+
+._16EzP {
+    stroke-width: 0;
+    stroke: currentColor;
+    width: 20px;
+    height: 20px;
+    fill: #3d4152;
+    vertical-align: middle;
+}
+
 ._2O4-3 {
     -ms-flex: 1;
     flex: 1;
@@ -2530,6 +2713,19 @@ li{
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+._3XUKB{
+    color: #7e808c;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.jBKjW {
+    font-size: 14px;
+    line-height: 20px;
 }
 
 ._2NSqs {
@@ -2753,7 +2949,7 @@ b {
 }
 
 ._3jBq8 {
-    margin-top: 0!important;
+    margin-top: 55px!important;
 }
 
 .Search_wrapper__lQvnw {
@@ -2767,6 +2963,12 @@ b {
 
 .Search_widgetsV2__27BBR {
     flex: 1 1 50%;
+}
+
+.search_card_dish,
+.search_card_res{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 ._3DdnR {

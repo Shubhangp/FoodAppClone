@@ -9,11 +9,11 @@ const SearchByDish = ({ searchByData }) => {
     return searchByData == undefined? (
         ""
         ):(
-        <div>
+        <div className="search_card_dish">
             {searchByData.map((card, index) =>(
-                <div key={index}>
+                <div  className="Search_widgetsV2__27BBR Search_widgets__3o_bA" key={index}>
                     {card?.card?.card["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.Dish" ?
-                        (<div className="Search_widgetsV2__27BBR Search_widgets__3o_bA">
+                        (<div>
                             <div className="styles_container__2GTLR styles_containerV2__1_U51">
                                 <div className="styles_containerInner__2Q_JM styles_containerInnerV2__2yjT5">
                                     <Link to={"/restaurents/" + card?.card?.card?.restaurant?.info?.id} className="styles_restaurant__20fB8">

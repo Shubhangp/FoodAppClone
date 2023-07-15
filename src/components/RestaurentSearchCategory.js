@@ -8,7 +8,7 @@ const RestaurentSearchCategory = ({ searchCategory, searchText }) => {
         <div className="main_container">
           {searchCategory.itemCards.map((item) => (
             <div key={item.card.info.id}>
-              {item?.card?.info.name.toLowerCase().includes(searchText.toLowerCase()) ?
+              {item?.card?.info.name.toLowerCase().includes(searchText) ?
                 (<RestaurentSearchMap item={item.card.info} />)
                 : ("")
               }

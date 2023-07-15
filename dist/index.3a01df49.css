@@ -1661,6 +1661,146 @@ li {
   border-bottom: 16px solid #f1f1f6;
 }
 
+.BaseModal_content {
+  z-index: 1001;
+  min-width: 280px;
+  transform-origin: center;
+  opacity: 0;
+  max-width: 90%;
+  background: #fff;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  box-shadow: 0 2px 10px #00000026;
+}
+
+.BaseModal_content__show {
+  animation: .1s ease-in forwards BaseModal_fadeIn__2TH7g;
+}
+
+@keyframes BaseModal_fadeIn__2TH7g {
+  0% {
+    opacity: 0;
+    transform: translate3d(-50%, -50%, 0)scale(.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0)scale(1);
+  }
+}
+
+.RestaurantOutlet_header {
+  height: 150px;
+  background: #f2f6fc;
+  padding: 24px 16px 0;
+  box-shadow: 0 1px #e9e9eb;
+}
+
+.RestaurantOutlet_headerImage {
+  width: 80px;
+  height: 80px;
+  background: #eef0f5;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.ScreenReaderOnly_screenReaderOnly {
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  height: 1px;
+  width: 1px;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  font-size: 1px;
+  line-height: 1px;
+  display: block;
+  position: absolute;
+  overflow: hidden;
+}
+
+.RestaurantOutlet_headerTitle {
+  color: #3d4152;
+  font-size: 1.07rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.RestaurantOutlet_headerDescription {
+  color: #7e808c;
+  font-size: .93rem;
+  line-height: 1.7;
+}
+
+.RestaurantOutlet_list {
+  background: #fff;
+}
+
+@media (width >= 640px) {
+  .RestaurantOutlet_list {
+    max-height: 500px;
+    overflow: scroll;
+  }
+}
+
+.RestaurantOutlet_listItem {
+  color: #686b78;
+  border-bottom: 1px solid #e9e9eb;
+  padding: 18px 16px;
+  font-size: .85rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.RestaurantOutlet_listItemTable {
+  table-layout: fixed;
+  width: 100%;
+  display: table;
+}
+
+.RestaurantOutlet_listItemAddress {
+  vertical-align: middle;
+  color: #5d8ed5;
+  width: 60%;
+  font-size: 1rem;
+  font-weight: 500;
+  display: table-cell;
+}
+
+.RestaurantOutlet_listItemRating {
+  vertical-align: middle;
+  width: 15%;
+  text-align: right;
+  display: table-cell;
+}
+
+.RestaurantOutlet_listItemRatingIcon {
+  margin-right: 5px;
+  font-size: 10px;
+}
+
+.RestaurantOutlet_listItemSLA {
+  vertical-align: middle;
+  width: 25%;
+  text-align: right;
+  display: table-cell;
+}
+
+.BaseModal_overlay {
+  z-index: 1000;
+  opacity: 1;
+  will-change: opacity;
+  contain: content;
+  background: #282c3e99;
+  animation: .3s BaseModal_opacityAnimate__e8O90;
+  position: fixed;
+  inset: 0;
+  transform: translateZ(0);
+}
+
 .not_show_loction {
   visibility: hidden;
 }
@@ -1748,10 +1888,6 @@ li {
   float: left;
   color: #3d4152;
   cursor: pointer;
-}
-
-.icon-close:before {
-  content: "❌";
 }
 
 ._2Joay {
@@ -2288,6 +2424,41 @@ li {
   display: flex;
 }
 
+._38OJP {
+  outline: none;
+  padding: 14px 12px;
+  font-weight: 600;
+  line-height: 0;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+._2EyGE {
+  animation: .3s ease-in l5Czt;
+}
+
+@keyframes l5Czt {
+  0% {
+    width: 10px;
+    transform: translateX(-150%);
+  }
+
+  100% {
+    width: 40px;
+    transform: translateX(0);
+  }
+}
+
+._16EzP {
+  stroke-width: 0;
+  stroke: currentColor;
+  width: 20px;
+  height: 20px;
+  fill: #3d4152;
+  vertical-align: middle;
+}
+
 ._2O4-3 {
   min-width: 0;
   flex: 1;
@@ -2329,6 +2500,19 @@ li {
   font-style: normal;
   font-weight: 500;
   line-height: 1;
+}
+
+._3XUKB {
+  color: #7e808c;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.jBKjW {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 ._2NSqs {
@@ -2532,7 +2716,7 @@ b {
 }
 
 ._3jBq8 {
-  margin-top: 0 !important;
+  margin-top: 55px !important;
 }
 
 .Search_wrapper__lQvnw {
@@ -2546,6 +2730,11 @@ b {
 
 .Search_widgetsV2__27BBR {
   flex: 50%;
+}
+
+.search_card_dish, .search_card_res {
+  flex-wrap: wrap;
+  display: flex;
 }
 
 ._3DdnR {

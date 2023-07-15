@@ -667,78 +667,134 @@ const Search = ()=>{
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "_1JbgW _1jet9",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1QBzC",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "_2O4-3",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                            type: "text",
-                                            className: "_2FkHZ",
-                                            placeholder: "Search for restaurants and food",
-                                            maxLength: "200",
-                                            autoFocus: "",
-                                            value: searchText,
-                                            onChange: (e)=>setSearchText(e.target.value)
-                                        }, "input-text", false, {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "_1QBzC",
+                            children: [
+                                searchByData == undefined ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "_38OJP _2EyGE",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                        className: "_16EzP",
+                                        viewBox: "0 0 22 24",
+                                        height: "20",
+                                        width: "20",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                            d: "M16.7806341,2.29035615 C17.3106478,1.84800244 18.0989073,1.91906491 18.541261,2.4490786 C18.9541245,2.94375805 18.9197454,3.66339831 18.4824058,4.11680172 L18.3825386,4.20970553 L9.2,11.8720308 L18.3310359,19.4913284 C18.8257555,19.9041438 18.9207068,20.6183204 18.5715601,21.142665 L18.4899294,21.2519399 C18.077114,21.7466594 17.3629373,21.8416107 16.8385928,21.4924641 L16.7293179,21.4108334 L6.44914097,12.8326086 C5.88775027,12.3641599 5.85262408,11.5262778 6.34379605,11.011602 L6.44904776,10.9131814 L16.7806341,2.29035615 Z",
+                                            fill: "#535766"
+                                        }, void 0, false, {
                                             fileName: "src/components/Search.js",
-                                            lineNumber: 84,
-                                            columnNumber: 33
+                                            lineNumber: 86,
+                                            columnNumber: 41
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Search.js",
-                                        lineNumber: 83,
-                                        columnNumber: 29
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "_2p8XD",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "icon-magnifier",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                className: "_1GTCc",
-                                                viewBox: "5 -1 12 25",
-                                                height: "17",
-                                                width: "17",
-                                                fill: "#686b78",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                    d: "M17.6671481,17.1391632 L22.7253317,22.1973467 L20.9226784,24 L15.7041226,18.7814442 C14.1158488,19.8024478 12.225761,20.3946935 10.1973467,20.3946935 C4.56550765,20.3946935 0,15.8291858 0,10.1973467 C0,4.56550765 4.56550765,0 10.1973467,0 C15.8291858,0 20.3946935,4.56550765 20.3946935,10.1973467 C20.3946935,12.8789625 19.3595949,15.3188181 17.6671481,17.1391632 Z M10.1973467,17.8453568 C14.4212261,17.8453568 17.8453568,14.4212261 17.8453568,10.1973467 C17.8453568,5.97346742 14.4212261,2.54933669 10.1973467,2.54933669 C5.97346742,2.54933669 2.54933669,5.97346742 2.54933669,10.1973467 C2.54933669,14.4212261 5.97346742,17.8453568 10.1973467,17.8453568 Z"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Search.js",
-                                                    lineNumber: 97,
-                                                    columnNumber: 41
-                                                }, undefined)
+                                        lineNumber: 85,
+                                        columnNumber: 37
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Search.js",
+                                    lineNumber: 84,
+                                    columnNumber: 34
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "_2O4-3",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                        type: "text",
+                                        className: "_2FkHZ",
+                                        placeholder: "Search for restaurants and food",
+                                        maxLength: "200",
+                                        autoFocus: "",
+                                        value: searchText,
+                                        onChange: (e)=>setSearchText(e.target.value)
+                                    }, "input-text", false, {
+                                        fileName: "src/components/Search.js",
+                                        lineNumber: 91,
+                                        columnNumber: 33
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Search.js",
+                                    lineNumber: 90,
+                                    columnNumber: 29
+                                }, undefined),
+                                searchText == "" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "_2p8XD",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        className: "icon-magnifier",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                            className: "_1GTCc",
+                                            viewBox: "5 -1 12 25",
+                                            height: "17",
+                                            width: "17",
+                                            fill: "#686b78",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                d: "M17.6671481,17.1391632 L22.7253317,22.1973467 L20.9226784,24 L15.7041226,18.7814442 C14.1158488,19.8024478 12.225761,20.3946935 10.1973467,20.3946935 C4.56550765,20.3946935 0,15.8291858 0,10.1973467 C0,4.56550765 4.56550765,0 10.1973467,0 C15.8291858,0 20.3946935,4.56550765 20.3946935,10.1973467 C20.3946935,12.8789625 19.3595949,15.3188181 17.6671481,17.1391632 Z M10.1973467,17.8453568 C14.4212261,17.8453568 17.8453568,14.4212261 17.8453568,10.1973467 C17.8453568,5.97346742 14.4212261,2.54933669 10.1973467,2.54933669 C5.97346742,2.54933669 2.54933669,5.97346742 2.54933669,10.1973467 C2.54933669,14.4212261 5.97346742,17.8453568 10.1973467,17.8453568 Z"
                                             }, void 0, false, {
                                                 fileName: "src/components/Search.js",
-                                                lineNumber: 96,
-                                                columnNumber: 37
+                                                lineNumber: 105,
+                                                columnNumber: 45
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Search.js",
-                                            lineNumber: 95,
-                                            columnNumber: 33
+                                            lineNumber: 104,
+                                            columnNumber: 41
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Search.js",
-                                        lineNumber: 94,
-                                        columnNumber: 29
+                                        lineNumber: 103,
+                                        columnNumber: 37
                                     }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Search.js",
-                                lineNumber: 82,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                type: "submit",
-                                hidden: true
-                            }, void 0, false, {
-                                fileName: "src/components/Search.js",
-                                lineNumber: 102,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                                }, void 0, false, {
+                                    fileName: "src/components/Search.js",
+                                    lineNumber: 102,
+                                    columnNumber: 34
+                                }, undefined) : "",
+                                searchText == "" ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: ()=>setSearchText(""),
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        class: "_3XUKB",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                            class: "jBKjW",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                width: "19",
+                                                height: "19",
+                                                viewBox: "0 0 24 24",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                    d: "M17.0251484,0.288798437 C17.5090218,-0.114571204 18.2292627,-0.0967643175 18.6927565,0.350826444 C19.189357,0.830387975 19.2031698,1.62172366 18.7236083,2.11832416 L18.7236083,2.11832416 L11.274,9.831 L18.7236083,17.5450054 C19.2031698,18.0416059 19.189357,18.8329416 18.6927565,19.3125031 C18.2292627,19.7600939 17.5090218,19.7779007 17.0251484,19.3745311 L16.9252588,19.2816513 L9.537,11.631 L2.14917595,19.2816513 L2.04928636,19.3745311 C1.56541292,19.7779007 0.845172034,19.7600939 0.381678232,19.3125031 C-0.114922271,18.8329416 -0.128735086,18.0416059 0.350826444,17.5450054 L0.350826444,17.5450054 L7.799,9.831 L0.350826444,2.11832416 C-0.128735086,1.62172366 -0.114922271,0.830387975 0.381678232,0.350826444 C0.845172034,-0.0967643175 1.56541292,-0.114571204 2.04928636,0.288798437 L2.14917595,0.381678232 L9.537,8.032 L16.9252588,0.381678232 Z",
+                                                    fill: "#535766",
+                                                    fillRule: "nonzero",
+                                                    stroke: "none",
+                                                    strokeWidth: "1"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Search.js",
+                                                    lineNumber: 116,
+                                                    columnNumber: 49
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Search.js",
+                                                lineNumber: 115,
+                                                columnNumber: 45
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Search.js",
+                                            lineNumber: 114,
+                                            columnNumber: 41
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Search.js",
+                                        lineNumber: 113,
+                                        columnNumber: 37
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Search.js",
+                                    lineNumber: 112,
+                                    columnNumber: 35
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Search.js",
+                            lineNumber: 82,
+                            columnNumber: 25
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/components/Search.js",
                         lineNumber: 81,
                         columnNumber: 21
@@ -763,7 +819,7 @@ const Search = ()=>{
                             searchByRes: searchByRes
                         }, void 0, false, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 109,
+                            lineNumber: 129,
                             columnNumber: 26
                         }, undefined),
                         searchText == "" || searchByData != undefined ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -773,38 +829,38 @@ const Search = ()=>{
                                 suggestionClick: suggestionClick
                             }, void 0, false, {
                                 fileName: "src/components/Search.js",
-                                lineNumber: 113,
+                                lineNumber: 133,
                                 columnNumber: 29
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 112,
+                            lineNumber: 132,
                             columnNumber: 26
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "Search_wrapper__lQvnw _1cEc4",
-                            children: searchText == "" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchByPopularCuiDefault.default), {
+                            children: searchText == "" && searchByData == undefined ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _searchByPopularCuiDefault.default), {
                                 popularCusi: popularCusi,
                                 selectClick: selectClick
                             }, void 0, false, {
                                 fileName: "src/components/Search.js",
-                                lineNumber: 118,
+                                lineNumber: 138,
                                 columnNumber: 30
                             }, undefined) : ""
                         }, void 0, false, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 116,
+                            lineNumber: 136,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Search.js",
-                    lineNumber: 107,
+                    lineNumber: 127,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Search.js",
-                lineNumber: 106,
+                lineNumber: 126,
                 columnNumber: 13
             }, undefined)
         ]
@@ -1213,9 +1269,10 @@ var _nonvegPngDefault = parcelHelpers.interopDefault(_nonvegPng);
 const SearchByDish = ({ searchByData  })=>{
     // console.log(searchByData);
     return searchByData == undefined ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "search_card_dish",
         children: searchByData.map((card, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "Search_widgetsV2__27BBR Search_widgets__3o_bA",
                 children: card?.card?.card["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.Dish" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "Search_widgetsV2__27BBR Search_widgets__3o_bA",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "styles_container__2GTLR styles_containerV2__1_U51",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1610,6 +1667,7 @@ var _reactRouterDom = require("react-router-dom");
 const SearchByRestaurant = ({ searchByRes  })=>{
     // console.log(searchByRes);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "search_card_res",
         children: searchByRes.map((card)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "Search_widgetsV2__27BBR Search_widgets__3o_bA",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
