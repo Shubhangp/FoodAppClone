@@ -2940,6 +2940,8 @@ var _locationSearch = require("./components/LocationSearch");
 var _locationSearchDefault = parcelHelpers.interopDefault(_locationSearch);
 var _reactRouterDom = require("react-router-dom");
 var _auth0React = require("@auth0/auth0-react");
+var _userLocation = require("./utils/UserLocation");
+var _userLocationDefault = parcelHelpers.interopDefault(_userLocation);
 var _s = $RefreshSig$();
 const RestaurantDetails = /*#__PURE__*/ (0, _react.lazy)(()=>require("e3a9d4c492a4c8ee"));
 _c = RestaurantDetails;
@@ -2949,49 +2951,61 @@ const Search = /*#__PURE__*/ (0, _react.lazy)(()=>require("fa0afb424638dcfc"));
 _c2 = Search;
 const AppLayout = ()=>{
     _s();
-    const [btnLocation, setBtnLocation] = (0, _reactDefault.default).useState(false);
+    const [btnLocation, setBtnLocation] = (0, _react.useState)(false);
+    const [latlng, setLatlng] = (0, _react.useState)([]);
     function handleClick() {
         setBtnLocation((btnLocation)=>!btnLocation);
     }
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "_3arMG",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {
-                btnLocation: btnLocation,
-                handleClick: handleClick
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 23,
-                columnNumber: 17
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _locationSearchDefault.default), {
-                btnLocation: btnLocation,
-                handleClick: handleClick
-            }, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 24,
-                columnNumber: 17
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-                fileName: "src/App.js",
-                lineNumber: 25,
-                columnNumber: 17
-            }, undefined)
-        ]
-    }, void 0, true, {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userLocationDefault.default).Provider, {
+        value: {
+            latitude: latlng.lat,
+            longitude: latlng.lng
+        },
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "_3arMG",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {
+                    btnLocation: btnLocation,
+                    handleClick: handleClick
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 27,
+                    columnNumber: 21
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _locationSearchDefault.default), {
+                    btnLocation: btnLocation,
+                    handleClick: handleClick,
+                    setLatlng: setLatlng
+                }, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 28,
+                    columnNumber: 21
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                    fileName: "src/App.js",
+                    lineNumber: 29,
+                    columnNumber: 21
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/App.js",
+            lineNumber: 26,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 22,
+        lineNumber: 25,
         columnNumber: 9
     }, undefined);
 };
-_s(AppLayout, "B3LCxgRcbdUUe0CjvUo5nvFf6lQ=");
+_s(AppLayout, "O/p9HBorso+bR1vOTfYYEi8FgZ4=");
 _c3 = AppLayout;
 const appRouter = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 33,
+            lineNumber: 38,
             columnNumber: 18
         }, undefined),
         children: [
@@ -3003,12 +3017,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 37,
+                        lineNumber: 42,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 37,
+                    lineNumber: 42,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3020,12 +3034,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Contact, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 41,
+                        lineNumber: 46,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 41,
+                    lineNumber: 46,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3037,12 +3051,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantDetails, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 45,
+                        lineNumber: 50,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 45,
+                    lineNumber: 50,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3054,19 +3068,19 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Search, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 49,
+                        lineNumber: 54,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 49,
+                    lineNumber: 54,
                     columnNumber: 26
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 52,
+            lineNumber: 57,
             columnNumber: 23
         }, undefined)
     }
@@ -3082,12 +3096,12 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _auth0React.Auth0Provid
         router: appRouter
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 64,
+        lineNumber: 69,
         columnNumber: 13
     }, undefined)
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 58,
+    lineNumber: 63,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
@@ -3101,7 +3115,7 @@ $RefreshReg$(_c3, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Home":"hcu4N","./components/Error":"kvula","e3a9d4c492a4c8ee":"fF4mG","./components/LocationSearch":"6Rzyb","react-router-dom":"9xmpe","@auth0/auth0-react":"lDrFi","a2d5bfc67480664d":"5nHAt","fa0afb424638dcfc":"dnB4M","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Home":"hcu4N","./components/Error":"kvula","e3a9d4c492a4c8ee":"fF4mG","./components/LocationSearch":"6Rzyb","react-router-dom":"9xmpe","@auth0/auth0-react":"lDrFi","a2d5bfc67480664d":"5nHAt","fa0afb424638dcfc":"dnB4M","./utils/UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("4bfdd2b1504c5739");
 
@@ -35651,6 +35665,8 @@ var _reactRouterDom = require("react-router-dom");
 var _constants = require("../utils/constants");
 var _useOnlineStatus = require("../utils/useOnlineStatus");
 var _useOnlineStatusDefault = parcelHelpers.interopDefault(_useOnlineStatus);
+var _userLocation = require("../utils/UserLocation");
+var _userLocationDefault = parcelHelpers.interopDefault(_userLocation);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
@@ -35661,6 +35677,8 @@ const Body = ()=>{
     const [page, setPage] = (0, _react.useState)(0);
     const [loading, setLoading] = (0, _react.useState)(true);
     const [sortBy, setSortBy] = (0, _react.useState)("RELEVANCE");
+    const { latitude , longitude  } = (0, _react.useContext)((0, _userLocationDefault.default));
+    // console.log(latitude, longitude);
     const RestaurantCardPromoted = (0, _reastaurentCard.withPromotedLabel)((0, _reastaurentCardDefault.default));
     const [btnSort, setBtnSort] = (0, _reactDefault.default).useState(true);
     const [btnSort1, setBtnSort1] = (0, _reactDefault.default).useState(false);
@@ -35716,7 +35734,7 @@ const Body = ()=>{
         fetchData();
     }, []);
     const fetchData = async ()=>{
-        var data = await fetch((0, _constants.MAIN_API) + (0, _constants.Lat) + (0, _constants.Lng) + (0, _constants.PAGE_TYPE));
+        var data = await fetch(`https://www.swiggy.com/dapi/restaurants/list/v5?${(0, _constants.Lat)}${(0, _constants.Lng)}&page_type=DESKTOP_WEB_LISTING`);
         var json = await data.json();
         // console.log(json);
         setLatestOffer(json?.data?.cards[0]?.data?.data?.cards);
@@ -35760,12 +35778,12 @@ const Body = ()=>{
     const onlineStatus = (0, _useOnlineStatusDefault.default)();
     if (onlineStatus == false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userOfflineDefault.default), {}, void 0, false, {
         fileName: "src/components/Home.js",
-        lineNumber: 141,
+        lineNumber: 146,
         columnNumber: 13
     }, undefined);
     return latestOffer == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerHomeDefault.default), {}, void 0, false, {
         fileName: "src/components/Home.js",
-        lineNumber: 144,
+        lineNumber: 149,
         columnNumber: 31
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -35785,17 +35803,17 @@ const Body = ()=>{
                                             resOff: offer
                                         }, offer.data.bannerId, false, {
                                             fileName: "src/components/Home.js",
-                                            lineNumber: 153,
+                                            lineNumber: 158,
                                             columnNumber: 41
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 150,
+                                    lineNumber: 155,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 149,
+                                lineNumber: 154,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35805,12 +35823,12 @@ const Body = ()=>{
                                     children: "➔"
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 159,
+                                    lineNumber: 164,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 158,
+                                lineNumber: 163,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35820,28 +35838,28 @@ const Body = ()=>{
                                     children: "➔"
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 162,
+                                    lineNumber: 167,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 161,
+                                lineNumber: 166,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 148,
+                        lineNumber: 153,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Home.js",
-                    lineNumber: 147,
+                    lineNumber: 152,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Home.js",
-                lineNumber: 146,
+                lineNumber: 151,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35866,7 +35884,7 @@ const Body = ()=>{
                                 btnSort4: btnSort4
                             }, void 0, false, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 170,
+                                lineNumber: 175,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35881,60 +35899,60 @@ const Body = ()=>{
                                                     resObj: restaurant
                                                 }, void 0, false, {
                                                     fileName: "src/components/Home.js",
-                                                    lineNumber: 192,
+                                                    lineNumber: 197,
                                                     columnNumber: 45
                                                 }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reastaurentCardDefault.default), {
                                                     resObj: restaurant
                                                 }, void 0, false, {
                                                     fileName: "src/components/Home.js",
-                                                    lineNumber: 194,
+                                                    lineNumber: 199,
                                                     columnNumber: 45
                                                 }, undefined)
                                             }, restaurant.data.data.id, false, {
                                                 fileName: "src/components/Home.js",
-                                                lineNumber: 186,
+                                                lineNumber: 191,
                                                 columnNumber: 37
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Home.js",
-                                            lineNumber: 185,
+                                            lineNumber: 190,
                                             columnNumber: 69
                                         }, undefined)),
                                     loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _moreShimmerHomeDefault.default), {}, void 0, false, {
                                         fileName: "src/components/Home.js",
-                                        lineNumber: 199,
+                                        lineNumber: 204,
                                         columnNumber: 41
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 184,
+                                lineNumber: 189,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 169,
+                        lineNumber: 174,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Home.js",
-                    lineNumber: 168,
+                    lineNumber: 173,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Home.js",
-                lineNumber: 167,
+                lineNumber: 172,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Home.js",
-        lineNumber: 145,
+        lineNumber: 150,
         columnNumber: 9
     }, undefined);
 };
-_s(Body, "2jlxOJ5URc8LNXLRx42ueKXiLEk=", false, function() {
+_s(Body, "HqGE39O7I4JmyceJVR0X3UGJgrg=", false, function() {
     return [
         (0, _useOnlineStatusDefault.default)
     ];
@@ -35949,7 +35967,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ReastaurentCard":"jJsE1","./OfferCard":"1GlBO","./ShimmerHome":"IRYcw","./MoreShimmerHome":"dBBOv","./UserOffline":"f2uiA","./Filter":"jhec3","react-router-dom":"9xmpe","../utils/constants":"hB8jg","../utils/useOnlineStatus":"181Ji","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jJsE1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ReastaurentCard":"jJsE1","./OfferCard":"1GlBO","./ShimmerHome":"IRYcw","./MoreShimmerHome":"dBBOv","./UserOffline":"f2uiA","./Filter":"jhec3","react-router-dom":"9xmpe","../utils/constants":"hB8jg","../utils/useOnlineStatus":"181Ji","../utils/UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jJsE1":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ac51 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -43174,7 +43192,28 @@ $RefreshReg$(_c, "Filter");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kvula":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aVyyN":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3550 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3550.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+const UserLocation = /*#__PURE__*/ (0, _react.createContext)({
+    latitude: "12.9351929",
+    longitude: "77.62448069999999"
+});
+exports.default = UserLocation;
+
+  $parcel$ReactRefreshHelpers$3550.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kvula":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0ba4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -43371,12 +43410,11 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _shimmerRestaurantPage = require("./ShimmerRestaurantPage");
 var _shimmerRestaurantPageDefault = parcelHelpers.interopDefault(_shimmerRestaurantPage);
 var _s = $RefreshSig$();
-const LocationSearch = ({ handleClick , btnLocation  })=>{
+const LocationSearch = ({ handleClick , btnLocation , setLatlng  })=>{
     _s();
     const [searchLocation, setSearchLocation] = (0, _react.useState)("");
     const [place, setPlace] = (0, _react.useState)([]);
     const [placeId, setPlaceId] = (0, _react.useState)("");
-    const [latlng, setLatlng] = (0, _react.useState)([]);
     (0, _react.useEffect)(()=>{
         fetchData();
     }, [
@@ -43400,7 +43438,6 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
         // console.log(latJson);
         if (placeId != "") setLatlng(latJson?.data[0]?.geometry?.location);
     };
-    // console.log(latlng);
     const selectClick = (e)=>{
         setPlaceId(e);
     };
@@ -43416,7 +43453,7 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                 className: "FYlIl"
                             }, void 0, false, {
                                 fileName: "src/components/LocationSearch.js",
-                                lineNumber: 50,
+                                lineNumber: 47,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43431,7 +43468,7 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                 children: "sticky_sentinel sticky_sentinel--top"
                                             }, void 0, false, {
                                                 fileName: "src/components/LocationSearch.js",
-                                                lineNumber: 54,
+                                                lineNumber: 51,
                                                 columnNumber: 37
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43456,35 +43493,35 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                             strokeWidth: "1"
                                                                         }, void 0, false, {
                                                                             fileName: "src/components/LocationSearch.js",
-                                                                            lineNumber: 62,
+                                                                            lineNumber: 59,
                                                                             columnNumber: 57
                                                                         }, undefined)
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/LocationSearch.js",
-                                                                        lineNumber: 61,
+                                                                        lineNumber: 58,
                                                                         columnNumber: 53
                                                                     }, undefined)
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 60,
+                                                                    lineNumber: 57,
                                                                     columnNumber: 49
                                                                 }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "src/components/LocationSearch.js",
-                                                                lineNumber: 59,
+                                                                lineNumber: 56,
                                                                 columnNumber: 45
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                 className: "_2Joay"
                                                             }, void 0, false, {
                                                                 fileName: "src/components/LocationSearch.js",
-                                                                lineNumber: 66,
+                                                                lineNumber: 63,
                                                                 columnNumber: 45
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/components/LocationSearch.js",
-                                                        lineNumber: 58,
+                                                        lineNumber: 55,
                                                         columnNumber: 41
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43501,38 +43538,38 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                     onChange: (e)=>setSearchLocation(e.target.value)
                                                                 }, "input-text", false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 70,
+                                                                    lineNumber: 67,
                                                                     columnNumber: 49
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                     className: "_2EeI1 _26LFr"
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 78,
+                                                                    lineNumber: 75,
                                                                     columnNumber: 53
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                     className: "_1Cvlf _2tL9P"
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 79,
+                                                                    lineNumber: 76,
                                                                     columnNumber: 49
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/components/LocationSearch.js",
-                                                            lineNumber: 69,
+                                                            lineNumber: 66,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/LocationSearch.js",
-                                                        lineNumber: 68,
+                                                        lineNumber: 65,
                                                         columnNumber: 41
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/LocationSearch.js",
-                                                lineNumber: 57,
+                                                lineNumber: 54,
                                                 columnNumber: 37
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43551,7 +43588,7 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                                 children: "\uD83D\uDEA9"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/components/LocationSearch.js",
-                                                                                lineNumber: 90,
+                                                                                lineNumber: 87,
                                                                                 columnNumber: 65
                                                                             }, undefined),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43562,13 +43599,13 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                                         children: plac.terms[0].value
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/components/LocationSearch.js",
-                                                                                        lineNumber: 92,
+                                                                                        lineNumber: 89,
                                                                                         columnNumber: 69
                                                                                     }, undefined),
                                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                                         className: "_1joFh",
                                                                                         children: [
-                                                                                            plac.terms[1].value,
+                                                                                            plac.terms.length >= 2 ? plac.terms[1].value : "",
                                                                                             " ",
                                                                                             plac.terms.length >= 3 ? plac.terms[2].value : "",
                                                                                             " ",
@@ -43576,34 +43613,34 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "src/components/LocationSearch.js",
-                                                                                        lineNumber: 93,
+                                                                                        lineNumber: 90,
                                                                                         columnNumber: 69
                                                                                     }, undefined)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "src/components/LocationSearch.js",
-                                                                                lineNumber: 91,
+                                                                                lineNumber: 88,
                                                                                 columnNumber: 65
                                                                             }, undefined)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/components/LocationSearch.js",
-                                                                        lineNumber: 89,
+                                                                        lineNumber: 86,
                                                                         columnNumber: 61
                                                                     }, undefined)
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 88,
+                                                                    lineNumber: 85,
                                                                     columnNumber: 57
                                                                 }, undefined)
-                                                            }, void 0, false, {
+                                                            }, plac.place_id, false, {
                                                                 fileName: "src/components/LocationSearch.js",
-                                                                lineNumber: 87,
+                                                                lineNumber: 84,
                                                                 columnNumber: 53
                                                             }, undefined))
                                                     }, void 0, false, {
                                                         fileName: "src/components/LocationSearch.js",
-                                                        lineNumber: 85,
+                                                        lineNumber: 82,
                                                         columnNumber: 47
                                                     }, undefined),
                                                     place == undefined || place.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43619,7 +43656,7 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                                 className: "icon-location-crosshair _13AY4"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/components/LocationSearch.js",
-                                                                                lineNumber: 108,
+                                                                                lineNumber: 105,
                                                                                 columnNumber: 61
                                                                             }, undefined),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43630,7 +43667,7 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                                         children: "Get current location"
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/components/LocationSearch.js",
-                                                                                        lineNumber: 110,
+                                                                                        lineNumber: 107,
                                                                                         columnNumber: 65
                                                                                     }, undefined),
                                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43638,29 +43675,29 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                                         children: "Using GPS"
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/components/LocationSearch.js",
-                                                                                        lineNumber: 113,
+                                                                                        lineNumber: 110,
                                                                                         columnNumber: 65
                                                                                     }, undefined)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "src/components/LocationSearch.js",
-                                                                                lineNumber: 109,
+                                                                                lineNumber: 106,
                                                                                 columnNumber: 61
                                                                             }, undefined)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/components/LocationSearch.js",
-                                                                        lineNumber: 107,
+                                                                        lineNumber: 104,
                                                                         columnNumber: 57
                                                                     }, undefined)
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 106,
+                                                                    lineNumber: 103,
                                                                     columnNumber: 53
                                                                 }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "src/components/LocationSearch.js",
-                                                                lineNumber: 105,
+                                                                lineNumber: 102,
                                                                 columnNumber: 49
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43671,7 +43708,7 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                         children: "RECENT SEARCHES"
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/LocationSearch.js",
-                                                                        lineNumber: 121,
+                                                                        lineNumber: 118,
                                                                         columnNumber: 53
                                                                     }, undefined),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43683,7 +43720,7 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                                     className: "icon-recent _13AY4 _fgrt4"
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/components/LocationSearch.js",
-                                                                                    lineNumber: 126,
+                                                                                    lineNumber: 123,
                                                                                     columnNumber: 61
                                                                                 }, undefined),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43694,7 +43731,7 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                                             children: "Koramangala"
                                                                                         }, void 0, false, {
                                                                                             fileName: "src/components/LocationSearch.js",
-                                                                                            lineNumber: 128,
+                                                                                            lineNumber: 125,
                                                                                             columnNumber: 65
                                                                                         }, undefined),
                                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43702,91 +43739,92 @@ const LocationSearch = ({ handleClick , btnLocation  })=>{
                                                                                             children: "Bengaluru, Karnataka, India"
                                                                                         }, void 0, false, {
                                                                                             fileName: "src/components/LocationSearch.js",
-                                                                                            lineNumber: 131,
+                                                                                            lineNumber: 128,
                                                                                             columnNumber: 65
                                                                                         }, undefined)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "src/components/LocationSearch.js",
-                                                                                    lineNumber: 127,
+                                                                                    lineNumber: 124,
                                                                                     columnNumber: 61
                                                                                 }, undefined)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/components/LocationSearch.js",
-                                                                            lineNumber: 125,
+                                                                            lineNumber: 122,
                                                                             columnNumber: 57
                                                                         }, undefined)
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/LocationSearch.js",
-                                                                        lineNumber: 124,
+                                                                        lineNumber: 121,
                                                                         columnNumber: 53
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/components/LocationSearch.js",
-                                                                lineNumber: 120,
+                                                                lineNumber: 117,
                                                                 columnNumber: 49
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/components/LocationSearch.js",
-                                                        lineNumber: 104,
+                                                        lineNumber: 101,
                                                         columnNumber: 46
                                                     }, undefined) : ""
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/LocationSearch.js",
-                                                lineNumber: 83,
+                                                lineNumber: 80,
                                                 columnNumber: 37
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/LocationSearch.js",
-                                        lineNumber: 53,
+                                        lineNumber: 50,
                                         columnNumber: 33
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/LocationSearch.js",
-                                    lineNumber: 52,
+                                    lineNumber: 49,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/LocationSearch.js",
-                                lineNumber: 51,
+                                lineNumber: 48,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/LocationSearch.js",
-                        lineNumber: 49,
+                        lineNumber: 46,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/LocationSearch.js",
-                    lineNumber: 48,
+                    lineNumber: 45,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/LocationSearch.js",
-                lineNumber: 47,
+                lineNumber: 44,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "overlay"
+                className: "overlay",
+                onClick: ()=>handleClick()
             }, void 0, false, {
                 fileName: "src/components/LocationSearch.js",
-                lineNumber: 148,
+                lineNumber: 145,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/LocationSearch.js",
-        lineNumber: 46,
+        lineNumber: 43,
         columnNumber: 9
     }, undefined);
 };
-_s(LocationSearch, "yLNcOAPQ8LOjbstcSsmOLHMWxes=");
+_s(LocationSearch, "dh21ZR1ewUaCJCf0EqHL4DcwIBg=");
 _c = LocationSearch;
 exports.default = LocationSearch;
 var _c;

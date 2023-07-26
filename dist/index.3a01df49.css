@@ -287,7 +287,6 @@ header svg:not(:root) {
 }
 
 .img-offers {
-  cursor: pointer;
   margin-right: 50px;
   display: inline-block;
 }
@@ -2719,13 +2718,13 @@ b {
   flex: 100% !important;
 }
 
-.Search_widgetsV2__27BBR {
-  flex: 50%;
-}
-
 .search_card_dish, .search_card_res {
   flex-wrap: wrap;
   display: flex;
+}
+
+.Search_widgetsV2__27BBR {
+  flex: 50%;
 }
 
 ._3DdnR {
@@ -2966,14 +2965,6 @@ b {
   -webkit-box-orient: vertical;
   display: -webkit-box;
   overflow: hidden;
-}
-
-.styles_itemDescButton__3Z6iB {
-  color: #686b78;
-  letter-spacing: -.3px;
-  margin-top: 4px;
-  font-size: 1rem;
-  font-weight: 600;
 }
 
 .styles_itemImageContainer__3Czsd {

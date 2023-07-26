@@ -1,25 +1,16 @@
 import React, { useState } from "react";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
-const Faqs = ({ helpQues }) => {
+const Faqs = ({ Que, isVisible, setShowAns, index }) => {
 
-    const [isVisible, setIsVisible] = useState(false);
-
-    const toggleView = () => {
-        setIsVisible(!isVisible);
-      };
-
-      console.log(helpQues);
-
-    return(<div>
-        {helpQues.map((Que) => (
+    return(
             <div className="_3rl8Q" key={Que.id}>
                 <button className="O1vpu">
                     <span className="L1QZ_">{Que?.title}</span>
                     {isVisible ? (
-                        <SlArrowDown onClick={toggleView} className="_1VUPm"/>
+                        <SlArrowDown className="_1VUPm"/>
                         ) : (
-                        <SlArrowUp onClick={toggleView} className="_1VUPm" />
+                        <SlArrowUp onClick={() => setShowAns()} className="_1VUPm" />
                     )}
                 </button>
                 {isVisible && (
@@ -40,10 +31,8 @@ const Faqs = ({ helpQues }) => {
                         }
                     </div>
                 )}
-            </div>)
-            )}
-    </div>
-    )
+            </div>
+        )
 }
 
 export default Faqs;

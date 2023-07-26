@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import ReastaurentCard, { withPromotedLabel } from "./ReastaurentCard";
 import OfferCard from "./OfferCard";
 import ShimmerHome from "./ShimmerHome";
@@ -8,6 +8,7 @@ import Filter from "./Filter";
 import { Link } from "react-router-dom";
 import { MAIN_API, PAGE_TYPE, Lat, Lng } from "../utils/constants";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserLocation from "../utils/UserLocation";
 
 
 const Body = () => {
@@ -24,6 +25,10 @@ const Body = () => {
     const [loading, setLoading] = useState(true);
 
     const [sortBy, setSortBy] = useState("RELEVANCE");
+
+    const { latitude, longitude } = useContext(UserLocation);
+
+    // console.log(latitude, longitude);
 
     const RestaurantCardPromoted = withPromotedLabel(ReastaurentCard);
 
@@ -88,8 +93,8 @@ const Body = () => {
     }, []);
 
     const fetchData = async() => {
-                var data = await fetch(MAIN_API + Lat + Lng + PAGE_TYPE);
-                var json = await data.json();
+            var data = await fetch(`https://www.swiggy.com/dapi/restaurants/list/v5?${Lat}${Lng}&page_type=DESKTOP_WEB_LISTING`);
+            var json = await data.json();
             // console.log(json);
             setLatestOffer(json?.data?.cards[0]?.data?.data?.cards)
             setSortCard(json?.data?.sorts);

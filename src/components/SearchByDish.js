@@ -58,7 +58,6 @@ const SearchByDish = ({ searchByData }) => {
                                                         </span>
                                                     </div>
                                                     <div className="styles_itemDesc__3vhM0 styles_hasMoreText__3fWkR">{card?.card?.card?.info?.description}</div>
-                                                    <button className="styles_itemDescButton__3Z6iB">More</button>
                                                 </div>
                                                 <div className="styles_itemImageContainer__3Czsd">
                                                     <div>

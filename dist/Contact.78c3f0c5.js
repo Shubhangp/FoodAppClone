@@ -606,6 +606,7 @@ const Contact = ()=>{
     const [btnHelp1, setBtnHelp1] = (0, _reactDefault.default).useState(false);
     const [btnHelp2, setBtnHelp2] = (0, _reactDefault.default).useState(false);
     const [navbar, setNarBar] = (0, _reactDefault.default).useState(false);
+    const [showAns, setShowAns] = (0, _react.useState)(null);
     function helpClick(e) {
         setBtnHelp(true);
         setBtnHelp1(false);
@@ -657,7 +658,7 @@ const Contact = ()=>{
     window.addEventListener("scroll", changeHeader);
     return helpType.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerHomeDefault.default), {}, void 0, false, {
         fileName: "src/components/Contact.js",
-        lineNumber: 86,
+        lineNumber: 88,
         columnNumber: 9
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -675,7 +676,7 @@ const Contact = ()=>{
                                     children: "Help & Support"
                                 }, void 0, false, {
                                     fileName: "src/components/Contact.js",
-                                    lineNumber: 92,
+                                    lineNumber: 94,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -683,18 +684,18 @@ const Contact = ()=>{
                                     children: "Let's take a step ahead and help you better."
                                 }, void 0, false, {
                                     fileName: "src/components/Contact.js",
-                                    lineNumber: 93,
+                                    lineNumber: 95,
                                     columnNumber: 25
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Contact.js",
-                            lineNumber: 91,
+                            lineNumber: 93,
                             columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Contact.js",
-                        lineNumber: 90,
+                        lineNumber: 92,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -709,7 +710,7 @@ const Contact = ()=>{
                                         children: "Help & Support"
                                     }, void 0, false, {
                                         fileName: "src/components/Contact.js",
-                                        lineNumber: 99,
+                                        lineNumber: 101,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -717,23 +718,23 @@ const Contact = ()=>{
                                         children: "Let's take a step ahead and help you better."
                                     }, void 0, false, {
                                         fileName: "src/components/Contact.js",
-                                        lineNumber: 100,
+                                        lineNumber: 102,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Contact.js",
-                                lineNumber: 98,
+                                lineNumber: 100,
                                 columnNumber: 25
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Contact.js",
-                            lineNumber: 97,
+                            lineNumber: 99,
                             columnNumber: 21
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Contact.js",
-                        lineNumber: 96,
+                        lineNumber: 98,
                         columnNumber: 17
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -743,7 +744,7 @@ const Contact = ()=>{
                                 className: navbar ? "v6luz FvIBT" : "v6luz"
                             }, void 0, false, {
                                 fileName: "src/components/Contact.js",
-                                lineNumber: 105,
+                                lineNumber: 107,
                                 columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -763,12 +764,12 @@ const Contact = ()=>{
                                                             children: helpType[0]?.title
                                                         }, void 0, false, {
                                                             fileName: "src/components/Contact.js",
-                                                            lineNumber: 111,
+                                                            lineNumber: 113,
                                                             columnNumber: 41
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Contact.js",
-                                                        lineNumber: 110,
+                                                        lineNumber: 112,
                                                         columnNumber: 37
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -779,12 +780,12 @@ const Contact = ()=>{
                                                             children: helpType[1]?.title
                                                         }, void 0, false, {
                                                             fileName: "src/components/Contact.js",
-                                                            lineNumber: 114,
+                                                            lineNumber: 116,
                                                             columnNumber: 41
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Contact.js",
-                                                        lineNumber: 113,
+                                                        lineNumber: 115,
                                                         columnNumber: 37
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
@@ -795,23 +796,23 @@ const Contact = ()=>{
                                                             children: helpType[2]?.title
                                                         }, void 0, false, {
                                                             fileName: "src/components/Contact.js",
-                                                            lineNumber: 117,
+                                                            lineNumber: 119,
                                                             columnNumber: 41
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Contact.js",
-                                                        lineNumber: 116,
+                                                        lineNumber: 118,
                                                         columnNumber: 37
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Contact.js",
-                                                lineNumber: 109,
+                                                lineNumber: 111,
                                                 columnNumber: 33
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Contact.js",
-                                            lineNumber: 108,
+                                            lineNumber: 110,
                                             columnNumber: 29
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -827,91 +828,116 @@ const Contact = ()=>{
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/components/Contact.js",
-                                                        lineNumber: 123,
+                                                        lineNumber: 125,
                                                         columnNumber: 37
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         children: [
-                                                            btnHelp ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _partnerOnboardingDefault.default), {
-                                                                helpQues: helpQues
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/Contact.js",
-                                                                lineNumber: 133,
-                                                                columnNumber: 42
-                                                            }, undefined) : "",
-                                                            btnHelp1 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _legalDefault.default), {
-                                                                helpQues: helpQues
+                                                            btnHelp ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                children: helpQues.map((Que, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _partnerOnboardingDefault.default), {
+                                                                        Que: Que,
+                                                                        isVisible: index === showAns ? true : false,
+                                                                        setShowAns: ()=>setShowAns(index)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Contact.js",
+                                                                        lineNumber: 136,
+                                                                        columnNumber: 76
+                                                                    }, undefined))
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Contact.js",
                                                                 lineNumber: 135,
                                                                 columnNumber: 42
                                                             }, undefined) : "",
-                                                            btnHelp2 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _faqsDefault.default), {
-                                                                helpQues: helpQues
+                                                            btnHelp1 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                children: helpQues.map((Que, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _legalDefault.default), {
+                                                                        Que: Que,
+                                                                        isVisible: index === showAns ? true : false,
+                                                                        setShowAns: ()=>setShowAns(index)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Contact.js",
+                                                                        lineNumber: 144,
+                                                                        columnNumber: 76
+                                                                    }, undefined))
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Contact.js",
-                                                                lineNumber: 137,
+                                                                lineNumber: 143,
+                                                                columnNumber: 42
+                                                            }, undefined) : "",
+                                                            btnHelp2 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                children: helpQues.map((Que, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _faqsDefault.default), {
+                                                                        Que: Que,
+                                                                        isVisible: index === showAns ? true : false,
+                                                                        setShowAns: ()=>setShowAns(index),
+                                                                        index: index
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Contact.js",
+                                                                        lineNumber: 152,
+                                                                        columnNumber: 76
+                                                                    }, undefined))
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Contact.js",
+                                                                lineNumber: 151,
                                                                 columnNumber: 42
                                                             }, undefined) : ""
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/components/Contact.js",
-                                                        lineNumber: 131,
+                                                        lineNumber: 133,
                                                         columnNumber: 37
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Contact.js",
-                                                lineNumber: 122,
+                                                lineNumber: 124,
                                                 columnNumber: 33
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Contact.js",
-                                            lineNumber: 121,
+                                            lineNumber: 123,
                                             columnNumber: 29
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Contact.js",
-                                    lineNumber: 107,
+                                    lineNumber: 109,
                                     columnNumber: 25
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Contact.js",
-                                lineNumber: 106,
+                                lineNumber: 108,
                                 columnNumber: 21
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: navbar ? "_1a4Mf _3m2h5" : "_1a4Mf"
                             }, void 0, false, {
                                 fileName: "src/components/Contact.js",
-                                lineNumber: 143,
+                                lineNumber: 164,
                                 columnNumber: 21
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Contact.js",
-                        lineNumber: 104,
+                        lineNumber: 106,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Contact.js",
-                lineNumber: 89,
+                lineNumber: 91,
                 columnNumber: 13
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/Contact.js",
-            lineNumber: 88,
+            lineNumber: 90,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Contact.js",
-        lineNumber: 87,
+        lineNumber: 89,
         columnNumber: 12
     }, undefined);
 };
-_s(Contact, "u/AG4Q9b907oCscjg1COa5SVnwQ=");
+_s(Contact, "6MB3GZ6Tf4P7KZwWBwEi/0BvqKA=");
 _c = Contact;
 exports.default = Contact;
 var _c;
@@ -935,123 +961,109 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _sl = require("react-icons/sl");
-var _s = $RefreshSig$();
-const Legal = ({ helpQues  })=>{
-    _s();
-    const [isVisible, setIsVisible] = (0, _react.useState)(false);
-    const toggleView = ()=>{
-        setIsVisible(!isVisible);
-    };
+const Legal = ({ Que , isVisible , setShowAns  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: helpQues.map((Que)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "_3rl8Q",
+        className: "_3rl8Q",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "O1vpu",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "O1vpu",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "L1QZ_",
-                                children: Que?.title
-                            }, void 0, false, {
-                                fileName: "src/components/Legal.js",
-                                lineNumber: 16,
-                                columnNumber: 21
-                            }, undefined),
-                            isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
-                                onClick: toggleView,
-                                className: "_1VUPm"
-                            }, void 0, false, {
-                                fileName: "src/components/Legal.js",
-                                lineNumber: 18,
-                                columnNumber: 25
-                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
-                                onClick: toggleView,
-                                className: "_1VUPm"
-                            }, void 0, false, {
-                                fileName: "src/components/Legal.js",
-                                lineNumber: 20,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "L1QZ_",
+                        children: Que?.title
+                    }, void 0, false, {
                         fileName: "src/components/Legal.js",
-                        lineNumber: 15,
-                        columnNumber: 17
-                    }, undefined),
-                    isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            Que?.description == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1YEKM",
-                                children: Que?.description
-                            }, void 0, false, {
-                                fileName: "src/components/Legal.js",
-                                lineNumber: 26,
-                                columnNumber: 32
-                            }, undefined),
-                            Que?.hyperLinkText == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                rel: "noopener noreferrer",
-                                target: "_blank",
-                                href: Que?.hyperLink,
-                                className: "_7bf5B",
-                                children: Que?.hyperLinkText
-                            }, void 0, false, {
-                                fileName: "src/components/Legal.js",
-                                lineNumber: 29,
-                                columnNumber: 32
-                            }, undefined),
-                            Que?.options.length == 0 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "GM_Lh",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: "_2aDLa",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            className: "_1vMNs",
-                                            href: `mailto:shubhanggpandey@gmail.com?subject=Who should I contact if I need help &amp; support in getting onboarded?`,
-                                            target: "blank",
-                                            children: Que?.options[0]?.type
-                                        }, void 0, false, {
-                                            fileName: "src/components/Legal.js",
-                                            lineNumber: 34,
-                                            columnNumber: 37
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "_1tK48",
-                                            children: Que?.options[0]?.waitTime
-                                        }, void 0, false, {
-                                            fileName: "src/components/Legal.js",
-                                            lineNumber: 35,
-                                            columnNumber: 37
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Legal.js",
-                                    lineNumber: 33,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Legal.js",
-                                lineNumber: 32,
-                                columnNumber: 32
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Legal.js",
-                        lineNumber: 24,
+                        lineNumber: 9,
                         columnNumber: 21
+                    }, undefined),
+                    isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
+                        className: "_1VUPm"
+                    }, void 0, false, {
+                        fileName: "src/components/Legal.js",
+                        lineNumber: 11,
+                        columnNumber: 25
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
+                        onClick: ()=>setShowAns(),
+                        className: "_1VUPm"
+                    }, void 0, false, {
+                        fileName: "src/components/Legal.js",
+                        lineNumber: 13,
+                        columnNumber: 25
                     }, undefined)
                 ]
-            }, Que.id, true, {
+            }, void 0, true, {
                 fileName: "src/components/Legal.js",
-                lineNumber: 14,
+                lineNumber: 8,
                 columnNumber: 17
-            }, undefined))
-    }, void 0, false, {
+            }, undefined),
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    Que?.description == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "_1YEKM",
+                        children: Que?.description
+                    }, void 0, false, {
+                        fileName: "src/components/Legal.js",
+                        lineNumber: 19,
+                        columnNumber: 32
+                    }, undefined),
+                    Que?.hyperLinkText == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        rel: "noopener noreferrer",
+                        target: "_blank",
+                        href: Que?.hyperLink,
+                        className: "_7bf5B",
+                        children: Que?.hyperLinkText
+                    }, void 0, false, {
+                        fileName: "src/components/Legal.js",
+                        lineNumber: 22,
+                        columnNumber: 32
+                    }, undefined),
+                    Que?.options.length == 0 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "GM_Lh",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "_2aDLa",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    className: "_1vMNs",
+                                    href: `mailto:shubhanggpandey@gmail.com?subject=Who should I contact if I need help &amp; support in getting onboarded?`,
+                                    target: "blank",
+                                    children: Que?.options[0]?.type
+                                }, void 0, false, {
+                                    fileName: "src/components/Legal.js",
+                                    lineNumber: 27,
+                                    columnNumber: 37
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "_1tK48",
+                                    children: Que?.options[0]?.waitTime
+                                }, void 0, false, {
+                                    fileName: "src/components/Legal.js",
+                                    lineNumber: 28,
+                                    columnNumber: 37
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Legal.js",
+                            lineNumber: 26,
+                            columnNumber: 33
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Legal.js",
+                        lineNumber: 25,
+                        columnNumber: 32
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Legal.js",
+                lineNumber: 17,
+                columnNumber: 21
+            }, undefined)
+        ]
+    }, Que.id, true, {
         fileName: "src/components/Legal.js",
-        lineNumber: 12,
+        lineNumber: 7,
         columnNumber: 13
     }, undefined);
 };
-_s(Legal, "QjDZesRvLCmcrZLxgN677nXnVLA=");
 _c = Legal;
 exports.default = Legal;
 var _c;
@@ -1075,124 +1087,109 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _sl = require("react-icons/sl");
-var _s = $RefreshSig$();
-const Faqs = ({ helpQues  })=>{
-    _s();
-    const [isVisible, setIsVisible] = (0, _react.useState)(false);
-    const toggleView = ()=>{
-        setIsVisible(!isVisible);
-    };
-    console.log(helpQues);
+const Faqs = ({ Que , isVisible , setShowAns , index  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: helpQues.map((Que)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "_3rl8Q",
+        className: "_3rl8Q",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "O1vpu",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "O1vpu",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "L1QZ_",
-                                children: Que?.title
-                            }, void 0, false, {
-                                fileName: "src/components/Faqs.js",
-                                lineNumber: 18,
-                                columnNumber: 21
-                            }, undefined),
-                            isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
-                                onClick: toggleView,
-                                className: "_1VUPm"
-                            }, void 0, false, {
-                                fileName: "src/components/Faqs.js",
-                                lineNumber: 20,
-                                columnNumber: 25
-                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
-                                onClick: toggleView,
-                                className: "_1VUPm"
-                            }, void 0, false, {
-                                fileName: "src/components/Faqs.js",
-                                lineNumber: 22,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "L1QZ_",
+                        children: Que?.title
+                    }, void 0, false, {
                         fileName: "src/components/Faqs.js",
-                        lineNumber: 17,
-                        columnNumber: 17
-                    }, undefined),
-                    isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            Que?.description == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1YEKM",
-                                children: Que?.description
-                            }, void 0, false, {
-                                fileName: "src/components/Faqs.js",
-                                lineNumber: 28,
-                                columnNumber: 32
-                            }, undefined),
-                            Que?.hyperLinkText == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                rel: "noopener noreferrer",
-                                target: "_blank",
-                                href: Que?.hyperLink,
-                                className: "_7bf5B",
-                                children: Que?.hyperLinkText
-                            }, void 0, false, {
-                                fileName: "src/components/Faqs.js",
-                                lineNumber: 31,
-                                columnNumber: 32
-                            }, undefined),
-                            Que?.options.length == 0 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "GM_Lh",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: "_2aDLa",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            className: "_1vMNs",
-                                            href: `mailto:shubhanggpandey@gmail.com?subject=Who should I contact if I need help &amp; support in getting onboarded?`,
-                                            target: "blank",
-                                            children: Que?.options[0]?.type
-                                        }, void 0, false, {
-                                            fileName: "src/components/Faqs.js",
-                                            lineNumber: 36,
-                                            columnNumber: 37
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "_1tK48",
-                                            children: Que?.options[0]?.waitTime
-                                        }, void 0, false, {
-                                            fileName: "src/components/Faqs.js",
-                                            lineNumber: 37,
-                                            columnNumber: 37
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Faqs.js",
-                                    lineNumber: 35,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Faqs.js",
-                                lineNumber: 34,
-                                columnNumber: 32
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Faqs.js",
-                        lineNumber: 26,
+                        lineNumber: 9,
                         columnNumber: 21
+                    }, undefined),
+                    isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
+                        className: "_1VUPm"
+                    }, void 0, false, {
+                        fileName: "src/components/Faqs.js",
+                        lineNumber: 11,
+                        columnNumber: 25
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
+                        onClick: ()=>setShowAns(),
+                        className: "_1VUPm"
+                    }, void 0, false, {
+                        fileName: "src/components/Faqs.js",
+                        lineNumber: 13,
+                        columnNumber: 25
                     }, undefined)
                 ]
-            }, Que.id, true, {
+            }, void 0, true, {
                 fileName: "src/components/Faqs.js",
-                lineNumber: 16,
-                columnNumber: 13
-            }, undefined))
-    }, void 0, false, {
+                lineNumber: 8,
+                columnNumber: 17
+            }, undefined),
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    Que?.description == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "_1YEKM",
+                        children: Que?.description
+                    }, void 0, false, {
+                        fileName: "src/components/Faqs.js",
+                        lineNumber: 19,
+                        columnNumber: 32
+                    }, undefined),
+                    Que?.hyperLinkText == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        rel: "noopener noreferrer",
+                        target: "_blank",
+                        href: Que?.hyperLink,
+                        className: "_7bf5B",
+                        children: Que?.hyperLinkText
+                    }, void 0, false, {
+                        fileName: "src/components/Faqs.js",
+                        lineNumber: 22,
+                        columnNumber: 32
+                    }, undefined),
+                    Que?.options.length == 0 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "GM_Lh",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "_2aDLa",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    className: "_1vMNs",
+                                    href: `mailto:shubhanggpandey@gmail.com?subject=Who should I contact if I need help &amp; support in getting onboarded?`,
+                                    target: "blank",
+                                    children: Que?.options[0]?.type
+                                }, void 0, false, {
+                                    fileName: "src/components/Faqs.js",
+                                    lineNumber: 27,
+                                    columnNumber: 37
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "_1tK48",
+                                    children: Que?.options[0]?.waitTime
+                                }, void 0, false, {
+                                    fileName: "src/components/Faqs.js",
+                                    lineNumber: 28,
+                                    columnNumber: 37
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Faqs.js",
+                            lineNumber: 26,
+                            columnNumber: 33
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Faqs.js",
+                        lineNumber: 25,
+                        columnNumber: 32
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Faqs.js",
+                lineNumber: 17,
+                columnNumber: 21
+            }, undefined)
+        ]
+    }, Que.id, true, {
         fileName: "src/components/Faqs.js",
-        lineNumber: 14,
-        columnNumber: 12
+        lineNumber: 7,
+        columnNumber: 13
     }, undefined);
 };
-_s(Faqs, "QjDZesRvLCmcrZLxgN677nXnVLA=");
 _c = Faqs;
 exports.default = Faqs;
 var _c;
@@ -1216,123 +1213,109 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _sl = require("react-icons/sl");
-var _s = $RefreshSig$();
-const PartnerOnboarding = ({ helpQues  })=>{
-    _s();
-    const [isVisible, setIsVisible] = (0, _react.useState)(false);
-    const toggleView = ()=>{
-        setIsVisible(!isVisible);
-    };
+const PartnerOnboarding = ({ Que , isVisible , setShowAns  })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: helpQues.map((Que)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "_3rl8Q",
+        className: "_3rl8Q",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "O1vpu",
                 children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                        className: "O1vpu",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                className: "L1QZ_",
-                                children: Que?.title
-                            }, void 0, false, {
-                                fileName: "src/components/PartnerOnboarding.js",
-                                lineNumber: 16,
-                                columnNumber: 17
-                            }, undefined),
-                            isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
-                                onClick: toggleView,
-                                className: "_1VUPm"
-                            }, void 0, false, {
-                                fileName: "src/components/PartnerOnboarding.js",
-                                lineNumber: 18,
-                                columnNumber: 21
-                            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
-                                onClick: toggleView,
-                                className: "_1VUPm"
-                            }, void 0, false, {
-                                fileName: "src/components/PartnerOnboarding.js",
-                                lineNumber: 20,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                        className: "L1QZ_",
+                        children: Que?.title
+                    }, void 0, false, {
                         fileName: "src/components/PartnerOnboarding.js",
-                        lineNumber: 15,
-                        columnNumber: 13
-                    }, undefined),
-                    isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: [
-                            Que?.description == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1YEKM",
-                                children: Que?.description
-                            }, void 0, false, {
-                                fileName: "src/components/PartnerOnboarding.js",
-                                lineNumber: 26,
-                                columnNumber: 32
-                            }, undefined),
-                            Que?.hyperLinkText == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                rel: "noopener noreferrer",
-                                target: "_blank",
-                                href: Que?.hyperLink,
-                                className: "_7bf5B",
-                                children: Que?.hyperLinkText
-                            }, void 0, false, {
-                                fileName: "src/components/PartnerOnboarding.js",
-                                lineNumber: 29,
-                                columnNumber: 32
-                            }, undefined),
-                            Que?.options.length == 0 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "GM_Lh",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: "_2aDLa",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                            className: "_1vMNs",
-                                            href: `mailto:shubhanggpandey@gmail.com?subject=Who should I contact if I need help &amp; support in getting onboarded?`,
-                                            target: "blank",
-                                            children: Que?.options[0]?.type
-                                        }, void 0, false, {
-                                            fileName: "src/components/PartnerOnboarding.js",
-                                            lineNumber: 34,
-                                            columnNumber: 37
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "_1tK48",
-                                            children: Que?.options[0]?.waitTime
-                                        }, void 0, false, {
-                                            fileName: "src/components/PartnerOnboarding.js",
-                                            lineNumber: 35,
-                                            columnNumber: 37
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/PartnerOnboarding.js",
-                                    lineNumber: 33,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/PartnerOnboarding.js",
-                                lineNumber: 32,
-                                columnNumber: 32
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/PartnerOnboarding.js",
-                        lineNumber: 24,
+                        lineNumber: 9,
                         columnNumber: 17
+                    }, undefined),
+                    isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
+                        className: "_1VUPm"
+                    }, void 0, false, {
+                        fileName: "src/components/PartnerOnboarding.js",
+                        lineNumber: 11,
+                        columnNumber: 21
+                    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
+                        onClick: ()=>setShowAns(),
+                        className: "_1VUPm"
+                    }, void 0, false, {
+                        fileName: "src/components/PartnerOnboarding.js",
+                        lineNumber: 13,
+                        columnNumber: 21
                     }, undefined)
                 ]
-            }, Que.id, true, {
+            }, void 0, true, {
                 fileName: "src/components/PartnerOnboarding.js",
-                lineNumber: 14,
+                lineNumber: 8,
                 columnNumber: 13
-            }, undefined))
-    }, void 0, false, {
+            }, undefined),
+            isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: [
+                    Que?.description == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "_1YEKM",
+                        children: Que?.description
+                    }, void 0, false, {
+                        fileName: "src/components/PartnerOnboarding.js",
+                        lineNumber: 19,
+                        columnNumber: 32
+                    }, undefined),
+                    Que?.hyperLinkText == null ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                        rel: "noopener noreferrer",
+                        target: "_blank",
+                        href: Que?.hyperLink,
+                        className: "_7bf5B",
+                        children: Que?.hyperLinkText
+                    }, void 0, false, {
+                        fileName: "src/components/PartnerOnboarding.js",
+                        lineNumber: 22,
+                        columnNumber: 32
+                    }, undefined),
+                    Que?.options.length == 0 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "GM_Lh",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "_2aDLa",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    className: "_1vMNs",
+                                    href: `mailto:shubhanggpandey@gmail.com?subject=Who should I contact if I need help &amp; support in getting onboarded?`,
+                                    target: "blank",
+                                    children: Que?.options[0]?.type
+                                }, void 0, false, {
+                                    fileName: "src/components/PartnerOnboarding.js",
+                                    lineNumber: 27,
+                                    columnNumber: 37
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "_1tK48",
+                                    children: Que?.options[0]?.waitTime
+                                }, void 0, false, {
+                                    fileName: "src/components/PartnerOnboarding.js",
+                                    lineNumber: 28,
+                                    columnNumber: 37
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/PartnerOnboarding.js",
+                            lineNumber: 26,
+                            columnNumber: 33
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/PartnerOnboarding.js",
+                        lineNumber: 25,
+                        columnNumber: 32
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/PartnerOnboarding.js",
+                lineNumber: 17,
+                columnNumber: 17
+            }, undefined)
+        ]
+    }, Que.id, true, {
         fileName: "src/components/PartnerOnboarding.js",
-        lineNumber: 12,
-        columnNumber: 12
+        lineNumber: 7,
+        columnNumber: 9
     }, undefined);
 };
-_s(PartnerOnboarding, "QjDZesRvLCmcrZLxgN677nXnVLA=");
 _c = PartnerOnboarding;
 exports.default = PartnerOnboarding;
 var _c;

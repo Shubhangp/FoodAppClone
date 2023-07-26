@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
 import ShimmerRestaurantPage from "./ShimmerRestaurantPage";
 
-const LocationSearch = ({ handleClick, btnLocation }) => {
+const LocationSearch = ({ handleClick, btnLocation, setLatlng }) => {
 
     const [searchLocation, setSearchLocation] = useState("");
 
     const [place, setPlace] = useState([]);
 
     const [placeId, setPlaceId] = useState("");
-
-    const [latlng, setLatlng] = useState([]);
 
     useEffect(() => {
         fetchData();
@@ -36,7 +34,6 @@ const LocationSearch = ({ handleClick, btnLocation }) => {
             setLatlng(latJson?.data[0]?.geometry?.location);
         }
     }
-    // console.log(latlng);
 
     const selectClick = (e) => {
         setPlaceId(e);
@@ -84,14 +81,14 @@ const LocationSearch = ({ handleClick, btnLocation }) => {
                                         {place == undefined || place.length == 0 ? ("")                                        
                                            : (<div>
                                                 {place.map((plac) => (
-                                                    <div onClick={() => selectClick(plac.place_id)}>
+                                                    <div onClick={() => selectClick(plac.place_id)} key={plac.place_id}>
                                                         <div className="_2peD4 _2peD45">
                                                             <div className="J80xC">
                                                                 <div className="icon-location">&#128681;</div>
                                                                 <div className="_3eFzL">
                                                                     <div className="Ku2oK">{plac.terms[0].value}</div>
                                                                     <div className="_1joFh">
-                                                                        {plac.terms[1].value} {plac.terms.length >= 3 ? ( plac.terms[2].value) : "" } {plac.terms.length == 4 ? ( plac.terms[3].value) : "" }
+                                                                        {plac.terms.length >= 2 ? (plac.terms[1].value) : ("")} {plac.terms.length >= 3 ? (plac.terms[2].value) : ("") } {plac.terms.length == 4 ? ( plac.terms[3].value) : ("") }
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -145,7 +142,7 @@ const LocationSearch = ({ handleClick, btnLocation }) => {
                     </div>
                 </div>
             </div>
-            <div className="overlay"></div>
+            <div className="overlay" onClick={() => handleClick()}></div>
         </div>
         )
 }

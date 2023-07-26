@@ -1,23 +1,16 @@
 import React, { useState } from "react";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
-const PartnerOnboarding = ({ helpQues }) => {
+const PartnerOnboarding = ({ Que, isVisible, setShowAns }) => {
 
-    const [isVisible, setIsVisible] = useState(false);
-
-    const toggleView = () => {
-        setIsVisible(!isVisible);
-      };
-
-    return(<div>
-        {helpQues.map((Que) => (
-            <div className="_3rl8Q" key={Que.id}>
+    return(
+        <div className="_3rl8Q" key={Que.id}>
             <button className="O1vpu">
                 <span className="L1QZ_">{Que?.title}</span>
                 {isVisible ? (
-                    <SlArrowDown onClick={toggleView} className="_1VUPm"/>
+                    <SlArrowDown className="_1VUPm"/>
                     ) : (
-                    <SlArrowUp onClick={toggleView} className="_1VUPm" />
+                    <SlArrowUp onClick={() => setShowAns()} className="_1VUPm" />
                 )}
             </button>
             {isVisible && (
@@ -38,9 +31,7 @@ const PartnerOnboarding = ({ helpQues }) => {
                         }
                 </div>
             )}
-            </div>)
-            )}
-    </div>
+        </div>
     )
 }
 

@@ -18,14 +18,14 @@ const SearchBy = ({ searchByData, searchByRes}) => {
         <div className="Search_wrapper__lQvnw _3_gGY _3jBq8">
             <div className="Search_widgetsV2__27BBR Search_widgets__3o_bA Search_widgetsFullLength__2lPs9">
                 <div className="NavTabs_wrapper__1me4c _3DdnR NavTabs_wrapperScrolled__10HRt">
-                    <span>
+                    <span onClick={() => handlerClick("Restaurents")}>
                         <span className={`styles_container__1ieVH styles_size-sm__1emwv styles_variant-default__2VzW8 styles_rounded__3IerS styles_canClick__16iph NavTab_tab__1JygM${btnActiveRest}`} role="button">
-                            <span  onClick={() => handlerClick("Restaurents")}>Restaurants</span>
+                            <span >Restaurants</span>
                         </span>
                     </span>
-                    <span>
+                    <span onClick={() => handlerClick("Dishes")}>
                         <span className={`styles_container__1ieVH styles_size-sm__1emwv styles_variant-default__2VzW8 styles_rounded__3IerS styles_canClick__16iph NavTab_tab__1JygM${btnActiveDish}`} role="button">
-                            <span  onClick={() => handlerClick("Dishes")}>Dishes</span>
+                            <span>Dishes</span>
                         </span>
                     </span>
                 </div>

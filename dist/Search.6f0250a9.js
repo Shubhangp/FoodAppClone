@@ -1169,11 +1169,11 @@ const SearchBy = ({ searchByData , searchByRes  })=>{
                     className: "NavTabs_wrapper__1me4c _3DdnR NavTabs_wrapperScrolled__10HRt",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            onClick: ()=>handlerClick("Restaurents"),
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 className: `styles_container__1ieVH styles_size-sm__1emwv styles_variant-default__2VzW8 styles_rounded__3IerS styles_canClick__16iph NavTab_tab__1JygM${btnActiveRest}`,
                                 role: "button",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    onClick: ()=>handlerClick("Restaurents"),
                                     children: "Restaurants"
                                 }, void 0, false, {
                                     fileName: "src/components/SearchBy.js",
@@ -1191,11 +1191,11 @@ const SearchBy = ({ searchByData , searchByRes  })=>{
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                            onClick: ()=>handlerClick("Dishes"),
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                 className: `styles_container__1ieVH styles_size-sm__1emwv styles_variant-default__2VzW8 styles_rounded__3IerS styles_canClick__16iph NavTab_tab__1JygM${btnActiveDish}`,
                                 role: "button",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                    onClick: ()=>handlerClick("Dishes"),
                                     children: "Dishes"
                                 }, void 0, false, {
                                     fileName: "src/components/SearchBy.js",
@@ -1501,14 +1501,6 @@ const SearchByDish = ({ searchByData  })=>{
                                                             fileName: "src/components/SearchByDish.js",
                                                             lineNumber: 60,
                                                             columnNumber: 53
-                                                        }, undefined),
-                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                            className: "styles_itemDescButton__3Z6iB",
-                                                            children: "More"
-                                                        }, void 0, false, {
-                                                            fileName: "src/components/SearchByDish.js",
-                                                            lineNumber: 61,
-                                                            columnNumber: 53
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
@@ -1531,17 +1523,17 @@ const SearchByDish = ({ searchByData  })=>{
                                                                     src: `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/${card?.card?.card?.info?.imageId}`
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/SearchByDish.js",
-                                                                    lineNumber: 66,
+                                                                    lineNumber: 65,
                                                                     columnNumber: 61
                                                                 }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "src/components/SearchByDish.js",
-                                                                lineNumber: 65,
+                                                                lineNumber: 64,
                                                                 columnNumber: 57
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/components/SearchByDish.js",
-                                                            lineNumber: 64,
+                                                            lineNumber: 63,
                                                             columnNumber: 53
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1554,7 +1546,7 @@ const SearchByDish = ({ searchByData  })=>{
                                                                         children: "ADD"
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/SearchByDish.js",
-                                                                        lineNumber: 71,
+                                                                        lineNumber: 70,
                                                                         columnNumber: 61
                                                                     }, undefined),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1562,14 +1554,14 @@ const SearchByDish = ({ searchByData  })=>{
                                                                         children: "+"
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/SearchByDish.js",
-                                                                        lineNumber: 72,
+                                                                        lineNumber: 71,
                                                                         columnNumber: 61
                                                                     }, undefined),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                         className: "_29Y5Z _20vNm _4aKW6"
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/SearchByDish.js",
-                                                                        lineNumber: 73,
+                                                                        lineNumber: 72,
                                                                         columnNumber: 61
                                                                     }, undefined),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1577,24 +1569,24 @@ const SearchByDish = ({ searchByData  })=>{
                                                                         children: "0"
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/SearchByDish.js",
-                                                                        lineNumber: 74,
+                                                                        lineNumber: 73,
                                                                         columnNumber: 61
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/components/SearchByDish.js",
-                                                                lineNumber: 70,
+                                                                lineNumber: 69,
                                                                 columnNumber: 57
                                                             }, undefined)
                                                         }, void 0, false, {
                                                             fileName: "src/components/SearchByDish.js",
-                                                            lineNumber: 69,
+                                                            lineNumber: 68,
                                                             columnNumber: 53
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/SearchByDish.js",
-                                                    lineNumber: 63,
+                                                    lineNumber: 62,
                                                     columnNumber: 49
                                                 }, undefined)
                                             ]

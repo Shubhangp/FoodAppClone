@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, { lazy, Suspense, useState, useContext } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./components/Header";
 import Body from "./components/Home";
@@ -9,21 +9,26 @@ import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import { Auth0Provider } from '@auth0/auth0-react';
 const Contact = lazy(() => import("./components/Contact"));
 const Search = lazy(() => import("./components/Search"));
+import UserLocation from "./utils/UserLocation";
 
 const AppLayout = () => {
 
-    const [btnLocation, setBtnLocation] = React.useState(false);
+    const [btnLocation, setBtnLocation] = useState(false);
 
+    const [latlng, setLatlng] = useState([]);
+    
     function handleClick(){
         setBtnLocation(btnLocation => !btnLocation);
     }
 
     return(
-        <div className="_3arMG">
-                <Header btnLocation={btnLocation} handleClick={handleClick} />
-                <LocationSearch btnLocation={btnLocation} handleClick={handleClick} />
-                <Outlet />
-        </div>
+        <UserLocation.Provider value={{latitude: latlng.lat, longitude: latlng.lng}}>
+            <div className="_3arMG">
+                    <Header btnLocation={btnLocation} handleClick={handleClick} />
+                    <LocationSearch btnLocation={btnLocation} handleClick={handleClick} setLatlng={setLatlng} />
+                    <Outlet />
+            </div>
+        </UserLocation.Provider>
     )
 }
 

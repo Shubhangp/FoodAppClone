@@ -18,6 +18,8 @@ const Contact = () => {
 
     const [navbar, setNarBar] = React.useState(false);
 
+    const [showAns, setShowAns] = useState(null);
+
     function helpClick(e){
         setBtnHelp(true);
         setBtnHelp1(false);
@@ -122,19 +124,38 @@ const Contact = () => {
                                 <div>
                                     <div className="_2at3z">
                                         {btnHelp ?
-                                        "Partner Onboarding" : ""}
+                                        "Partner Onboarding" : ("")}
                                         {btnHelp1 ?
-                                        "Legal" : ""}
+                                        "Legal" : ("")}
                                         {btnHelp2 ?
-                                        "FAQs" : ""}
+                                        "FAQs" : ("")}
                                     </div>
                                     <div>
                                         {btnHelp ?
-                                        (<PartnerOnboarding helpQues={helpQues} />) : ""}
+                                        (<div>
+                                            {helpQues.map((Que, index) => (<PartnerOnboarding 
+                                                                                Que={Que} 
+                                                                                isVisible={index === showAns ? true : false}
+                                                                                setShowAns={() => setShowAns(index)}
+                                                                                />))}
+                                        </div>) : ("")}
                                         {btnHelp1 ?
-                                        (<Legal helpQues={helpQues} />) : ""}
+                                        (<div>
+                                            {helpQues.map((Que, index) => (<Legal 
+                                                                                Que={Que}
+                                                                                isVisible={index === showAns ? true : false}
+                                                                                setShowAns={() => setShowAns(index)}
+                                                                                />))}
+                                        </div>) : ("")}
                                         {btnHelp2 ?
-                                        (<Faqs helpQues={helpQues} />) : ""}
+                                        (<div>
+                                            {helpQues.map((Que, index) => (<Faqs 
+                                                                                Que={Que}
+                                                                                isVisible={index === showAns ? true : false}
+                                                                                setShowAns={() => setShowAns(index)}
+                                                                                index={index}
+                                                                                />))}
+                                        </div>) : ("")}
                                     </div>
                                 </div>
                             </div>
