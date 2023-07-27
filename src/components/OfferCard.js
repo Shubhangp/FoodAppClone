@@ -4,11 +4,11 @@ import { OFF_URL } from "../utils/constants";
 const OfferCard = (props) => {
     const { resOff } = props;
 
-    const { creativeId } = resOff?.data
+    const { imageId } = resOff
 
     return(
         <div className="img-offers">
-                <img src={OFF_URL + creativeId} alt="" />
+                <img src={OFF_URL + imageId} alt="" />
         </div>
     )
 }

@@ -648,7 +648,7 @@ const Contact = ()=>{
         else if (btnHelp1) var quesData = await fetch("https://www.swiggy.com/dapi/support/issues/legal");
         else if (btnHelp2) var quesData = await fetch("https://www.swiggy.com/dapi/support/issues/faq");
         const json = await quesData.json();
-        console.log(json);
+        // console.log(json);
         setHelpQues(json?.data?.issues?.data);
     };
     const changeHeader = ()=>{

@@ -70,7 +70,7 @@ const Contact = () => {
             var quesData = await fetch("https://www.swiggy.com/dapi/support/issues/faq");
         }
         const json = await quesData.json();
-        console.log(json);
+        // console.log(json);
         setHelpQues(json?.data?.issues?.data);
     }
 

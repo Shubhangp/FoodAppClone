@@ -595,6 +595,8 @@ var _searchSuggest = require("./SearchSuggest");
 var _searchSuggestDefault = parcelHelpers.interopDefault(_searchSuggest);
 var _searchBy = require("./SearchBy");
 var _searchByDefault = parcelHelpers.interopDefault(_searchBy);
+var _userLocation = require("../utils/UserLocation");
+var _userLocationDefault = parcelHelpers.interopDefault(_userLocation);
 var _s = $RefreshSig$();
 const Search = ()=>{
     _s();
@@ -606,11 +608,12 @@ const Search = ()=>{
     const [searchByApi, setSearchByApi] = (0, _react.useState)([]);
     const [searchByData, setSearchByData] = (0, _react.useState)([]);
     const [searchByRes, setSearchByRes] = (0, _react.useState)([]);
+    const { latitude , longitude  } = (0, _react.useContext)((0, _userLocationDefault.default));
     (0, _react.useEffect)(()=>{
         fetchData();
     }, []);
     const fetchData = async ()=>{
-        var data = await fetch("https://www.swiggy.com/dapi/landing/PRE_SEARCH?lat=12.9351929&lng=77.62448069999999");
+        var data = await fetch(`https://www.swiggy.com/dapi/landing/PRE_SEARCH?lat=${latitude}&lng=${longitude}`);
         const json = await data.json();
         // console.log(json);
         setPopularCusi(json?.data?.cards[1]?.card?.card?.imageGridCards?.info);
@@ -622,7 +625,7 @@ const Search = ()=>{
         searchText
     ]);
     const fetchSearchData = async ()=>{
-        var dataSearch = await fetch(`https://www.swiggy.com/dapi/restaurants/search/suggest?lat=12.9351929&lng=77.62448069999999&str=${searchText}&trackingId=undefined`);
+        var dataSearch = await fetch(`https://www.swiggy.com/dapi/restaurants/search/suggest?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined`);
         const json = await dataSearch.json();
         // console.log(json);
         setSearchApi(json?.data?.suggestions);
@@ -634,7 +637,7 @@ const Search = ()=>{
         searchByApi
     ]);
     const fetchSearchBy = async ()=>{
-        var dataSearchBy = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9351929&lng=77.62448069999999&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}`);
+        var dataSearchBy = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}`);
         const json = await dataSearchBy.json();
         // console.log(json);
         setSearchByData(json?.data?.cards[1]?.groupedCard?.cardGroupMap?.DISH?.cards);
@@ -646,7 +649,7 @@ const Search = ()=>{
         searchByApi
     ]);
     const fetchSearchByRes = async ()=>{
-        var dataSearchByRes = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9351929&lng=77.62448069999999&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}&selectedPLTab=RESTAURANT`);
+        var dataSearchByRes = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}&selectedPLTab=RESTAURANT`);
         const json = await dataSearchByRes.json();
         // console.log(json);
         setSearchByRes(json?.data?.cards[0]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards);
@@ -687,17 +690,17 @@ const Search = ()=>{
                                             fill: "#535766"
                                         }, void 0, false, {
                                             fileName: "src/components/Search.js",
-                                            lineNumber: 91,
+                                            lineNumber: 94,
                                             columnNumber: 41
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Search.js",
-                                        lineNumber: 90,
+                                        lineNumber: 93,
                                         columnNumber: 37
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Search.js",
-                                    lineNumber: 89,
+                                    lineNumber: 92,
                                     columnNumber: 34
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -712,12 +715,12 @@ const Search = ()=>{
                                         onChange: (e)=>setSearchText(e.target.value)
                                     }, "input-text", false, {
                                         fileName: "src/components/Search.js",
-                                        lineNumber: 96,
+                                        lineNumber: 99,
                                         columnNumber: 33
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Search.js",
-                                    lineNumber: 95,
+                                    lineNumber: 98,
                                     columnNumber: 29
                                 }, undefined),
                                 searchText == "" ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -734,22 +737,22 @@ const Search = ()=>{
                                                 d: "M17.6671481,17.1391632 L22.7253317,22.1973467 L20.9226784,24 L15.7041226,18.7814442 C14.1158488,19.8024478 12.225761,20.3946935 10.1973467,20.3946935 C4.56550765,20.3946935 0,15.8291858 0,10.1973467 C0,4.56550765 4.56550765,0 10.1973467,0 C15.8291858,0 20.3946935,4.56550765 20.3946935,10.1973467 C20.3946935,12.8789625 19.3595949,15.3188181 17.6671481,17.1391632 Z M10.1973467,17.8453568 C14.4212261,17.8453568 17.8453568,14.4212261 17.8453568,10.1973467 C17.8453568,5.97346742 14.4212261,2.54933669 10.1973467,2.54933669 C5.97346742,2.54933669 2.54933669,5.97346742 2.54933669,10.1973467 C2.54933669,14.4212261 5.97346742,17.8453568 10.1973467,17.8453568 Z"
                                             }, void 0, false, {
                                                 fileName: "src/components/Search.js",
-                                                lineNumber: 110,
+                                                lineNumber: 113,
                                                 columnNumber: 45
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Search.js",
-                                            lineNumber: 109,
+                                            lineNumber: 112,
                                             columnNumber: 41
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Search.js",
-                                        lineNumber: 108,
+                                        lineNumber: 111,
                                         columnNumber: 37
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Search.js",
-                                    lineNumber: 107,
+                                    lineNumber: 110,
                                     columnNumber: 34
                                 }, undefined) : "",
                                 searchText == "" ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -770,48 +773,48 @@ const Search = ()=>{
                                                     strokeWidth: "1"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Search.js",
-                                                    lineNumber: 121,
+                                                    lineNumber: 124,
                                                     columnNumber: 49
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Search.js",
-                                                lineNumber: 120,
+                                                lineNumber: 123,
                                                 columnNumber: 45
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Search.js",
-                                            lineNumber: 119,
+                                            lineNumber: 122,
                                             columnNumber: 41
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Search.js",
-                                        lineNumber: 118,
+                                        lineNumber: 121,
                                         columnNumber: 37
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Search.js",
-                                    lineNumber: 117,
+                                    lineNumber: 120,
                                     columnNumber: 35
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 87,
+                            lineNumber: 90,
                             columnNumber: 25
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Search.js",
-                        lineNumber: 86,
+                        lineNumber: 89,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Search.js",
-                    lineNumber: 85,
+                    lineNumber: 88,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Search.js",
-                lineNumber: 84,
+                lineNumber: 87,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -824,7 +827,7 @@ const Search = ()=>{
                             searchByRes: searchByRes
                         }, void 0, false, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 134,
+                            lineNumber: 137,
                             columnNumber: 26
                         }, undefined),
                         searchText == "" || searchByData != undefined ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -834,12 +837,12 @@ const Search = ()=>{
                                 suggestionClick: suggestionClick
                             }, void 0, false, {
                                 fileName: "src/components/Search.js",
-                                lineNumber: 138,
+                                lineNumber: 141,
                                 columnNumber: 29
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 137,
+                            lineNumber: 140,
                             columnNumber: 26
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -849,33 +852,33 @@ const Search = ()=>{
                                 selectClick: selectClick
                             }, void 0, false, {
                                 fileName: "src/components/Search.js",
-                                lineNumber: 143,
+                                lineNumber: 146,
                                 columnNumber: 30
                             }, undefined) : ""
                         }, void 0, false, {
                             fileName: "src/components/Search.js",
-                            lineNumber: 141,
+                            lineNumber: 144,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Search.js",
-                    lineNumber: 132,
+                    lineNumber: 135,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Search.js",
-                lineNumber: 131,
+                lineNumber: 134,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Search.js",
-        lineNumber: 83,
+        lineNumber: 86,
         columnNumber: 9
     }, undefined);
 };
-_s(Search, "ECR7Jjd5lldiBNq2maQ5MUwCX9w=");
+_s(Search, "Ud2oftN/X8e7olDItRJmHxKtyMw=");
 _c = Search;
 exports.default = Search;
 var _c;
@@ -886,7 +889,7 @@ $RefreshReg$(_c, "Search");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./SearchByPopularCui":"3Fz2n","./SearchSuggest":"aqydN","./SearchBy":"8NNjA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3Fz2n":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./SearchByPopularCui":"3Fz2n","./SearchSuggest":"aqydN","./SearchBy":"8NNjA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/UserLocation":"aVyyN"}],"3Fz2n":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c08c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

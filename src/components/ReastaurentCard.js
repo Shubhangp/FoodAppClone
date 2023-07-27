@@ -4,7 +4,7 @@ import QuickView from "./QuickView";
 
 const ReastaurentCard = (props) => {
     const { resObj } = props;
-    const { cloudinaryImageId, name, cuisines, avgRating, slaString, costForTwoString } = resObj?.data?.data
+    const { cloudinaryImageId, name, cuisines, avgRating, sla, costForTwo } = resObj?.info
 
     return(<div>
             <div className="res-card">
@@ -19,9 +19,9 @@ const ReastaurentCard = (props) => {
                     <div className="res-details">
                         <div className="rating">&#9733; {avgRating}</div>
                         <div>.</div>
-                        <div>{slaString}</div>
+                        <div>{sla?.slaString}</div>
                         <div>.</div>
-                        <div>{costForTwoString}</div>
+                        <div>{costForTwo}</div>
                     </div>
                 </div>
                 <QuickView />
@@ -30,17 +30,17 @@ const ReastaurentCard = (props) => {
     );
 };
 
-export const withPromotedLabel = (ReastaurentCard) => {
-    return (props) => {
-        return(
-            <div>
-                <div className="IJsqo">
-                    <div className="_1kXWW">Promoted</div>
-                </div>
-                <ReastaurentCard {...props} />
-            </div>
-        )
-    }
-}
+// export const withPromotedLabel = (ReastaurentCard) => {
+//     return (props) => {
+//         return(
+//             <div>
+//                 <div className="IJsqo">
+//                     <div className="_1kXWW">Promoted</div>
+//                 </div>
+//                 <ReastaurentCard {...props} />
+//             </div>
+//         )
+//     }
+// }
 
 export default ReastaurentCard;

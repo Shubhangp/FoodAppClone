@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import SearchByPopularCui from "./SearchByPopularCui";
 import SearchSuggest from "./SearchSuggest";
 import SearchBy from "./SearchBy";
+import UserLocation from "../utils/UserLocation";
 
 const Search = () => {
 
@@ -12,12 +13,14 @@ const Search = () => {
     const [searchByData, setSearchByData] = useState([]);
     const [searchByRes, setSearchByRes] = useState([]);
 
+    const { latitude, longitude } = useContext(UserLocation);
+
     useEffect(() => {
         fetchData();
     }, [])
 
     const fetchData = async() => {
-        var data = await fetch("https://www.swiggy.com/dapi/landing/PRE_SEARCH?lat=12.9351929&lng=77.62448069999999");
+        var data = await fetch(`https://www.swiggy.com/dapi/landing/PRE_SEARCH?lat=${latitude}&lng=${longitude}`);
         const json = await data.json();
         // console.log(json);
 
@@ -30,7 +33,7 @@ const Search = () => {
     }, [searchText])
 
     const fetchSearchData = async() => {
-        var dataSearch = await fetch(`https://www.swiggy.com/dapi/restaurants/search/suggest?lat=12.9351929&lng=77.62448069999999&str=${searchText}&trackingId=undefined`);
+        var dataSearch = await fetch(`https://www.swiggy.com/dapi/restaurants/search/suggest?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined`);
         const json = await dataSearch.json();
         // console.log(json);
 
@@ -43,7 +46,7 @@ const Search = () => {
     }, [searchByApi])
 
     const fetchSearchBy = async() => {
-        var dataSearchBy = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9351929&lng=77.62448069999999&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}`);
+        var dataSearchBy = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}`);
         const json = await dataSearchBy.json();
         // console.log(json);
 
@@ -56,7 +59,7 @@ const Search = () => {
     }, [searchByApi])
 
     const fetchSearchByRes = async() => {
-        var dataSearchByRes = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=12.9351929&lng=77.62448069999999&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}&selectedPLTab=RESTAURANT`);
+        var dataSearchByRes = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}&selectedPLTab=RESTAURANT`);
         const json = await dataSearchByRes.json();
         // console.log(json);
 

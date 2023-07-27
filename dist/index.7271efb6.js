@@ -2940,6 +2940,8 @@ var _locationSearch = require("./components/LocationSearch");
 var _locationSearchDefault = parcelHelpers.interopDefault(_locationSearch);
 var _reactRouterDom = require("react-router-dom");
 var _auth0React = require("@auth0/auth0-react");
+var _starting = require("./components/Starting");
+var _startingDefault = parcelHelpers.interopDefault(_starting);
 var _userLocation = require("./utils/UserLocation");
 var _userLocationDefault = parcelHelpers.interopDefault(_userLocation);
 var _s = $RefreshSig$();
@@ -2969,8 +2971,8 @@ const AppLayout = ()=>{
                     handleClick: handleClick
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 27,
-                    columnNumber: 21
+                    lineNumber: 28,
+                    columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _locationSearchDefault.default), {
                     btnLocation: btnLocation,
@@ -2978,23 +2980,23 @@ const AppLayout = ()=>{
                     setLatlng: setLatlng
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 28,
-                    columnNumber: 21
+                    lineNumber: 29,
+                    columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 29,
-                    columnNumber: 21
+                    lineNumber: 30,
+                    columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 26,
+            lineNumber: 27,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 9
     }, undefined);
 };
@@ -3005,7 +3007,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 38,
+            lineNumber: 39,
             columnNumber: 18
         }, undefined),
         children: [
@@ -3017,12 +3019,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 42,
+                        lineNumber: 43,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 42,
+                    lineNumber: 43,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3034,12 +3036,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Contact, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 46,
+                        lineNumber: 47,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 46,
+                    lineNumber: 47,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3051,12 +3053,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantDetails, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 50,
+                        lineNumber: 51,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 50,
+                    lineNumber: 51,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3068,19 +3070,19 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Search, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 54,
+                        lineNumber: 55,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 54,
+                    lineNumber: 55,
                     columnNumber: 26
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 57,
+            lineNumber: 58,
             columnNumber: 23
         }, undefined)
     }
@@ -3096,12 +3098,12 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _auth0React.Auth0Provid
         router: appRouter
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 69,
+        lineNumber: 70,
         columnNumber: 13
     }, undefined)
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 63,
+    lineNumber: 64,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
@@ -3115,7 +3117,7 @@ $RefreshReg$(_c3, "AppLayout");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Home":"hcu4N","./components/Error":"kvula","e3a9d4c492a4c8ee":"fF4mG","./components/LocationSearch":"6Rzyb","react-router-dom":"9xmpe","@auth0/auth0-react":"lDrFi","a2d5bfc67480664d":"5nHAt","fa0afb424638dcfc":"dnB4M","./utils/UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Header":"hsJbF","./components/Home":"hcu4N","./components/Error":"kvula","e3a9d4c492a4c8ee":"fF4mG","./components/LocationSearch":"6Rzyb","react-router-dom":"9xmpe","@auth0/auth0-react":"lDrFi","a2d5bfc67480664d":"5nHAt","fa0afb424638dcfc":"dnB4M","./utils/UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/Starting":"jW49j"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("4bfdd2b1504c5739");
 
@@ -27700,7 +27702,7 @@ parcelHelpers.export(exports, "MAIN_API", ()=>MAIN_API);
 parcelHelpers.export(exports, "Lat", ()=>Lat);
 parcelHelpers.export(exports, "Lng", ()=>Lng);
 parcelHelpers.export(exports, "PAGE_TYPE", ()=>PAGE_TYPE);
-const OFF_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_520,h_520/";
+const OFF_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/";
 const OFFER_IMG = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_28,h_28/";
 const CDN_URL = "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/";
 const LOGO_URL = "https://png.pngtree.com/png-clipart/20230106/original/pngtree-simple-and-modern-food-logo-vector-design-png-image_8876455.png";
@@ -35655,135 +35657,62 @@ var _offerCard = require("./OfferCard");
 var _offerCardDefault = parcelHelpers.interopDefault(_offerCard);
 var _shimmerHome = require("./ShimmerHome");
 var _shimmerHomeDefault = parcelHelpers.interopDefault(_shimmerHome);
-var _moreShimmerHome = require("./MoreShimmerHome");
-var _moreShimmerHomeDefault = parcelHelpers.interopDefault(_moreShimmerHome);
 var _userOffline = require("./UserOffline");
 var _userOfflineDefault = parcelHelpers.interopDefault(_userOffline);
-var _filter = require("./Filter");
-var _filterDefault = parcelHelpers.interopDefault(_filter);
 var _reactRouterDom = require("react-router-dom");
 var _constants = require("../utils/constants");
 var _useOnlineStatus = require("../utils/useOnlineStatus");
 var _useOnlineStatusDefault = parcelHelpers.interopDefault(_useOnlineStatus);
 var _userLocation = require("../utils/UserLocation");
 var _userLocationDefault = parcelHelpers.interopDefault(_userLocation);
+var _restaurantChain = require("./RestaurantChain");
+var _restaurantChainDefault = parcelHelpers.interopDefault(_restaurantChain);
+var _yourMind = require("./YourMind");
+var _yourMindDefault = parcelHelpers.interopDefault(_yourMind);
 var _s = $RefreshSig$();
 const Body = ()=>{
     _s();
     const [listOfRestaurants, setListOfRestaurants] = (0, _react.useState)([]);
     const [latestOffer, setLatestOffer] = (0, _react.useState)([]);
-    const [sortCard, setSortCard] = (0, _react.useState)([]);
-    const [totalRestaurant, setTotalRestaurant] = (0, _react.useState)([]);
-    const [page, setPage] = (0, _react.useState)(0);
-    const [loading, setLoading] = (0, _react.useState)(true);
-    const [sortBy, setSortBy] = (0, _react.useState)("RELEVANCE");
+    const [mindDish, setMindDish] = (0, _react.useState)([]);
+    const [chainRes, setChainRes] = (0, _react.useState)([]);
+    const [head, setHead] = (0, _react.useState)("");
     const { latitude , longitude  } = (0, _react.useContext)((0, _userLocationDefault.default));
-    // console.log(latitude, longitude);
-    const RestaurantCardPromoted = (0, _reastaurentCard.withPromotedLabel)((0, _reastaurentCardDefault.default));
-    const [btnSort, setBtnSort] = (0, _reactDefault.default).useState(true);
-    const [btnSort1, setBtnSort1] = (0, _reactDefault.default).useState(false);
-    const [btnSort2, setBtnSort2] = (0, _reactDefault.default).useState(false);
-    const [btnSort3, setBtnSort3] = (0, _reactDefault.default).useState(false);
-    const [btnSort4, setBtnSort4] = (0, _reactDefault.default).useState(false);
-    function handleClickSort(e) {
-        setBtnSort(true);
-        setBtnSort1(false);
-        setBtnSort2(false);
-        setBtnSort3(false);
-        setBtnSort4(false);
-        setSortBy(e);
-        setListOfRestaurants([]);
-    }
-    function handleClickSort1(e) {
-        setBtnSort1(true);
-        setBtnSort(false);
-        setBtnSort2(false);
-        setBtnSort3(false);
-        setBtnSort4(false);
-        setSortBy(e);
-        setListOfRestaurants([]);
-    }
-    function handleClickSort2(e) {
-        setBtnSort2(true);
-        setBtnSort1(false);
-        setBtnSort(false);
-        setBtnSort3(false);
-        setBtnSort4(false);
-        setSortBy(e);
-        setListOfRestaurants([]);
-    }
-    function handleClickSort3(e) {
-        setBtnSort3(true);
-        setBtnSort1(false);
-        setBtnSort2(false);
-        setBtnSort(false);
-        setBtnSort4(false);
-        setSortBy(e);
-        setListOfRestaurants([]);
-    }
-    function handleClickSort4(e) {
-        setBtnSort4(true);
-        setBtnSort1(false);
-        setBtnSort2(false);
-        setBtnSort3(false);
-        setBtnSort(false);
-        setSortBy(e);
-        setListOfRestaurants([]);
-    }
+    console.log(latitude, longitude);
+    // const RestaurantCardPromoted = withPromotedLabel(ReastaurentCard);
+    const favourite = "type.googleapis.com/swiggy.presentation.food.v2.FavouriteRestaurantInfoWithStyle";
     (0, _react.useEffect)(()=>{
         fetchData();
-    }, []);
-    const fetchData = async ()=>{
-        var data = await fetch(`https://www.swiggy.com/dapi/restaurants/list/v5?${(0, _constants.Lat)}${(0, _constants.Lng)}&page_type=DESKTOP_WEB_LISTING`);
-        var json = await data.json();
-        // console.log(json);
-        setLatestOffer(json?.data?.cards[0]?.data?.data?.cards);
-        setSortCard(json?.data?.sorts);
-        setTotalRestaurant(json?.data?.cards[2]?.data?.data);
-        setLoading(false);
-    };
-    (0, _react.useEffect)(()=>{
-        fetchData1();
     }, [
-        page,
-        sortBy
+        latitude,
+        longitude
     ]);
-    const fetchData1 = async ()=>{
-        var data1 = await fetch((0, _constants.MAIN_API) + (0, _constants.Lat) + (0, _constants.Lng) + `&offset=${page}&sortBy=${sortBy}&page_type=DESKTOP_SEE_ALL_LISTING`);
-        var json1 = await data1.json();
-        // console.log(json1);
-        setListOfRestaurants((prev)=>[
-                ...prev,
-                ...json1?.data?.cards
-            ]);
-    };
-    // console.log(sortReastaurent);
-    (0, _react.useEffect)(()=>{
-        window.addEventListener("scroll", handelInfiniteScroll);
-        return ()=>window.removeEventListener("scroll", handelInfiniteScroll);
-    }, []);
-    const handelInfiniteScroll = async ()=>{
-        // console.log("scrollHeight" + document.documentElement.scrollHeight);
-        // console.log("innerHeight" + window.innerHeight);
-        // console.log("scrollTop" + document.documentElement.scrollTop);
-        try {
-            if (872 + document.documentElement.scrollTop >= document.documentElement.scrollHeight) {
-                setLoading(true);
-                setPage((prev)=>prev + 16);
-            }
-        } catch (error) {
-            console.log(error);
+    const fetchData = async ()=>{
+        if (latitude == undefined && longitude == undefined) {
+            var data = await fetch(`https://www.swiggy.com/dapi/restaurants/list/v5?${(0, _constants.Lat)}${(0, _constants.Lng)}&page_type=DESKTOP_WEB_LISTING`);
+            var json = await data.json();
+        } else {
+            var data = await fetch(`https://www.swiggy.com/dapi/restaurants/list/v5?lat=${latitude}&lng=${longitude}&page_type=DESKTOP_WEB_LISTING`);
+            var json = await data.json();
         }
+        console.log(json);
+        setLatestOffer(json?.data?.cards[0]?.card?.card?.imageGridCards?.info);
+        setMindDish(json?.data?.cards[1]?.card?.card);
+        setChainRes(json?.data?.cards[2]?.card?.card);
+        setHead(json?.data?.cards[3]?.card?.card?.title);
+        if (json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle["@type"] === favourite) setListOfRestaurants(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        else if (json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle["@type"] === favourite) setListOfRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        else if (json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle["@type"] === favourite) setListOfRestaurants(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
     const onlineStatus = (0, _useOnlineStatusDefault.default)();
     if (onlineStatus == false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userOfflineDefault.default), {}, void 0, false, {
         fileName: "src/components/Home.js",
-        lineNumber: 146,
+        lineNumber: 60,
         columnNumber: 13
     }, undefined);
     return latestOffer == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerHomeDefault.default), {}, void 0, false, {
         fileName: "src/components/Home.js",
-        lineNumber: 149,
+        lineNumber: 63,
         columnNumber: 31
     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body",
@@ -35792,74 +35721,205 @@ const Body = ()=>{
                 className: "offers",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "offers_layer1",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "offers_layer2",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "offers_layer3",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "offers_layer4",
-                                    children: latestOffer.map((offer)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offerCardDefault.default), {
-                                            resOff: offer
-                                        }, offer.data.bannerId, false, {
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "btn_cr",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "btn_prev btn_off",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "OBHoC cOMcyj",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                            width: "17",
+                                            height: "17",
+                                            viewBox: "0 0 17 17",
+                                            fill: "none",
+                                            "aria-hidden": "true",
+                                            strokecolor: "rgba(2, 6, 12, 0.92)",
+                                            fillcolor: "rgba(2, 6, 12, 0.92)",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                d: "M7.46869 3.43394C7.79171 3.13249 8.29794 3.14998 8.59939 3.473C8.90083 3.79602 8.88334 4.30225 8.56033 4.60369L5.0839 7.84795C4.94511 7.97748 4.82252 8.0921 4.71414 8.19502L15.0937 8.19502C15.5355 8.19502 15.8937 8.5532 15.8937 8.99502C15.8937 9.43685 15.5355 9.79502 15.0937 9.79502L4.6665 9.79502C4.78625 9.90939 4.92436 10.0386 5.08389 10.1875L8.51791 13.3922C8.84092 13.6937 8.8584 14.1999 8.55695 14.5229C8.2555 14.8459 7.74927 14.8634 7.42626 14.5619L3.95463 11.3221C3.54648 10.9413 3.18179 10.601 2.92647 10.2871C2.64873 9.94573 2.41671 9.53755 2.41672 9.01769C2.41672 8.49783 2.64874 8.08965 2.92648 7.74824C3.18181 7.43439 3.54649 7.09412 3.95465 6.7133L7.46869 3.43394Z",
+                                                fill: "rgba(2, 6, 12, 0.92)",
+                                                fillOpacity: "0.92"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Home.js",
+                                                lineNumber: 71,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        }, void 0, false, {
                                             fileName: "src/components/Home.js",
-                                            lineNumber: 158,
-                                            columnNumber: 41
-                                        }, undefined))
+                                            lineNumber: 70,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Home.js",
+                                        lineNumber: 69,
+                                        columnNumber: 29
+                                    }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 155,
-                                    columnNumber: 29
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Home.js",
-                                lineNumber: 154,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "btn_cr btn_prev",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                    className: "icon-prev",
-                                    children: "➔"
+                                    lineNumber: 68,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "btn_next btn_off",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "OBHoC",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                            width: "17",
+                                            height: "17",
+                                            viewBox: "0 0 17 17",
+                                            fill: "none",
+                                            "aria-hidden": "true",
+                                            strokecolor: "rgba(2, 6, 12, 0.92)",
+                                            fillcolor: "rgba(2, 6, 12, 0.92)",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                d: "M10.5164 3.43418C10.1934 3.13273 9.68714 3.15022 9.3857 3.47324C9.08425 3.79626 9.10174 4.30249 9.42476 4.60394L12.9012 7.84819C13.04 7.97772 13.1626 8.09234 13.2709 8.19527L2.89142 8.19527C2.44959 8.19527 2.09142 8.55344 2.09142 8.99527C2.09142 9.4371 2.44959 9.79527 2.89142 9.79527L13.3186 9.79527C13.1988 9.90964 13.0607 10.0388 12.9012 10.1877L9.46718 13.3924C9.14416 13.6939 9.12668 14.2001 9.42813 14.5231C9.72958 14.8462 10.2358 14.8636 10.5588 14.5622L14.0304 11.3224C14.4386 10.9415 14.8033 10.6012 15.0586 10.2874C15.3364 9.94598 15.5684 9.5378 15.5684 9.01793C15.5684 8.49807 15.3363 8.08989 15.0586 7.74849C14.8033 7.43463 14.4386 7.09437 14.0304 6.71354L10.5164 3.43418Z",
+                                                fill: "rgba(2, 6, 12, 0.92)",
+                                                fillOpacity: "0.92"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Home.js",
+                                                lineNumber: 78,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        }, void 0, false, {
+                                            fileName: "src/components/Home.js",
+                                            lineNumber: 77,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Home.js",
+                                        lineNumber: 76,
+                                        columnNumber: 29
+                                    }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 164,
-                                    columnNumber: 29
+                                    lineNumber: 75,
+                                    columnNumber: 25
                                 }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Home.js",
-                                lineNumber: 163,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "btn_cr btn_next",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                    className: "icon-next",
-                                    children: "➔"
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Home.js",
+                            lineNumber: 67,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "offers_layer2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    class: "iMCsYC",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        class: "jveqan",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                            class: "kPlrlF",
+                                            children: "Best offers for you"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Home.js",
+                                            lineNumber: 86,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Home.js",
+                                        lineNumber: 85,
+                                        columnNumber: 29
+                                    }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 167,
-                                    columnNumber: 29
+                                    lineNumber: 84,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "offers_layer3",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "offers_layer4",
+                                        children: latestOffer.map((offer)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _offerCardDefault.default), {
+                                                resOff: offer
+                                            }, offer?.id, false, {
+                                                fileName: "src/components/Home.js",
+                                                lineNumber: 93,
+                                                columnNumber: 41
+                                            }, undefined))
+                                    }, void 0, false, {
+                                        fileName: "src/components/Home.js",
+                                        lineNumber: 90,
+                                        columnNumber: 29
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/Home.js",
+                                    lineNumber: 89,
+                                    columnNumber: 25
                                 }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Home.js",
-                                lineNumber: 166,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/Home.js",
-                        lineNumber: 153,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/Home.js",
+                            lineNumber: 83,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
                     fileName: "src/components/Home.js",
-                    lineNumber: 152,
+                    lineNumber: 66,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Home.js",
-                lineNumber: 151,
+                lineNumber: 65,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _yourMindDefault.default), {
+                mindDish: mindDish
+            }, void 0, false, {
+                fileName: "src/components/Home.js",
+                lineNumber: 101,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                className: "czePTO"
+            }, void 0, false, {
+                fileName: "src/components/Home.js",
+                lineNumber: 102,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantChainDefault.default), {
+                chainRes: chainRes
+            }, void 0, false, {
+                fileName: "src/components/Home.js",
+                lineNumber: 103,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
+                className: "czePTO"
+            }, void 0, false, {
+                fileName: "src/components/Home.js",
+                lineNumber: 104,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "eoBdns",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        class: "sc-bczRLJ jgombA",
+                        children: head
+                    }, void 0, false, {
+                        fileName: "src/components/Home.js",
+                        lineNumber: 107,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Home.js",
+                    lineNumber: 106,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Home.js",
+                lineNumber: 105,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                class: "dsbFcD"
+            }, void 0, false, {
+                fileName: "src/components/Home.js",
+                lineNumber: 110,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35868,91 +35928,58 @@ const Body = ()=>{
                     className: "_1LV_f",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "_10p2-",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filterDefault.default), {
-                                sort: sortCard,
-                                totalRestaurant: totalRestaurant,
-                                handleClickSort: handleClickSort,
-                                handleClickSort1: handleClickSort1,
-                                handleClickSort2: handleClickSort2,
-                                handleClickSort3: handleClickSort3,
-                                handleClickSort4: handleClickSort4,
-                                btnSort: btnSort,
-                                btnSort1: btnSort1,
-                                btnSort2: btnSort2,
-                                btnSort3: btnSort3,
-                                btnSort4: btnSort4
-                            }, void 0, false, {
-                                fileName: "src/components/Home.js",
-                                lineNumber: 175,
-                                columnNumber: 25
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "res-container",
-                                children: [
-                                    listOfRestaurants.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "_3XX_A",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                                className: "card_link",
-                                                to: "/restaurents/" + restaurant.data.data.id,
-                                                children: restaurant.data.data.promoted ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantCardPromoted, {
-                                                    resObj: restaurant
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Home.js",
-                                                    lineNumber: 197,
-                                                    columnNumber: 45
-                                                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reastaurentCardDefault.default), {
-                                                    resObj: restaurant
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Home.js",
-                                                    lineNumber: 199,
-                                                    columnNumber: 45
-                                                }, undefined)
-                                            }, restaurant.data.data.id, false, {
-                                                fileName: "src/components/Home.js",
-                                                lineNumber: 191,
-                                                columnNumber: 37
-                                            }, undefined)
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "res-container",
+                            children: listOfRestaurants.map((restaurant)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "_3XX_A",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        className: "card_link",
+                                        to: "/restaurents/" + restaurant.info.id,
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reastaurentCardDefault.default), {
+                                            resObj: restaurant
                                         }, void 0, false, {
                                             fileName: "src/components/Home.js",
-                                            lineNumber: 190,
-                                            columnNumber: 69
-                                        }, undefined)),
-                                    loading && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _moreShimmerHomeDefault.default), {}, void 0, false, {
+                                            lineNumber: 122,
+                                            columnNumber: 41
+                                        }, undefined)
+                                    }, restaurant.info.id, false, {
                                         fileName: "src/components/Home.js",
-                                        lineNumber: 204,
-                                        columnNumber: 41
+                                        lineNumber: 117,
+                                        columnNumber: 37
                                     }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Home.js",
-                                lineNumber: 189,
-                                columnNumber: 25
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                                }, void 0, false, {
+                                    fileName: "src/components/Home.js",
+                                    lineNumber: 116,
+                                    columnNumber: 33
+                                }, undefined))
+                        }, void 0, false, {
+                            fileName: "src/components/Home.js",
+                            lineNumber: 114,
+                            columnNumber: 25
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 174,
+                        lineNumber: 113,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Home.js",
-                    lineNumber: 173,
+                    lineNumber: 112,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Home.js",
-                lineNumber: 172,
+                lineNumber: 111,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Home.js",
-        lineNumber: 150,
+        lineNumber: 64,
         columnNumber: 9
     }, undefined);
 };
-_s(Body, "HqGE39O7I4JmyceJVR0X3UGJgrg=", false, function() {
+_s(Body, "WSqA50v7H0Fab6/Vji8iIyyeoVY=", false, function() {
     return [
         (0, _useOnlineStatusDefault.default)
     ];
@@ -35967,7 +35994,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ReastaurentCard":"jJsE1","./OfferCard":"1GlBO","./ShimmerHome":"IRYcw","./MoreShimmerHome":"dBBOv","./UserOffline":"f2uiA","./Filter":"jhec3","react-router-dom":"9xmpe","../utils/constants":"hB8jg","../utils/useOnlineStatus":"181Ji","../utils/UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jJsE1":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ReastaurentCard":"jJsE1","./OfferCard":"1GlBO","./ShimmerHome":"IRYcw","./UserOffline":"f2uiA","react-router-dom":"9xmpe","../utils/constants":"hB8jg","../utils/useOnlineStatus":"181Ji","../utils/UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./RestaurantChain":"6mdZq","./YourMind":"70XXP"}],"jJsE1":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ac51 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -35976,7 +36003,6 @@ $parcel$ReactRefreshHelpers$ac51.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "withPromotedLabel", ()=>withPromotedLabel);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
@@ -35985,7 +36011,7 @@ var _quickView = require("./QuickView");
 var _quickViewDefault = parcelHelpers.interopDefault(_quickView);
 const ReastaurentCard = (props)=>{
     const { resObj  } = props;
-    const { cloudinaryImageId , name , cuisines , avgRating , slaString , costForTwoString  } = resObj?.data?.data;
+    const { cloudinaryImageId , name , cuisines , avgRating , sla , costForTwo  } = resObj?.info;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "res-card",
@@ -36056,7 +36082,7 @@ const ReastaurentCard = (props)=>{
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    children: slaString
+                                    children: sla?.slaString
                                 }, void 0, false, {
                                     fileName: "src/components/ReastaurentCard.js",
                                     lineNumber: 22,
@@ -36070,7 +36096,7 @@ const ReastaurentCard = (props)=>{
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    children: costForTwoString
+                                    children: costForTwo
                                 }, void 0, false, {
                                     fileName: "src/components/ReastaurentCard.js",
                                     lineNumber: 24,
@@ -36106,40 +36132,18 @@ const ReastaurentCard = (props)=>{
     }, undefined);
 };
 _c = ReastaurentCard;
-const withPromotedLabel = (ReastaurentCard)=>{
-    return (props)=>{
-        return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "IJsqo",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "_1kXWW",
-                        children: "Promoted"
-                    }, void 0, false, {
-                        fileName: "src/components/ReastaurentCard.js",
-                        lineNumber: 38,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/ReastaurentCard.js",
-                    lineNumber: 37,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(ReastaurentCard, {
-                    ...props
-                }, void 0, false, {
-                    fileName: "src/components/ReastaurentCard.js",
-                    lineNumber: 40,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/ReastaurentCard.js",
-            lineNumber: 36,
-            columnNumber: 13
-        }, undefined);
-    };
-};
+// export const withPromotedLabel = (ReastaurentCard) => {
+//     return (props) => {
+//         return(
+//             <div>
+//                 <div className="IJsqo">
+//                     <div className="_1kXWW">Promoted</div>
+//                 </div>
+//                 <ReastaurentCard {...props} />
+//             </div>
+//         )
+//     }
+// }
 exports.default = ReastaurentCard;
 var _c;
 $RefreshReg$(_c, "ReastaurentCard");
@@ -36202,11 +36206,11 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _constants = require("../utils/constants");
 const OfferCard = (props)=>{
     const { resOff  } = props;
-    const { creativeId  } = resOff?.data;
+    const { imageId  } = resOff;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "img-offers",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            src: (0, _constants.OFF_URL) + creativeId,
+            src: (0, _constants.OFF_URL) + imageId,
             alt: ""
         }, void 0, false, {
             fileName: "src/components/OfferCard.js",
@@ -42469,510 +42473,7 @@ function Blocks(_a) {
 }
 exports.default = Blocks;
 
-},{"react":"21dqq","../type":"5w37n","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dBBOv":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$11d1 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$11d1.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-const MoreShimmerHome = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "_1LV_f",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "shimmer-container",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "MZy1T",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "_3XX_A",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1j_Yo",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "_3iWTD",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "_3FR5S",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1MemN"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 13,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_79i_S"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 14,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1X1Vy"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 15,
-                                                columnNumber: 41
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/MoreShimmerHome.js",
-                                        lineNumber: 12,
-                                        columnNumber: 37
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/MoreShimmerHome.js",
-                                    lineNumber: 11,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/MoreShimmerHome.js",
-                                lineNumber: 10,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/MoreShimmerHome.js",
-                            lineNumber: 9,
-                            columnNumber: 25
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/MoreShimmerHome.js",
-                        lineNumber: 8,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "_3XX_A",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1j_Yo",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "_3iWTD",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "_3FR5S",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1MemN"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 26,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_79i_S"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 27,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1X1Vy"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 28,
-                                                columnNumber: 41
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/MoreShimmerHome.js",
-                                        lineNumber: 25,
-                                        columnNumber: 37
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/MoreShimmerHome.js",
-                                    lineNumber: 24,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/MoreShimmerHome.js",
-                                lineNumber: 23,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/MoreShimmerHome.js",
-                            lineNumber: 22,
-                            columnNumber: 25
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/MoreShimmerHome.js",
-                        lineNumber: 21,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "_3XX_A",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1j_Yo",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "_3iWTD",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "_3FR5S",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1MemN"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 39,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_79i_S"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 40,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1X1Vy"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 41,
-                                                columnNumber: 41
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/MoreShimmerHome.js",
-                                        lineNumber: 38,
-                                        columnNumber: 37
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/MoreShimmerHome.js",
-                                    lineNumber: 37,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/MoreShimmerHome.js",
-                                lineNumber: 36,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/MoreShimmerHome.js",
-                            lineNumber: 35,
-                            columnNumber: 25
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/MoreShimmerHome.js",
-                        lineNumber: 34,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "_3XX_A",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1j_Yo",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "_3iWTD",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "_3FR5S",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1MemN"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 52,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_79i_S"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 53,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1X1Vy"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 54,
-                                                columnNumber: 41
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/MoreShimmerHome.js",
-                                        lineNumber: 51,
-                                        columnNumber: 37
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/MoreShimmerHome.js",
-                                    lineNumber: 50,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/MoreShimmerHome.js",
-                                lineNumber: 49,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/MoreShimmerHome.js",
-                            lineNumber: 48,
-                            columnNumber: 25
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/MoreShimmerHome.js",
-                        lineNumber: 47,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "_3XX_A",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1j_Yo",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "_3iWTD",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "_3FR5S",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1MemN"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 65,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_79i_S"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 66,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1X1Vy"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 67,
-                                                columnNumber: 41
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/MoreShimmerHome.js",
-                                        lineNumber: 64,
-                                        columnNumber: 37
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/MoreShimmerHome.js",
-                                    lineNumber: 63,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/MoreShimmerHome.js",
-                                lineNumber: 62,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/MoreShimmerHome.js",
-                            lineNumber: 61,
-                            columnNumber: 25
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/MoreShimmerHome.js",
-                        lineNumber: 60,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "_3XX_A",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1j_Yo",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "_3iWTD",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "_3FR5S",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1MemN"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 78,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_79i_S"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 79,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1X1Vy"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 80,
-                                                columnNumber: 41
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/MoreShimmerHome.js",
-                                        lineNumber: 77,
-                                        columnNumber: 37
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/MoreShimmerHome.js",
-                                    lineNumber: 76,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/MoreShimmerHome.js",
-                                lineNumber: 75,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/MoreShimmerHome.js",
-                            lineNumber: 74,
-                            columnNumber: 25
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/MoreShimmerHome.js",
-                        lineNumber: 73,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "_3XX_A",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1j_Yo",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "_3iWTD",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "_3FR5S",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1MemN"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 91,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_79i_S"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 92,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1X1Vy"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 93,
-                                                columnNumber: 41
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/MoreShimmerHome.js",
-                                        lineNumber: 90,
-                                        columnNumber: 37
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/MoreShimmerHome.js",
-                                    lineNumber: 89,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/MoreShimmerHome.js",
-                                lineNumber: 88,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/MoreShimmerHome.js",
-                            lineNumber: 87,
-                            columnNumber: 25
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/MoreShimmerHome.js",
-                        lineNumber: 86,
-                        columnNumber: 21
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                            className: "_3XX_A",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "_1j_Yo",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "_3iWTD",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "_3FR5S",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1MemN"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 104,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_79i_S"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 105,
-                                                columnNumber: 41
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "_1X1Vy"
-                                            }, void 0, false, {
-                                                fileName: "src/components/MoreShimmerHome.js",
-                                                lineNumber: 106,
-                                                columnNumber: 41
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/components/MoreShimmerHome.js",
-                                        lineNumber: 103,
-                                        columnNumber: 37
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/MoreShimmerHome.js",
-                                    lineNumber: 102,
-                                    columnNumber: 33
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/MoreShimmerHome.js",
-                                lineNumber: 101,
-                                columnNumber: 29
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/MoreShimmerHome.js",
-                            lineNumber: 100,
-                            columnNumber: 25
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/MoreShimmerHome.js",
-                        lineNumber: 99,
-                        columnNumber: 21
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/MoreShimmerHome.js",
-                lineNumber: 7,
-                columnNumber: 17
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/components/MoreShimmerHome.js",
-            lineNumber: 6,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/MoreShimmerHome.js",
-        lineNumber: 5,
-        columnNumber: 9
-    }, undefined);
-};
-_c = MoreShimmerHome;
-exports.default = MoreShimmerHome;
-var _c;
-$RefreshReg$(_c, "MoreShimmerHome");
-
-  $parcel$ReactRefreshHelpers$11d1.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"f2uiA":[function(require,module,exports) {
+},{"react":"21dqq","../type":"5w37n","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"f2uiA":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c54e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -43003,196 +42504,7 @@ $RefreshReg$(_c, "UserOffline");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jhec3":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$40ec = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$40ec.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-const Filter = (props)=>{
-    const { sort , totalRestaurant , handleClickSort , handleClickSort1 , handleClickSort2 , handleClickSort3 , handleClickSort4 , btnSort , btnSort1 , btnSort2 , btnSort3 , btnSort4  } = props;
-    // console.log(sort);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "filters k4axS",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "_19Aso",
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "_2LB31",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "_3IrNP",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "BZR3j",
-                            children: [
-                                totalRestaurant.totalRestaurants,
-                                " restaurants"
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Filter.js",
-                            lineNumber: 19,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "_3Ynv-",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    className: "_2-ofZ _3bkpC",
-                                    to: "/search",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "icon-magnifier Vqj7X",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                className: "_1GTCc",
-                                                viewBox: "5 -1 12 25",
-                                                height: "17",
-                                                width: "17",
-                                                fill: "#686b78",
-                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
-                                                    d: "M17.6671481,17.1391632 L22.7253317,22.1973467 L20.9226784,24 L15.7041226,18.7814442 C14.1158488,19.8024478 12.225761,20.3946935 10.1973467,20.3946935 C4.56550765,20.3946935 0,15.8291858 0,10.1973467 C0,4.56550765 4.56550765,0 10.1973467,0 C15.8291858,0 20.3946935,4.56550765 20.3946935,10.1973467 C20.3946935,12.8789625 19.3595949,15.3188181 17.6671481,17.1391632 Z M10.1973467,17.8453568 C14.4212261,17.8453568 17.8453568,14.4212261 17.8453568,10.1973467 C17.8453568,5.97346742 14.4212261,2.54933669 10.1973467,2.54933669 C5.97346742,2.54933669 2.54933669,5.97346742 2.54933669,10.1973467 C2.54933669,14.4212261 5.97346742,17.8453568 10.1973467,17.8453568 Z"
-                                                }, void 0, false, {
-                                                    fileName: "src/components/Filter.js",
-                                                    lineNumber: 24,
-                                                    columnNumber: 41
-                                                }, undefined)
-                                            }, void 0, false, {
-                                                fileName: "src/components/Filter.js",
-                                                lineNumber: 23,
-                                                columnNumber: 37
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/components/Filter.js",
-                                            lineNumber: 22,
-                                            columnNumber: 33
-                                        }, undefined),
-                                        "Search"
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Filter.js",
-                                    lineNumber: 21,
-                                    columnNumber: 29
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: btnSort ? "_2-ofZ _3hfyI" : "_2-ofZ",
-                                    onClick: ()=>handleClickSort(sort[0].key),
-                                    children: sort[0].title
-                                }, sort[0].key, false, {
-                                    fileName: "src/components/Filter.js",
-                                    lineNumber: 30,
-                                    columnNumber: 29
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: btnSort1 ? "_2-ofZ _3hfyI" : "_2-ofZ",
-                                    onClick: ()=>handleClickSort1(sort[1].key),
-                                    children: sort[1].title
-                                }, sort[1].key, false, {
-                                    fileName: "src/components/Filter.js",
-                                    lineNumber: 31,
-                                    columnNumber: 29
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: btnSort2 ? "_2-ofZ _3hfyI" : "_2-ofZ",
-                                    onClick: ()=>handleClickSort2(sort[2].key),
-                                    children: sort[2].title
-                                }, sort[2].key, false, {
-                                    fileName: "src/components/Filter.js",
-                                    lineNumber: 32,
-                                    columnNumber: 29
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: btnSort3 ? "_2-ofZ _3hfyI" : "_2-ofZ",
-                                    onClick: ()=>handleClickSort3(sort[3].key),
-                                    children: sort[3].title
-                                }, sort[3].key, false, {
-                                    fileName: "src/components/Filter.js",
-                                    lineNumber: 33,
-                                    columnNumber: 29
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: btnSort4 ? "_2-ofZ _3hfyI" : "_2-ofZ",
-                                    onClick: ()=>handleClickSort4(sort[4].key),
-                                    children: sort[4].title
-                                }, sort[4].key, false, {
-                                    fileName: "src/components/Filter.js",
-                                    lineNumber: 34,
-                                    columnNumber: 29
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "_2-ofZ",
-                                    children: [
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "h0xOG",
-                                            children: "Filters"
-                                        }, void 0, false, {
-                                            fileName: "src/components/Filter.js",
-                                            lineNumber: 36,
-                                            columnNumber: 33
-                                        }, undefined),
-                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                            className: "_3eFQ-",
-                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: "icon-filter _1PoQ7"
-                                            }, void 0, false, {
-                                                fileName: "src/components/Filter.js",
-                                                lineNumber: 38,
-                                                columnNumber: 37
-                                            }, undefined)
-                                        }, void 0, false, {
-                                            fileName: "src/components/Filter.js",
-                                            lineNumber: 37,
-                                            columnNumber: 33
-                                        }, undefined)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/components/Filter.js",
-                                    lineNumber: 35,
-                                    columnNumber: 29
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/Filter.js",
-                            lineNumber: 20,
-                            columnNumber: 25
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Filter.js",
-                    lineNumber: 18,
-                    columnNumber: 21
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/Filter.js",
-                lineNumber: 17,
-                columnNumber: 17
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/components/Filter.js",
-            lineNumber: 16,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/Filter.js",
-        lineNumber: 15,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Filter;
-exports.default = Filter;
-var _c;
-$RefreshReg$(_c, "Filter");
-
-  $parcel$ReactRefreshHelpers$40ec.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aVyyN":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"aVyyN":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3550 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -43203,8 +42515,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 const UserLocation = /*#__PURE__*/ (0, _react.createContext)({
-    latitude: "12.9351929",
-    longitude: "77.62448069999999"
+    latitude: "",
+    longitude: ""
 });
 exports.default = UserLocation;
 
@@ -43213,7 +42525,661 @@ exports.default = UserLocation;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kvula":[function(require,module,exports) {
+},{"react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6mdZq":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b8b0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b8b0.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+const RestaurantChain = ({ chainRes  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "sc-BrFsL sc-fjqEFS lidxXy laKjiC",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "sc-hKpBwk cUjjjg",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "sc-djUGQo cKmNa-d",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "sc-hjQCSK ftUdSb",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "sc-jhzXDd sc-bSakgD OBHoC cOMcyj",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                        width: "17",
+                                        height: "17",
+                                        viewBox: "0 0 17 17",
+                                        fill: "none",
+                                        "aria-hidden": "true",
+                                        strokecolor: "rgba(2, 6, 12, 0.92)",
+                                        fillcolor: "rgba(2, 6, 12, 0.92)",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                            d: "M7.46869 3.43394C7.79171 3.13249 8.29794 3.14998 8.59939 3.473C8.90083 3.79602 8.88334 4.30225 8.56033 4.60369L5.0839 7.84795C4.94511 7.97748 4.82252 8.0921 4.71414 8.19502L15.0937 8.19502C15.5355 8.19502 15.8937 8.5532 15.8937 8.99502C15.8937 9.43685 15.5355 9.79502 15.0937 9.79502L4.6665 9.79502C4.78625 9.90939 4.92436 10.0386 5.08389 10.1875L8.51791 13.3922C8.84092 13.6937 8.8584 14.1999 8.55695 14.5229C8.2555 14.8459 7.74927 14.8634 7.42626 14.5619L3.95463 11.3221C3.54648 10.9413 3.18179 10.601 2.92647 10.2871C2.64873 9.94573 2.41671 9.53755 2.41672 9.01769C2.41672 8.49783 2.64874 8.08965 2.92648 7.74824C3.18181 7.43439 3.54649 7.09412 3.95465 6.7133L7.46869 3.43394Z",
+                                            fill: "rgba(2, 6, 12, 0.92)",
+                                            fillOpacity: "0.92"
+                                        }, void 0, false, {
+                                            fileName: "src/components/RestaurantChain.js",
+                                            lineNumber: 14,
+                                            columnNumber: 37
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/RestaurantChain.js",
+                                        lineNumber: 13,
+                                        columnNumber: 33
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/RestaurantChain.js",
+                                    lineNumber: 12,
+                                    columnNumber: 29
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/RestaurantChain.js",
+                                lineNumber: 11,
+                                columnNumber: 25
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "sc-hjQCSK iOOXDE",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "sc-jhzXDd OBHoC",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                        width: "17",
+                                        height: "17",
+                                        viewBox: "0 0 17 17",
+                                        fill: "none",
+                                        "aria-hidden": "true",
+                                        strokecolor: "rgba(2, 6, 12, 0.92)",
+                                        fillcolor: "rgba(2, 6, 12, 0.92)",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                            d: "M10.5164 3.43418C10.1934 3.13273 9.68714 3.15022 9.3857 3.47324C9.08425 3.79626 9.10174 4.30249 9.42476 4.60394L12.9012 7.84819C13.04 7.97772 13.1626 8.09234 13.2709 8.19527L2.89142 8.19527C2.44959 8.19527 2.09142 8.55344 2.09142 8.99527C2.09142 9.4371 2.44959 9.79527 2.89142 9.79527L13.3186 9.79527C13.1988 9.90964 13.0607 10.0388 12.9012 10.1877L9.46718 13.3924C9.14416 13.6939 9.12668 14.2001 9.42813 14.5231C9.72958 14.8462 10.2358 14.8636 10.5588 14.5622L14.0304 11.3224C14.4386 10.9415 14.8033 10.6012 15.0586 10.2874C15.3364 9.94598 15.5684 9.5378 15.5684 9.01793C15.5684 8.49807 15.3363 8.08989 15.0586 7.74849C14.8033 7.43463 14.4386 7.09437 14.0304 6.71354L10.5164 3.43418Z",
+                                            fill: "rgba(2, 6, 12, 0.92)",
+                                            fillOpacity: "0.92"
+                                        }, void 0, false, {
+                                            fileName: "src/components/RestaurantChain.js",
+                                            lineNumber: 21,
+                                            columnNumber: 37
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/RestaurantChain.js",
+                                        lineNumber: 20,
+                                        columnNumber: 33
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/RestaurantChain.js",
+                                    lineNumber: 19,
+                                    columnNumber: 29
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/RestaurantChain.js",
+                                lineNumber: 18,
+                                columnNumber: 25
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/RestaurantChain.js",
+                        lineNumber: 10,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "sc-iAvgwm ebepUu",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "sc-cTQhss iMCsYC",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "sc-jOrMOR jveqan",
+                                    children: [
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                            className: "sc-bczRLJ kPlrlF title",
+                                            children: chainRes?.header?.title
+                                        }, void 0, false, {
+                                            fileName: "src/components/RestaurantChain.js",
+                                            lineNumber: 29,
+                                            columnNumber: 33
+                                        }, undefined),
+                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "sc-bczRLJ kmpvrg"
+                                        }, void 0, false, {
+                                            fileName: "src/components/RestaurantChain.js",
+                                            lineNumber: 30,
+                                            columnNumber: 33
+                                        }, undefined)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "src/components/RestaurantChain.js",
+                                    lineNumber: 28,
+                                    columnNumber: 29
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/RestaurantChain.js",
+                                lineNumber: 27,
+                                columnNumber: 25
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "sc-efBctP bGaJhO",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "row",
+                                    children: chainRes?.gridElements?.infoWithStyle?.restaurants.map((chain)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                            className: "sc-dPyBCJ fJKDKr",
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                                    to: "/restaurents/" + chain.info.id,
+                                                    className: "sc-hZgfyJ ctdOAV",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                        className: "sc-eFWqGp bbYjZD",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "sc-dmRaPn gxjPtO",
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                    className: "sc-kgflAQ cGeVnN",
+                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                        width: "100%",
+                                                                        height: "100%",
+                                                                        className: "sc-dIouRR yUTwf",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                                className: "sc-hKMtZM ehLqCq",
+                                                                                src: `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${chain.info.cloudinaryImageId}`,
+                                                                                alt: "Nandhana Palace"
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/RestaurantChain.js",
+                                                                                lineNumber: 43,
+                                                                                columnNumber: 65
+                                                                            }, undefined),
+                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                                className: "sc-bjUoiL dParKm sc-hHLeRK cKlryb",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                                        className: "sc-bczRLJ cEaOWD sc-idiyUo ltTmN"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "src/components/RestaurantChain.js",
+                                                                                        lineNumber: 45,
+                                                                                        columnNumber: 69
+                                                                                    }, undefined),
+                                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                                        className: "sc-bczRLJ RWjhp sc-idiyUo ltTmN",
+                                                                                        children: "  "
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "src/components/RestaurantChain.js",
+                                                                                        lineNumber: 46,
+                                                                                        columnNumber: 69
+                                                                                    }, undefined),
+                                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                                        className: "sc-bczRLJ eMRGdv sc-idiyUo ltTmN"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "src/components/RestaurantChain.js",
+                                                                                        lineNumber: 47,
+                                                                                        columnNumber: 69
+                                                                                    }, undefined)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "src/components/RestaurantChain.js",
+                                                                                lineNumber: 44,
+                                                                                columnNumber: 65
+                                                                            }, undefined)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "src/components/RestaurantChain.js",
+                                                                        lineNumber: 42,
+                                                                        columnNumber: 61
+                                                                    }, undefined)
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/RestaurantChain.js",
+                                                                    lineNumber: 41,
+                                                                    columnNumber: 57
+                                                                }, undefined)
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/RestaurantChain.js",
+                                                                lineNumber: 40,
+                                                                columnNumber: 53
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "ddtvss",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                            className: "sc-bczRLJ gWiXXg",
+                                                                            children: chain.info.name
+                                                                        }, void 0, false, {
+                                                                            fileName: "src/components/RestaurantChain.js",
+                                                                            lineNumber: 54,
+                                                                            columnNumber: 61
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/RestaurantChain.js",
+                                                                        lineNumber: 53,
+                                                                        columnNumber: 57
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                        className: "sw-restaurant-card-subtext-container",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                                className: "star_dd",
+                                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                                                    width: "20",
+                                                                                    height: "20",
+                                                                                    viewBox: "0 0 20 20",
+                                                                                    fill: "none",
+                                                                                    role: "img",
+                                                                                    "aria-hidden": "true",
+                                                                                    strokecolor: "rgba(2, 6, 12, 0.92)",
+                                                                                    fillcolor: "rgba(2, 6, 12, 0.92)",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                                            cx: "10",
+                                                                                            cy: "10",
+                                                                                            r: "9",
+                                                                                            fill: "url(#StoreRating20_svg__paint0_linear_32982_71567)"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "src/components/RestaurantChain.js",
+                                                                                            lineNumber: 59,
+                                                                                            columnNumber: 69
+                                                                                        }, undefined),
+                                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                                            d: "M10.0816 12.865C10.0312 12.8353 9.96876 12.8353 9.91839 12.865L7.31647 14.3968C6.93482 14.6214 6.47106 14.2757 6.57745 13.8458L7.27568 11.0245C7.29055 10.9644 7.26965 10.9012 7.22195 10.8618L4.95521 8.99028C4.60833 8.70388 4.78653 8.14085 5.23502 8.10619L8.23448 7.87442C8.29403 7.86982 8.34612 7.83261 8.36979 7.77777L9.54092 5.06385C9.71462 4.66132 10.2854 4.66132 10.4591 5.06385L11.6302 7.77777C11.6539 7.83261 11.706 7.86982 11.7655 7.87442L14.765 8.10619C15.2135 8.14085 15.3917 8.70388 15.0448 8.99028L12.7781 10.8618C12.7303 10.9012 12.7095 10.9644 12.7243 11.0245L13.4225 13.8458C13.5289 14.2757 13.0652 14.6214 12.6835 14.3968L10.0816 12.865Z",
+                                                                                            fill: "white"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "src/components/RestaurantChain.js",
+                                                                                            lineNumber: 60,
+                                                                                            columnNumber: 69
+                                                                                        }, undefined),
+                                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("defs", {
+                                                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("linearGradient", {
+                                                                                                id: "StoreRating20_svg__paint0_linear_32982_71567",
+                                                                                                x1: "10",
+                                                                                                y1: "1",
+                                                                                                x2: "10",
+                                                                                                y2: "19",
+                                                                                                gradientUnits: "userSpaceOnUse",
+                                                                                                children: [
+                                                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
+                                                                                                        "stop-color": "#21973B"
+                                                                                                    }, void 0, false, {
+                                                                                                        fileName: "src/components/RestaurantChain.js",
+                                                                                                        lineNumber: 63,
+                                                                                                        columnNumber: 77
+                                                                                                    }, undefined),
+                                                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("stop", {
+                                                                                                        offset: "1",
+                                                                                                        "stop-color": "#128540"
+                                                                                                    }, void 0, false, {
+                                                                                                        fileName: "src/components/RestaurantChain.js",
+                                                                                                        lineNumber: 64,
+                                                                                                        columnNumber: 77
+                                                                                                    }, undefined)
+                                                                                                ]
+                                                                                            }, void 0, true, {
+                                                                                                fileName: "src/components/RestaurantChain.js",
+                                                                                                lineNumber: 62,
+                                                                                                columnNumber: 73
+                                                                                            }, undefined)
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "src/components/RestaurantChain.js",
+                                                                                            lineNumber: 61,
+                                                                                            columnNumber: 69
+                                                                                        }, undefined)
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "src/components/RestaurantChain.js",
+                                                                                    lineNumber: 58,
+                                                                                    columnNumber: 65
+                                                                                }, undefined)
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/RestaurantChain.js",
+                                                                                lineNumber: 57,
+                                                                                columnNumber: 61
+                                                                            }, undefined),
+                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                                className: "sc-bczRLJ cSxxDX",
+                                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                                    className: "sc-bczRLJ bCUVQi",
+                                                                                    children: "4.1"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "src/components/RestaurantChain.js",
+                                                                                    lineNumber: 70,
+                                                                                    columnNumber: 65
+                                                                                }, undefined)
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/RestaurantChain.js",
+                                                                                lineNumber: 69,
+                                                                                columnNumber: 61
+                                                                            }, undefined)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "src/components/RestaurantChain.js",
+                                                                        lineNumber: 56,
+                                                                        columnNumber: 57
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                        className: "sw-restaurant-card-descriptions-container",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                                className: "sc-bczRLJ kRLpy",
+                                                                                children: chain.info.cuisines.join(", ")
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/RestaurantChain.js",
+                                                                                lineNumber: 74,
+                                                                                columnNumber: 61
+                                                                            }, undefined),
+                                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                                className: "sc-bczRLJ kRLpy",
+                                                                                children: chain.info.areaName
+                                                                            }, void 0, false, {
+                                                                                fileName: "src/components/RestaurantChain.js",
+                                                                                lineNumber: 75,
+                                                                                columnNumber: 61
+                                                                            }, undefined)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "src/components/RestaurantChain.js",
+                                                                        lineNumber: 73,
+                                                                        columnNumber: 57
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/RestaurantChain.js",
+                                                                lineNumber: 52,
+                                                                columnNumber: 53
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/RestaurantChain.js",
+                                                        lineNumber: 39,
+                                                        columnNumber: 49
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/RestaurantChain.js",
+                                                    lineNumber: 38,
+                                                    columnNumber: 45
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/RestaurantChain.js",
+                                                lineNumber: 37,
+                                                columnNumber: 41
+                                            }, undefined)
+                                        }, chain.info.id, false, {
+                                            fileName: "src/components/RestaurantChain.js",
+                                            lineNumber: 36,
+                                            columnNumber: 37
+                                        }, undefined))
+                                }, void 0, false, {
+                                    fileName: "src/components/RestaurantChain.js",
+                                    lineNumber: 34,
+                                    columnNumber: 29
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/RestaurantChain.js",
+                                lineNumber: 33,
+                                columnNumber: 25
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/RestaurantChain.js",
+                        lineNumber: 26,
+                        columnNumber: 21
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/RestaurantChain.js",
+                lineNumber: 9,
+                columnNumber: 17
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/RestaurantChain.js",
+            lineNumber: 8,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/RestaurantChain.js",
+        lineNumber: 7,
+        columnNumber: 9
+    }, undefined);
+};
+_c = RestaurantChain;
+exports.default = RestaurantChain;
+var _c;
+$RefreshReg$(_c, "RestaurantChain");
+
+  $parcel$ReactRefreshHelpers$b8b0.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"70XXP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$57ca = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$57ca.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+const YourMind = ({ mindDish  })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "sc-BrFsL sc-fjqEFS lidxXy laKjiC",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "sc-iXxrte cUjjjg",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "sc-djUGQo cKmNa-d",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "sc-hjQCSK iOOXDE",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "sc-jhzXDd sc-bSakgD OBHoC cOMcyj",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                        width: "17",
+                                        height: "17",
+                                        viewBox: "0 0 17 17",
+                                        fill: "none",
+                                        "aria-hidden": "true",
+                                        strokecolor: "rgba(2, 6, 12, 0.92)",
+                                        fillcolor: "rgba(2, 6, 12, 0.92)",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                            d: "M7.46869 3.43394C7.79171 3.13249 8.29794 3.14998 8.59939 3.473C8.90083 3.79602 8.88334 4.30225 8.56033 4.60369L5.0839 7.84795C4.94511 7.97748 4.82252 8.0921 4.71414 8.19502L15.0937 8.19502C15.5355 8.19502 15.8937 8.5532 15.8937 8.99502C15.8937 9.43685 15.5355 9.79502 15.0937 9.79502L4.6665 9.79502C4.78625 9.90939 4.92436 10.0386 5.08389 10.1875L8.51791 13.3922C8.84092 13.6937 8.8584 14.1999 8.55695 14.5229C8.2555 14.8459 7.74927 14.8634 7.42626 14.5619L3.95463 11.3221C3.54648 10.9413 3.18179 10.601 2.92647 10.2871C2.64873 9.94573 2.41671 9.53755 2.41672 9.01769C2.41672 8.49783 2.64874 8.08965 2.92648 7.74824C3.18181 7.43439 3.54649 7.09412 3.95465 6.7133L7.46869 3.43394Z",
+                                            fill: "rgba(2, 6, 12, 0.92)",
+                                            fillOpacity: "0.92"
+                                        }, void 0, false, {
+                                            fileName: "src/components/YourMind.js",
+                                            lineNumber: 13,
+                                            columnNumber: 37
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/YourMind.js",
+                                        lineNumber: 12,
+                                        columnNumber: 33
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/YourMind.js",
+                                    lineNumber: 11,
+                                    columnNumber: 29
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/YourMind.js",
+                                lineNumber: 10,
+                                columnNumber: 25
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: "sc-hjQCSK iOOXDE",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "sc-jhzXDd OBHoC",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                        width: "17",
+                                        height: "17",
+                                        viewBox: "0 0 17 17",
+                                        fill: "none",
+                                        "aria-hidden": "true",
+                                        strokecolor: "rgba(2, 6, 12, 0.92)",
+                                        fillcolor: "rgba(2, 6, 12, 0.92)",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                            d: "M10.5164 3.43418C10.1934 3.13273 9.68714 3.15022 9.3857 3.47324C9.08425 3.79626 9.10174 4.30249 9.42476 4.60394L12.9012 7.84819C13.04 7.97772 13.1626 8.09234 13.2709 8.19527L2.89142 8.19527C2.44959 8.19527 2.09142 8.55344 2.09142 8.99527C2.09142 9.4371 2.44959 9.79527 2.89142 9.79527L13.3186 9.79527C13.1988 9.90964 13.0607 10.0388 12.9012 10.1877L9.46718 13.3924C9.14416 13.6939 9.12668 14.2001 9.42813 14.5231C9.72958 14.8462 10.2358 14.8636 10.5588 14.5622L14.0304 11.3224C14.4386 10.9415 14.8033 10.6012 15.0586 10.2874C15.3364 9.94598 15.5684 9.5378 15.5684 9.01793C15.5684 8.49807 15.3363 8.08989 15.0586 7.74849C14.8033 7.43463 14.4386 7.09437 14.0304 6.71354L10.5164 3.43418Z",
+                                            fill: "rgba(2, 6, 12, 0.92)",
+                                            fillOpacity: "0.92"
+                                        }, void 0, false, {
+                                            fileName: "src/components/YourMind.js",
+                                            lineNumber: 20,
+                                            columnNumber: 37
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/YourMind.js",
+                                        lineNumber: 19,
+                                        columnNumber: 33
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/YourMind.js",
+                                    lineNumber: 18,
+                                    columnNumber: 29
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/components/YourMind.js",
+                                lineNumber: 17,
+                                columnNumber: 25
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/YourMind.js",
+                        lineNumber: 9,
+                        columnNumber: 21
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "sc-iAvgwm ebepUu",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "sc-cTQhss iMCsYC",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "sc-jOrMOR jveqan",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                className: "sc-bczRLJ kPlrlF title",
+                                                children: mindDish?.header?.title
+                                            }, void 0, false, {
+                                                fileName: "src/components/YourMind.js",
+                                                lineNumber: 29,
+                                                columnNumber: 37
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "sc-bczRLJ kmpvrg"
+                                            }, void 0, false, {
+                                                fileName: "src/components/YourMind.js",
+                                                lineNumber: 30,
+                                                columnNumber: 37
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/YourMind.js",
+                                        lineNumber: 28,
+                                        columnNumber: 33
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/YourMind.js",
+                                    lineNumber: 27,
+                                    columnNumber: 29
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "sc-efBctP kyIOzD",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "row",
+                                        children: mindDish?.imageGridCards?.info.map((img)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "sc-dPyBCJ jOVCSM",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        "aria-label": "restaurants curated for biryani",
+                                                        className: "sc-jvLaUc cSDnQf",
+                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                            height: "180",
+                                                            width: "144",
+                                                            className: "sc-jmnVvD jRBBQD",
+                                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                className: "sc-hKMtZM kNMdGy",
+                                                                src: `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/${img.imageId}`,
+                                                                width: "144",
+                                                                height: "180",
+                                                                alt: img.accessibility.altText
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/YourMind.js",
+                                                                lineNumber: 40,
+                                                                columnNumber: 57
+                                                            }, undefined)
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/YourMind.js",
+                                                            lineNumber: 39,
+                                                            columnNumber: 53
+                                                        }, undefined)
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/YourMind.js",
+                                                        lineNumber: 38,
+                                                        columnNumber: 49
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/YourMind.js",
+                                                    lineNumber: 37,
+                                                    columnNumber: 45
+                                                }, undefined)
+                                            }, img.id, false, {
+                                                fileName: "src/components/YourMind.js",
+                                                lineNumber: 36,
+                                                columnNumber: 41
+                                            }, undefined))
+                                    }, void 0, false, {
+                                        fileName: "src/components/YourMind.js",
+                                        lineNumber: 34,
+                                        columnNumber: 33
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/components/YourMind.js",
+                                    lineNumber: 33,
+                                    columnNumber: 29
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/YourMind.js",
+                            lineNumber: 26,
+                            columnNumber: 25
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/YourMind.js",
+                        lineNumber: 25,
+                        columnNumber: 21
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/YourMind.js",
+                lineNumber: 8,
+                columnNumber: 17
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/components/YourMind.js",
+            lineNumber: 7,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/YourMind.js",
+        lineNumber: 6,
+        columnNumber: 9
+    }, undefined);
+};
+_c = YourMind;
+exports.default = YourMind;
+var _c;
+$RefreshReg$(_c, "YourMind");
+
+  $parcel$ReactRefreshHelpers$57ca.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"kvula":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0ba4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -43226,50 +43192,58 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-var _header = require("./Header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
 var _s = $RefreshSig$();
 const Error = ()=>{
     _s();
     const err = (0, _reactRouterDom.useRouteError)();
     console.log(err);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
-                fileName: "src/components/Error.js",
-                lineNumber: 10,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                children: "Oops!!"
-            }, void 0, false, {
-                fileName: "src/components/Error.js",
-                lineNumber: 11,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                children: "Something wents wrong"
-            }, void 0, false, {
-                fileName: "src/components/Error.js",
-                lineNumber: 12,
-                columnNumber: 9
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                children: [
-                    err.status,
-                    ": ",
-                    err.statusText
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Error.js",
-                lineNumber: 13,
-                columnNumber: 9
-            }, undefined)
-        ]
-    }, void 0, true, {
+        class: "GenericError__container",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            class: "GenericError__content",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    class: "GenericError__image"
+                }, void 0, false, {
+                    fileName: "src/components/Error.js",
+                    lineNumber: 12,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    class: "GenericError__title",
+                    children: "We'll be back shortly"
+                }, void 0, false, {
+                    fileName: "src/components/Error.js",
+                    lineNumber: 13,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    class: "GenericError__description",
+                    children: "We are fixing a temporary glitch. Sorry for the inconvenience."
+                }, void 0, false, {
+                    fileName: "src/components/Error.js",
+                    lineNumber: 14,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/",
+                    class: "GenericNotFound__btn",
+                    children: "Go Back"
+                }, void 0, false, {
+                    fileName: "src/components/Error.js",
+                    lineNumber: 17,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Error.js",
+            lineNumber: 11,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
         fileName: "src/components/Error.js",
-        lineNumber: 9,
-        columnNumber: 13
+        lineNumber: 10,
+        columnNumber: 9
     }, undefined);
 };
 _s(Error, "U5GmGaAmh0j0MVy+E8WdBnjlm7s=", false, function() {
@@ -43287,7 +43261,7 @@ $RefreshReg$(_c, "Error");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./Header":"hsJbF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fF4mG":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fF4mG":[function(require,module,exports) {
 module.exports = Promise.all([
     require("a757225d1c72509a")(require("d942f9b7d10891e1").getBundleURL("aXMci") + "RestaurentDetails.7990e042.js" + "?" + Date.now()).catch((err)=>{
         delete module.bundle.cache[module.id];
@@ -44540,6 +44514,347 @@ module.exports = require("c241f5f4c1ab5c6e")(require("7d59fed82b99fec3").getBund
     throw err;
 }).then(()=>module.bundle.root("jqPPz"));
 
-},{"c241f5f4c1ab5c6e":"61B45","7d59fed82b99fec3":"lgJ39"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequire8442")
+},{"c241f5f4c1ab5c6e":"61B45","7d59fed82b99fec3":"lgJ39"}],"jW49j":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5bc9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5bc9.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Starting = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "nDVxx",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "_1MdYR",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "_1TWur",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "_2COmU",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "m3-34",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_2TYHu",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                width: "200",
+                                                className: "_1envo",
+                                                viewBox: "0 0 200 200",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                    d: "M19.9253444,58.766315 C19.8876048,58.7384908 19.8458927,58.7037105 19.8021942,58.6654521 C19.094081,57.7879944 14.7152991,52.3026415 10.2535896,45.2670801 C8.91532497,43.0252402 8.046322,41.2767839 8.21317057,40.8246398 C8.64965835,39.6490651 16.4279798,39.0056292 18.8234486,40.0713975 C19.5519214,40.3948545 19.5335482,40.8231492 19.5335482,41.0725738 C19.5335482,42.1487762 19.4804148,45.0365363 19.4804148,45.0365363 C19.4809114,45.6332671 19.9660634,46.1172104 20.5634408,46.1162167 C21.1618115,46.1162167 21.6449771,45.630286 21.6429908,45.0320645 L21.6305765,37.8365137 L21.6285902,37.8365137 C21.6285902,37.2119586 20.9467953,37.055944 20.8186794,37.0315978 C19.5683083,37.0256354 17.0293299,37.0171888 14.3031434,37.0171888 C8.28765654,37.0171888 6.94343308,37.264129 5.92148558,36.5958501 C3.707266,35.1479951 0.0867513255,25.3896318 0.0023338937,19.8993102 C-0.117836803,12.1537335 4.47149205,5.44808831 10.9338947,2.12557426 C13.6337628,0.766160708 16.6832184,0 19.9039917,0 C30.132405,0 38.555775,7.72023676 39.6765405,17.6529986 C39.6775337,17.6614452 39.6775337,17.6708856 39.67952,17.6793322 C39.8851013,20.0806647 26.6504342,20.5909417 24.0325007,19.8923542 C23.6312696,19.785032 23.528479,19.3741274 23.528479,19.1972447 C23.5254995,17.371278 23.5130852,12.2327345 23.5130852,12.2327345 C23.5110989,11.6355068 23.025947,11.1510667 22.4285695,11.1525572 L22.4275764,11.1525572 C21.831192,11.153551 21.3470332,11.6389848 21.3470332,12.2372063 L21.3683859,21.7029181 C21.3867591,22.2991521 21.8873048,22.4601353 22.024359,22.4869659 C23.5130852,22.4874627 26.9945594,22.4839847 30.2371819,22.4839847 C34.6199364,22.4839847 36.460733,22.9917773 37.6857789,23.9243867 C38.5001588,24.5454638 38.8154827,25.7344538 38.5398847,27.2796936 C36.0823442,41.0258688 20.5103075,58.0562997 19.9253444,58.766315 Z M62.158293,26.6840558 C66.0871796,28.3679201 68.5213811,30.23612 68.5213811,34.3367194 C68.5213811,38.5257602 65.3482788,41.2316689 60.4386603,41.2316689 C56.4601164,41.2316689 53.2666546,39.4295516 51.6761309,36.2864046 L51.418906,35.7796057 L56.0966249,33.0692253 L56.4030105,33.5700618 C57.4562421,35.2916875 58.633617,36.0255522 60.3418285,36.0255522 C61.8141679,36.0255522 62.8033415,35.3731729 62.8033415,34.4013114 C62.8033415,33.3246122 62.0872831,32.9211605 59.8740566,31.9522802 L58.7493185,31.4698275 C55.7475339,30.1904087 52.9667244,28.4126376 52.9667244,24.1068343 C52.9667244,20.2372755 55.9327557,17.5348449 60.1799457,17.5348449 C63.3977396,17.5348449 65.6030208,18.7804771 67.1210449,21.4535929 L67.4026018,21.9499577 L62.8703789,24.8625609 L62.5580344,24.3035915 C61.8002638,22.9481529 61.0866882,22.6763695 60.1799457,22.6763695 C59.2319876,22.6763695 58.6212026,23.199068 58.6212026,24.0099463 C58.6212026,24.9415619 59.0710979,25.3504791 61.0320652,26.2001125 L62.158293,26.6840558 Z M95.2686968,27.476898 L98.5709081,18.2690574 L104.238794,18.2690574 L95.8387627,41.611619 L94.5799498,41.611619 L89.484613,30.6796684 C89.2477476,30.1788318 89.0034336,29.556761 88.7928866,28.9868606 C88.5773739,29.5577547 88.327101,30.1813161 88.089739,30.6821527 L82.7952763,41.611619 L81.5449052,41.611619 L73.0103029,18.2690574 L79.065019,18.2690574 L82.4034802,27.476898 C82.61651,28.0641885 82.8350022,28.7801662 83.0261829,29.4444702 C83.2531168,28.7588011 83.5257354,28.0184772 83.8107684,27.4217464 L88.1955091,18.0767719 L89.4086373,18.0767719 L93.8614085,27.4227401 C94.1454483,28.0189741 94.4190601,28.7597949 94.6450009,29.445464 C94.8371747,28.7801662 95.0571566,28.0641885 95.2686968,27.476898 Z M110.84853,40.9414023 L110.84853,17.7921198 L116.569052,17.7921198 L116.569052,40.9414023 L110.84853,40.9414023 Z M135.325265,33.163629 L135.325265,27.9903052 L145.94746,27.9903052 L145.94746,38.3652739 L145.727975,38.5461315 C144.512861,39.5438298 141.291094,41.2316689 136.926713,41.2316689 C129.564023,41.2316689 124.423995,36.3529841 124.423995,29.3676057 C124.423995,22.5114114 129.383767,17.5348449 136.217607,17.5348449 C139.975672,17.5348449 142.730163,18.594154 144.637004,20.7738862 L145.009434,21.1996966 L141.110342,25.059815 L140.686765,24.6235704 C139.59778,23.500663 138.469566,22.8050567 136.217607,22.8050567 C132.717263,22.8050567 130.272137,25.5035125 130.272137,29.3676057 C130.272137,33.3926822 132.883118,35.99425 136.926713,35.99425 C138.267957,35.99425 139.664321,35.7632093 140.614762,35.394041 L140.614762,33.163629 L135.325265,33.163629 Z M164.314658,33.163629 L164.314658,27.9903052 L174.936853,27.9903052 L174.936853,38.3652739 L174.717368,38.5461315 C173.501261,39.5438298 170.280487,41.2316689 165.917099,41.2316689 C158.554409,41.2316689 153.413388,36.3529841 153.413388,29.3676057 C153.413388,22.5114114 158.374153,17.5348449 165.206006,17.5348449 C168.966058,17.5348449 171.720549,18.594154 173.626397,20.7738862 L173.99982,21.1996966 L170.101721,25.059815 L169.677151,24.6235704 C168.587669,23.500663 167.458959,22.8050567 165.206006,22.8050567 C161.706656,22.8050567 159.26153,25.5035125 159.26153,29.3676057 C159.26153,33.3926822 161.873504,35.99425 165.917099,35.99425 C167.258343,35.99425 168.653714,35.7632093 169.604155,35.394041 L169.604155,33.163629 L164.314658,33.163629 Z M195.897503,17.7922192 L201.87674,17.7922192 L193.669876,33.1964218 L193.669876,40.9415017 L187.918566,40.9415017 L187.918566,33.5253443 L179.1759,17.7922192 L185.555871,17.7922192 L189.596487,25.1730995 C190.030988,25.9760279 190.484856,27.0373245 190.827988,27.8988826 C191.155726,27.0442805 191.589235,25.9924244 192.020757,25.1800555 L195.897503,17.7922192 Z"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Starting.js",
+                                                    lineNumber: 12,
+                                                    columnNumber: 45
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Starting.js",
+                                                lineNumber: 11,
+                                                columnNumber: 41
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "_2fX4J",
+                                                children: [
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        className: "x4bK8",
+                                                        children: "Login"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Starting.js",
+                                                        lineNumber: 15,
+                                                        columnNumber: 45
+                                                    }, undefined),
+                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                        className: "r2iyh",
+                                                        children: "Sign up"
+                                                    }, void 0, false, {
+                                                        fileName: "src/components/Starting.js",
+                                                        lineNumber: 16,
+                                                        columnNumber: 45
+                                                    }, undefined)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/components/Starting.js",
+                                                lineNumber: 14,
+                                                columnNumber: 41
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 10,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                        className: "sZsUd",
+                                        children: "Hungry?"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 19,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                        className: "_1E3AJ",
+                                        children: "Order food from favourite restaurants near you."
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 20,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_3mZgT",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "Al5GE",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                    className: "_3Um38 _2oQ4_",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                                            type: "text",
+                                                            className: "_381fS _3BIgv",
+                                                            name: "location",
+                                                            id: "location",
+                                                            autoComplete: "off",
+                                                            tabIndex: "1",
+                                                            placeholder: "Enter your delivery location",
+                                                            maxLength: "30"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Starting.js",
+                                                            lineNumber: 24,
+                                                            columnNumber: 49
+                                                        }, undefined),
+                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                                                            className: "_1Cvlf _2tL9P",
+                                                            htmlFor: "location"
+                                                        }, void 0, false, {
+                                                            fileName: "src/components/Starting.js",
+                                                            lineNumber: 25,
+                                                            columnNumber: 49
+                                                        }, undefined)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "src/components/Starting.js",
+                                                    lineNumber: 23,
+                                                    columnNumber: 45
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Starting.js",
+                                                lineNumber: 22,
+                                                columnNumber: 41
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                                className: "_3iFC5",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                    children: "FIND FOOD"
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Starting.js",
+                                                    lineNumber: 29,
+                                                    columnNumber: 45
+                                                }, undefined)
+                                            }, void 0, false, {
+                                                fileName: "src/components/Starting.js",
+                                                lineNumber: 28,
+                                                columnNumber: 41
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 21,
+                                        columnNumber: 37
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Starting.js",
+                                lineNumber: 9,
+                                columnNumber: 33
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/components/Starting.js",
+                            lineNumber: 8,
+                            columnNumber: 29
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "_2h2bu"
+                        }, void 0, false, {
+                            fileName: "src/components/Starting.js",
+                            lineNumber: 34,
+                            columnNumber: 29
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/Starting.js",
+                    lineNumber: 7,
+                    columnNumber: 25
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "_2tnu-",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "_2RZDN",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "_2Zn3W",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_1Vw_y",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "_2dYjq",
+                                            width: "105",
+                                            height: "199",
+                                            src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_210,h_398/4x_-_No_min_order_x0bxuf"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Starting.js",
+                                            lineNumber: 40,
+                                            columnNumber: 41
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 39,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_3fted",
+                                        children: "No Minimum Order"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 42,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_12i5X",
+                                        children: "Order in for yourself or for the group, with no restrictions on order value"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 43,
+                                        columnNumber: 37
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Starting.js",
+                                lineNumber: 38,
+                                columnNumber: 33
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "_2Zn3W",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_1Vw_y",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "_2dYjq",
+                                            width: "112",
+                                            height: "206",
+                                            src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_224,h_412/4x_Live_order_zzotwy"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Starting.js",
+                                            lineNumber: 47,
+                                            columnNumber: 41
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 46,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_3fted",
+                                        children: "Live Order Tracking"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 49,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_12i5X",
+                                        children: "Know where your order is at all times, from the restaurant to your doorstep"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 50,
+                                        columnNumber: 37
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Starting.js",
+                                lineNumber: 45,
+                                columnNumber: 33
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "_2Zn3W",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_1Vw_y",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            className: "_2dYjq",
+                                            width: "124",
+                                            height: "188",
+                                            src: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_248,h_376/4x_-_Super_fast_delivery_awv7sn"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Starting.js",
+                                            lineNumber: 54,
+                                            columnNumber: 41
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 53,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_3fted",
+                                        children: "Lightning-Fast Delivery"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 56,
+                                        columnNumber: 37
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "_12i5X",
+                                        children: "Experience Swiggy's superfast delivery for food delivered fresh & on time"
+                                    }, void 0, false, {
+                                        fileName: "src/components/Starting.js",
+                                        lineNumber: 57,
+                                        columnNumber: 37
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/components/Starting.js",
+                                lineNumber: 52,
+                                columnNumber: 33
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/Starting.js",
+                        lineNumber: 37,
+                        columnNumber: 29
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Starting.js",
+                    lineNumber: 36,
+                    columnNumber: 25
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/Starting.js",
+            lineNumber: 6,
+            columnNumber: 21
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Starting.js",
+        lineNumber: 5,
+        columnNumber: 17
+    }, undefined);
+};
+_c = Starting;
+exports.default = Starting;
+var _c;
+$RefreshReg$(_c, "Starting");
+
+  $parcel$ReactRefreshHelpers$5bc9.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","cJcMZ","2kQhy"], "2kQhy", "parcelRequire8442")
 
 //# sourceMappingURL=index.7271efb6.js.map
