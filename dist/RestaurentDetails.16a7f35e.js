@@ -654,7 +654,7 @@ const RestaurantDetails = ()=>{
         lineNumber: 69,
         columnNumber: 33
     }, undefined);
-    // console.log(restaurant);
+    console.log(restaurant);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -826,17 +826,25 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _constants = require("./constants");
+var _userLocation = require("./UserLocation");
+var _userLocationDefault = parcelHelpers.interopDefault(_userLocation);
 var _s = $RefreshSig$();
 const useRestaurent = (resId)=>{
     _s();
     const [restaurant, setRestaurant] = (0, _react.useState)(null);
+    const { latitude , longitude  } = (0, _react.useContext)((0, _userLocationDefault.default));
     (0, _react.useEffect)(()=>{
         getRestaurantInfo();
     }, []);
     const getRestaurantInfo = async ()=>{
         try {
-            /* Live Data */ const response = await fetch((0, _constants.MENU_API) + resId);
-            const res_data = await response.json();
+            if (latitude == undefined && longitude == undefined) {
+                var response = await fetch((0, _constants.MENU_API) + resId);
+                var res_data = await response.json();
+            } else {
+                var response = await fetch(`https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${latitude}&lng=${longitude}&restaurantId=` + resId);
+                var res_data = await response.json();
+            }
             const menuItemsList = res_data?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
             const itemCategory = "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory";
             const NestedItemCategory = "type.googleapis.com/swiggy.presentation.food.v2.NestedItemCategory";
@@ -857,7 +865,7 @@ const useRestaurent = (resId)=>{
     };
     return restaurant;
 };
-_s(useRestaurent, "xTHIp85kevrNjFQ3g5ZiTLKWCkg=");
+_s(useRestaurent, "gvj5lx1+Q+J8y80yc1RsYFwDW4c=");
 exports.default = useRestaurent;
 
   $parcel$ReactRefreshHelpers$7264.postlude(module);
@@ -865,7 +873,7 @@ exports.default = useRestaurent;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","./constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bYQlU":[function(require,module,exports) {
+},{"react":"21dqq","./constants":"hB8jg","./UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bYQlU":[function(require,module,exports) {
 module.exports = require("bf6ae388e131d0b2")(require("889a5df94e043576").getBundleURL("uZckO") + "RestaurentSearchByDish.cd582774.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
@@ -17707,6 +17715,14 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
     const toggleView = ()=>{
         setIsVisible(!isVisible);
     };
+    const menu = itemCategory.itemCards.map((item)=>{
+        if (item.card.info.itemAttribute.vegClassifier === "VEG") return item.card.info.itemAttribute.vegClassifier;
+    });
+    const lengthmenu = menu.filter((value)=>value !== undefined);
+    const menu1 = itemCategory.itemCards.map((item)=>{
+        if (item.card.info.itemAttribute.vegClassifier === "NONVEG") return item.card.info.itemAttribute.vegClassifier;
+    });
+    const lengthindex = menu1.filter((value)=>value !== undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "main_container",
         children: [
@@ -17719,12 +17735,12 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
                         children: [
                             itemCategory.title,
                             " (",
-                            btnVeg ? itemCategory.itemCards.length : itemCategory.itemCards.length,
+                            btnVeg ? lengthmenu.length : itemCategory.itemCards.length,
                             ")"
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantItemCategory.js",
-                        lineNumber: 16,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, undefined),
                     isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
@@ -17732,29 +17748,31 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
                         className: "cursor-pointer"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantItemCategory.js",
-                        lineNumber: 20,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
                         onClick: toggleView,
                         className: "cursor-pointer"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantItemCategory.js",
-                        lineNumber: 22,
+                        lineNumber: 38,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantItemCategory.js",
-                lineNumber: 15,
+                lineNumber: 31,
                 columnNumber: 7
             }, undefined),
             isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: itemCategory.itemCards.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: btnVeg ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentVegMenuItemDefault.default), {
-                            item: item.card.info
+                            item: item.card.info,
+                            itemLength: lengthmenu.length,
+                            index: index - lengthindex.length
                         }, void 0, false, {
                             fileName: "src/components/RestaurantItemCategory.js",
-                            lineNumber: 29,
+                            lineNumber: 45,
                             columnNumber: 18
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentMenuItemDefault.default), {
                             item: item.card.info,
@@ -17762,23 +17780,23 @@ const RestaurantItemCategory = ({ itemCategory , btnVeg  })=>{
                             index: index
                         }, void 0, false, {
                             fileName: "src/components/RestaurantItemCategory.js",
-                            lineNumber: 30,
+                            lineNumber: 46,
                             columnNumber: 20
                         }, undefined)
                     }, item.card.info.id, false, {
                         fileName: "src/components/RestaurantItemCategory.js",
-                        lineNumber: 27,
+                        lineNumber: 43,
                         columnNumber: 57
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/RestaurantItemCategory.js",
-                lineNumber: 26,
+                lineNumber: 42,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantItemCategory.js",
-        lineNumber: 14,
+        lineNumber: 30,
         columnNumber: 5
     }, undefined);
 };
@@ -18073,11 +18091,11 @@ var _vegePngDefault = parcelHelpers.interopDefault(_vegePng);
 var _nonvegPng = require("../utils/nonveg.png");
 var _nonvegPngDefault = parcelHelpers.interopDefault(_nonvegPng);
 var _s = $RefreshSig$();
-const RestaurentVegMenuItem = ({ item  })=>{
+const RestaurentVegMenuItem = ({ item , itemLength , index  })=>{
     _s();
     const [count, setCount] = (0, _react.useState)(0);
     if (count < 0) setCount(0);
-    // console.log(item);
+    // console.log(index);
     // console.log(item.isVeg);
     const { name , description , price , defaultPrice , imageId , itemAttribute , isBestseller  } = item;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -18284,12 +18302,12 @@ const RestaurentVegMenuItem = ({ item  })=>{
                     lineNumber: 20,
                     columnNumber: 25
                 }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                itemLength == index + 1 ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "styles_divider"
                 }, void 0, false, {
                     fileName: "src/components/RestaurentVegMenuItem.js",
-                    lineNumber: 64,
-                    columnNumber: 25
+                    lineNumber: 65,
+                    columnNumber: 31
                 }, undefined)
             ]
         }, void 0, true, {
@@ -18407,6 +18425,14 @@ const RestaurantNestedItemCategoryMenu = ({ itemCategory , btnVeg  })=>{
     const toggleView = ()=>{
         setIsVisible(!isVisible);
     };
+    const menu = itemCategory.itemCards.map((item)=>{
+        if (item.card.info.itemAttribute.vegClassifier === "VEG") return item.card.info.itemAttribute.vegClassifier;
+    });
+    const lengthmenu = menu.filter((value)=>value !== undefined);
+    const menu1 = itemCategory.itemCards.map((item)=>{
+        if (item.card.info.itemAttribute.vegClassifier === "NONVEG") return item.card.info.itemAttribute.vegClassifier;
+    });
+    const lengthindex = menu1.filter((value)=>value !== undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "main_container",
         children: [
@@ -18419,12 +18445,12 @@ const RestaurantNestedItemCategoryMenu = ({ itemCategory , btnVeg  })=>{
                         children: [
                             itemCategory.title,
                             " (",
-                            btnVeg ? itemCategory.itemCards.length : itemCategory.itemCards.length,
+                            btnVeg ? lengthmenu.length : itemCategory.itemCards.length,
                             ")"
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
-                        lineNumber: 16,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, undefined),
                     isVisible ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowUp), {
@@ -18432,58 +18458,60 @@ const RestaurantNestedItemCategoryMenu = ({ itemCategory , btnVeg  })=>{
                         className: "cursor-pointer"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
-                        lineNumber: 20,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sl.SlArrowDown), {
                         onClick: toggleView,
                         className: "cursor-pointer"
                     }, void 0, false, {
                         fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
-                        lineNumber: 22,
+                        lineNumber: 38,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
-                lineNumber: 15,
+                lineNumber: 31,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: isVisible ? "styles_divider styles_dividerFull" : "styles_divider"
             }, void 0, false, {
                 fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
-                lineNumber: 25,
+                lineNumber: 41,
                 columnNumber: 7
             }, undefined),
             isVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: itemCategory.itemCards.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: itemCategory.itemCards.map((item, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: btnVeg ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentVegMenuItemDefault.default), {
-                            item: item.card.info
+                            item: item.card.info,
+                            itemLength: lengthmenu.length,
+                            index: index - lengthindex.length
                         }, void 0, false, {
                             fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
-                            lineNumber: 30,
+                            lineNumber: 46,
                             columnNumber: 18
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurentMenuItemDefault.default), {
                             item: item.card.info
                         }, void 0, false, {
                             fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
-                            lineNumber: 31,
+                            lineNumber: 47,
                             columnNumber: 20
                         }, undefined)
                     }, item.card.info.id, false, {
                         fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
-                        lineNumber: 28,
-                        columnNumber: 50
+                        lineNumber: 44,
+                        columnNumber: 57
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
-                lineNumber: 27,
+                lineNumber: 43,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantNestedItemCategoryMenu.js",
-        lineNumber: 14,
+        lineNumber: 30,
         columnNumber: 5
     }, undefined);
 };

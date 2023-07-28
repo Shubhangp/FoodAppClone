@@ -1,14 +1,15 @@
 import React from "react";
 import { OFF_URL } from "../utils/constants";
 
-const OfferCard = (props) => {
-    const { resOff } = props;
-
-    const { imageId } = resOff
+const OfferCard = ({ latestOffer }) => {
 
     return(
-        <div className="img-offers">
-                <img src={OFF_URL + imageId} alt="" />
+        <div className="offers_layer4">  
+            {latestOffer.map((offer) => (
+                <div className="img-offers" key={offer?.id}>
+                    <img src={OFF_URL + offer?.imageId} alt="" />
+                </div>
+            ))}
         </div>
     )
 }

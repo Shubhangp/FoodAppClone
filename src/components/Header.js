@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
-const Header = ({ handleClick, navbar }) => {
+const Header = ({ handleClick, navbar, placeName }) => {
 
     const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
 
@@ -18,12 +18,22 @@ const Header = ({ handleClick, navbar }) => {
                         <img className="logo" src={LOGO_URL} alt="" />
                     </Link>
                     <div className="_2z2N5" onClick={() => handleClick()}>
-                        <span className="_1tcx6">
-                            <span className="_3odgy">Koramangala</span>
-                        </span>
-                        <span className="_3HusE"> Bengaluru, Karnataka, India</span>
-                        <span className="icon-downArrow kVKTT"></span>
-                        
+                        {placeName.length == 0 ? 
+                            (<div>
+                                <span className="_1tcx6">
+                                    <span className="_3odgy">Koramangala</span>
+                                </span>
+                                <span className="_3HusE"> Bengaluru, Karnataka, India</span>
+                                <span className="icon-downArrow kVKTT"></span>
+                            </div>)
+                            :(<div>
+                                <span className="_1tcx6">
+                                    <span className="_3odgy">{placeName?.main_text}</span>
+                                </span>
+                                <span className="_3HusE"> {placeName?.secondary_text}</span>
+                                <span className="icon-downArrow kVKTT"></span>
+                            </div>)
+                        }
                     </div>
                     <ul className="_1JNGZ">
                         <li className="_1fo6c">

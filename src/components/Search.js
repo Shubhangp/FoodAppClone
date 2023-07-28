@@ -3,6 +3,7 @@ import SearchByPopularCui from "./SearchByPopularCui";
 import SearchSuggest from "./SearchSuggest";
 import SearchBy from "./SearchBy";
 import UserLocation from "../utils/UserLocation";
+import { Lat, Lng } from "../utils/constants";
 
 const Search = () => {
 
@@ -20,9 +21,14 @@ const Search = () => {
     }, [])
 
     const fetchData = async() => {
-        var data = await fetch(`https://www.swiggy.com/dapi/landing/PRE_SEARCH?lat=${latitude}&lng=${longitude}`);
-        const json = await data.json();
-        // console.log(json);
+        if(latitude == undefined && longitude == undefined) {
+            var data = await fetch(`https://www.swiggy.com/dapi/landing/PRE_SEARCH?${Lat}${Lng}`);
+            var json = await data.json();
+        } else{
+            var data = await fetch(`https://www.swiggy.com/dapi/landing/PRE_SEARCH?lat=${latitude}&lng=${longitude}`);
+            var json = await data.json();
+        }
+        console.log(json);
 
         setPopularCusi(json?.data?.cards[1]?.card?.card?.imageGridCards?.info);
     }
@@ -33,39 +39,47 @@ const Search = () => {
     }, [searchText])
 
     const fetchSearchData = async() => {
-        var dataSearch = await fetch(`https://www.swiggy.com/dapi/restaurants/search/suggest?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined`);
-        const json = await dataSearch.json();
-        // console.log(json);
-
-        setSearchApi(json?.data?.suggestions);
+        if(latitude == undefined && longitude == undefined) {
+            var dataSearch = await fetch(`https://www.swiggy.com/dapi/restaurants/search/suggest?${Lat}${Lng}&str=${searchText}&trackingId=undefined`);
+            var json1 = await dataSearch.json();
+        } else{
+            var dataSearch = await fetch(`https://www.swiggy.com/dapi/restaurants/search/suggest?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined`);
+            var json1 = await dataSearch.json();
+        }
+        setSearchApi(json1?.data?.suggestions);
     }
-    // console.log(searchApi);
 
     useEffect(() => {
         fetchSearchBy();
     }, [searchByApi])
 
     const fetchSearchBy = async() => {
-        var dataSearchBy = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}`);
-        const json = await dataSearchBy.json();
-        // console.log(json);
+        if(latitude == undefined && longitude == undefined) {
+            var dataSearchBy = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?${Lat}${Lng}&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}`);
+            var json2 = await dataSearchBy.json();
+        } else{
+            var dataSearchBy = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}`);
+            var json2 = await dataSearchBy.json();
+        }
 
-        setSearchByData(json?.data?.cards[1]?.groupedCard?.cardGroupMap?.DISH?.cards);
+        setSearchByData(json2?.data?.cards[1]?.groupedCard?.cardGroupMap?.DISH?.cards);
     }
-    // console.log(searchByData);
 
     useEffect(() => {
         fetchSearchByRes();
     }, [searchByApi])
 
     const fetchSearchByRes = async() => {
-        var dataSearchByRes = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}&selectedPLTab=RESTAURANT`);
-        const json = await dataSearchByRes.json();
-        // console.log(json);
+        if(latitude == undefined && longitude == undefined) {
+            var dataSearchByRes = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?${Lat}${Lng}&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}&selectedPLTab=RESTAURANT`);
+            var json3 = await dataSearchByRes.json();
+        } else{
+            var dataSearchByRes = await fetch(`https://www.swiggy.com/dapi/restaurants/search/v3?lat=${latitude}&lng=${longitude}&str=${searchText}&trackingId=undefined&submitAction=SUGGESTION&${searchByApi}&selectedPLTab=RESTAURANT`);
+            var json3 = await dataSearchByRes.json();
+        }
 
-        setSearchByRes(json?.data?.cards[0]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards);
+        setSearchByRes(json3?.data?.cards[0]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards);
     }
-    // console.log(searchByRes);
 
     function suggestionClick(e){
         setSearchByApi(e[1]);

@@ -17,7 +17,8 @@ const AppLayout = () => {
     const [btnLocation, setBtnLocation] = useState(false);
 
     const [latlng, setLatlng] = useState([]);
-
+    const [placeName, setPlaceName] = useState([]);
+    
     function handleClick(){
         setBtnLocation(btnLocation => !btnLocation);
     }
@@ -25,8 +26,8 @@ const AppLayout = () => {
     return(
         <UserLocation.Provider value={{latitude: latlng.lat, longitude: latlng.lng}}>
             <div className="_3arMG">
-                <Header btnLocation={btnLocation} handleClick={handleClick} />
-                <LocationSearch btnLocation={btnLocation} handleClick={handleClick} setLatlng={setLatlng} />
+                <Header btnLocation={btnLocation} handleClick={handleClick} placeName={placeName} />
+                <LocationSearch btnLocation={btnLocation} handleClick={handleClick} setLatlng={setLatlng} setPlaceName={setPlaceName} />
                 <Outlet />
             </div>
         </UserLocation.Provider>

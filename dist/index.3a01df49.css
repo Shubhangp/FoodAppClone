@@ -107,6 +107,13 @@ svg:not(:root) {
   box-shadow: 0 1px 3px #0000001f;
 }
 
+.GenericError__image_un {
+  height: 260px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 ._1MdYR {
   margin-top: -80px;
 }
@@ -2365,11 +2372,34 @@ li {
 }
 
 .not_show_loction {
-  visibility: hidden;
+  animation: .5s sfsf;
+  position: absolute;
+  left: -1351px;
+}
+
+@keyframes sfsf {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -1351px;
+  }
 }
 
 .show_loction {
-  visibility: visible;
+  animation: .5s sfsfs;
+  left: 0;
+}
+
+@keyframes sfsfs {
+  0% {
+    left: -1351px;
+  }
+
+  100% {
+    left: 0;
+  }
 }
 
 .FYlIl {
@@ -2386,13 +2416,9 @@ li {
   height: 100%;
   z-index: 10001;
   background: #fff;
-  transition: transform .3s ease-out;
   position: fixed;
   top: 0;
-  left: 0;
-  right: auto;
   overflow-y: scroll;
-  transform: translateZ(0);
 }
 
 ._12S7_ {
@@ -2626,7 +2652,7 @@ li {
   line-height: 1.3;
 }
 
-.overlay {
+.show_loction .overlay {
   z-index: 10000;
   opacity: .7;
   background: #282c3f;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ShimmerRestaurantPage from "./ShimmerRestaurantPage";
 
-const LocationSearch = ({ handleClick, btnLocation, setLatlng }) => {
+const LocationSearch = ({ handleClick, btnLocation, setLatlng, setPlaceName }) => {
 
     const [searchLocation, setSearchLocation] = useState("");
 
@@ -36,7 +36,9 @@ const LocationSearch = ({ handleClick, btnLocation, setLatlng }) => {
     }
 
     const selectClick = (e) => {
-        setPlaceId(e);
+        setPlaceId(e.place_id);
+        setPlaceName(e.structured_formatting)
+        setSearchLocation("");
     }
 
     return(
@@ -81,8 +83,8 @@ const LocationSearch = ({ handleClick, btnLocation, setLatlng }) => {
                                         {place == undefined || place.length == 0 ? ("")                                        
                                            : (<div>
                                                 {place.map((plac) => (
-                                                    <div onClick={() => selectClick(plac.place_id)} key={plac.place_id}>
-                                                        <div className="_2peD4 _2peD45">
+                                                    <div onClick={() => selectClick(plac)} key={plac.place_id}>
+                                                        <div className="_2peD4 _2peD45" onClick={() => handleClick()}>
                                                             <div className="J80xC">
                                                                 <div className="icon-location">&#128681;</div>
                                                                 <div className="_3eFzL">

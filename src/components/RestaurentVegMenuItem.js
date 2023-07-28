@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import vege from "../utils/vege.png";
 import nonveg from "../utils/nonveg.png";
 
-const RestaurentVegMenuItem = ({item}) => {
+const RestaurentVegMenuItem = ({ item, itemLength, index }) => {
     const [count, setCount] = useState(0);
 
     if(count < 0) {
         setCount(0);
     }
 
-    // console.log(item);
+    // console.log(index);
     // console.log(item.isVeg);
 
     const { name, description, price, defaultPrice, imageId, itemAttribute, isBestseller } = item;
@@ -61,7 +61,9 @@ const RestaurentVegMenuItem = ({item}) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="styles_divider"></div>
+                        { itemLength == index + 1 ? ("")
+                            :(<div className="styles_divider"></div>)
+                        }
                     </div>
                     )
                     : ("")

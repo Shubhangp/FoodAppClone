@@ -125,6 +125,15 @@ hr {
     outline: none;
 }
 
+/* Unserviceable */
+
+.GenericError__image_un {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 260px;
+}
+
 /* Starting */
 
 ._1MdYR {
@@ -2577,11 +2586,32 @@ li{
 /* Location Search */
 
 .not_show_loction{
-    visibility: hidden;
+    position: absolute;
+    animation: sfsf .5s ease;
+    left: -1351;
+}
+
+@keyframes sfsf {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -1351;
+    }
 }
 
 .show_loction{
-    visibility: visible;
+    animation: sfsfs .5s ease;
+    left: 0;
+}
+
+@keyframes sfsfs {
+    0%{
+        left: -1351;
+    }
+    100%{
+        left: 0;
+    }
 }
 
 .FYlIl {
@@ -2601,12 +2631,7 @@ li{
     height: 100%;
     overflow-y: scroll;
     background: #fff;
-    transition: transform .3s ease-out;
     z-index: 10001;
-    transform: translateZ(0);
-    left: 0px;
-    right: auto;
-    transform: translate(0%, 0px);
 }
 
 ._12S7_ {
@@ -2874,7 +2899,7 @@ li{
     padding-top: 5px;
 }
 
-.overlay {
+.show_loction .overlay {
     z-index: 10000;
     position: fixed;
     top: 0;
