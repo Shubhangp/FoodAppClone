@@ -15,7 +15,6 @@ import UserLocation from "./utils/UserLocation";
 const AppLayout = () => {
 
     const [btnLocation, setBtnLocation] = useState(false);
-
     const [latlng, setLatlng] = useState([]);
     const [placeName, setPlaceName] = useState([]);
     

@@ -2973,7 +2973,7 @@ const AppLayout = ()=>{
                     placeName: placeName
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 29,
+                    lineNumber: 28,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _locationSearchDefault.default), {
@@ -2983,23 +2983,23 @@ const AppLayout = ()=>{
                     setPlaceName: setPlaceName
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 30,
+                    lineNumber: 29,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 31,
+                    lineNumber: 30,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 28,
+            lineNumber: 27,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 27,
+        lineNumber: 26,
         columnNumber: 9
     }, undefined);
 };
@@ -3010,7 +3010,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(AppLayout, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 40,
+            lineNumber: 39,
             columnNumber: 18
         }, undefined),
         children: [
@@ -3022,12 +3022,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 44,
+                        lineNumber: 43,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 44,
+                    lineNumber: 43,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3039,12 +3039,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Contact, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 48,
+                        lineNumber: 47,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 48,
+                    lineNumber: 47,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3056,12 +3056,12 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantDetails, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 52,
+                        lineNumber: 51,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 52,
+                    lineNumber: 51,
                     columnNumber: 26
                 }, undefined)
             },
@@ -3073,19 +3073,19 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                     }, void 0, false, void 0, void 0),
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Search, {}, void 0, false, {
                         fileName: "src/App.js",
-                        lineNumber: 56,
+                        lineNumber: 55,
                         columnNumber: 67
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 56,
+                    lineNumber: 55,
                     columnNumber: 26
                 }, undefined)
             }
         ],
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 59,
+            lineNumber: 58,
             columnNumber: 23
         }, undefined)
     }
@@ -3101,12 +3101,12 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _auth0React.Auth0Provid
         router: appRouter
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 71,
+        lineNumber: 70,
         columnNumber: 13
     }, undefined)
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 65,
+    lineNumber: 64,
     columnNumber: 13
 }, undefined));
 var _c, _c1, _c2, _c3;
