@@ -1,8 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const RestaurentOutlet = ({ outlet, setBtnOutlet, info }) => {
     
     const { name, cloudinaryImageId } = info?.info;
+
+    const navigate = useNavigate()
 
     return(
         <div id="dialog">
@@ -19,8 +22,8 @@ const RestaurentOutlet = ({ outlet, setBtnOutlet, info }) => {
                         </div>
                         <div className="RestaurantOutlet_list">
                             {outlet.map((name) =>(
-                                <button className="RestaurantOutlet_listItem" key={name?.id}>
-                                    <div className="RestaurantOutlet_listItemTable">
+                                <button className="RestaurantOutlet_listItem" key={name?.id} onClick={() => navigate("/restaurents/" + name?.id)}>
+                                    <div className="RestaurantOutlet_listItemTable" onClick={() => window.location.reload(true)}>
                                         <div className="RestaurantOutlet_listItemAddress">{name?.locality}, {name?.area}</div>
                                         <div className="RestaurantOutlet_listItemRatingf">
                                             <span className="RestaurantOutlet_listItemRatingIcon icon-star">★</span>

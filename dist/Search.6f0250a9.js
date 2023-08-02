@@ -904,7 +904,7 @@ $RefreshReg$(_c, "Search");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./SearchByPopularCui":"3Fz2n","./SearchSuggest":"aqydN","./SearchBy":"8NNjA","../utils/UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constants":"hB8jg"}],"3Fz2n":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./SearchByPopularCui":"3Fz2n","./SearchSuggest":"aqydN","./SearchBy":"8NNjA","../utils/UserLocation":"aVyyN","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3Fz2n":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c08c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

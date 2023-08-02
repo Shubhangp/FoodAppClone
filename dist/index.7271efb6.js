@@ -35737,7 +35737,8 @@ const Body = ()=>{
     // const RestaurantCardPromoted = withPromotedLabel(ReastaurentCard);
     const unserviceable = "type.googleapis.com/swiggy.seo.widgets.v1.SwiggyNotPresent";
     const favourite = "type.googleapis.com/swiggy.presentation.food.v2.FavouriteRestaurantInfoWithStyle";
-    const offer = "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget";
+    const offer = "topical_banner";
+    const mind = "whats_on_your_mind";
     const chain = "top_brands_for_you";
     const listHead = "type.googleapis.com/swiggy.seo.widgets.v1.BasicContent";
     (0, _react.useEffect)(()=>{
@@ -35756,15 +35757,15 @@ const Body = ()=>{
         }
         console.log(json);
         SetUn(json?.data?.cards[0]?.card?.card["@type"]);
-        if (json?.data?.cards[0]?.card?.card["@type"] != offer) {
+        if (json?.data?.cards[0]?.card?.card?.id != offer) {
             setLatestOffer([]);
-            setIsOffer(json?.data?.cards[0]?.card?.card["@type"]);
+            setIsOffer(json?.data?.cards[0]?.card?.card?.id);
         } else {
             setLatestOffer(json?.data?.cards[0]?.card?.card?.imageGridCards?.info);
-            setIsOffer(json?.data?.cards[0]?.card?.card["@type"]);
+            setIsOffer(json?.data?.cards[0]?.card?.card?.id);
         }
         setMindDish(json?.data?.cards[1]?.card?.card);
-        setIsMindDish(json?.data?.cards[1]?.card?.card["@type"]);
+        setIsMindDish(json?.data?.cards[1]?.card?.card?.id);
         if (json?.data?.cards[1]?.card?.card?.id === chain) {
             setChainRes(json?.data?.cards[1]?.card?.card);
             setIsChainRes(json?.data?.cards[1]?.card?.card?.id);
@@ -35784,7 +35785,7 @@ const Body = ()=>{
     const onlineStatus = (0, _useOnlineStatusDefault.default)();
     if (onlineStatus == false) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userOfflineDefault.default), {}, void 0, false, {
         fileName: "src/components/Home.js",
-        lineNumber: 92,
+        lineNumber: 93,
         columnNumber: 13
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35792,7 +35793,7 @@ const Body = ()=>{
         children: un != unserviceable ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             children: listOfRestaurants == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _shimmerHomeDefault.default), {}, void 0, false, {
                 fileName: "src/components/Home.js",
-                lineNumber: 99,
+                lineNumber: 100,
                 columnNumber: 47
             }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
@@ -35822,22 +35823,22 @@ const Body = ()=>{
                                                         fillOpacity: "0.92"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Home.js",
-                                                        lineNumber: 108,
+                                                        lineNumber: 109,
                                                         columnNumber: 57
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/components/Home.js",
-                                                    lineNumber: 107,
+                                                    lineNumber: 108,
                                                     columnNumber: 53
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Home.js",
-                                                lineNumber: 106,
+                                                lineNumber: 107,
                                                 columnNumber: 49
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Home.js",
-                                            lineNumber: 105,
+                                            lineNumber: 106,
                                             columnNumber: 45
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -35858,28 +35859,28 @@ const Body = ()=>{
                                                         fillOpacity: "0.92"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Home.js",
-                                                        lineNumber: 115,
+                                                        lineNumber: 116,
                                                         columnNumber: 57
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/components/Home.js",
-                                                    lineNumber: 114,
+                                                    lineNumber: 115,
                                                     columnNumber: 53
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Home.js",
-                                                lineNumber: 113,
+                                                lineNumber: 114,
                                                 columnNumber: 49
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Home.js",
-                                            lineNumber: 112,
+                                            lineNumber: 113,
                                             columnNumber: 45
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 104,
+                                    lineNumber: 105,
                                     columnNumber: 41
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35894,17 +35895,17 @@ const Body = ()=>{
                                                     children: "Best offers for you"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Home.js",
-                                                    lineNumber: 123,
+                                                    lineNumber: 124,
                                                     columnNumber: 53
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Home.js",
-                                                lineNumber: 122,
+                                                lineNumber: 123,
                                                 columnNumber: 49
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Home.js",
-                                            lineNumber: 121,
+                                            lineNumber: 122,
                                             columnNumber: 45
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35913,65 +35914,65 @@ const Body = ()=>{
                                                 latestOffer: latestOffer
                                             }, void 0, false, {
                                                 fileName: "src/components/Home.js",
-                                                lineNumber: 128,
+                                                lineNumber: 129,
                                                 columnNumber: 51
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Home.js",
-                                            lineNumber: 126,
+                                            lineNumber: 127,
                                             columnNumber: 45
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 120,
+                                    lineNumber: 121,
                                     columnNumber: 41
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Home.js",
-                            lineNumber: 103,
+                            lineNumber: 104,
                             columnNumber: 37
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 102,
+                        lineNumber: 103,
                         columnNumber: 34
                     }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 134,
+                        lineNumber: 135,
                         columnNumber: 36
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: isMindDish === offer ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        children: isMindDish === mind ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _yourMindDefault.default), {
                                     mindDish: mindDish
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 139,
+                                    lineNumber: 140,
                                     columnNumber: 41
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
                                     className: "czePTO"
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 140,
+                                    lineNumber: 141,
                                     columnNumber: 41
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Home.js",
-                            lineNumber: 138,
+                            lineNumber: 139,
                             columnNumber: 38
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
                             fileName: "src/components/Home.js",
-                            lineNumber: 142,
+                            lineNumber: 143,
                             columnNumber: 39
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 136,
+                        lineNumber: 137,
                         columnNumber: 29
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35981,29 +35982,29 @@ const Body = ()=>{
                                     chainRes: chainRes
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 148,
+                                    lineNumber: 149,
                                     columnNumber: 41
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("hr", {
                                     className: "czePTO"
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 149,
+                                    lineNumber: 150,
                                     columnNumber: 41
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Home.js",
-                            lineNumber: 147,
+                            lineNumber: 148,
                             columnNumber: 38
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {}, void 0, false, {
                             fileName: "src/components/Home.js",
-                            lineNumber: 151,
+                            lineNumber: 152,
                             columnNumber: 39
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 145,
+                        lineNumber: 146,
                         columnNumber: 29
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36014,24 +36015,24 @@ const Body = ()=>{
                                 children: head
                             }, void 0, false, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 156,
+                                lineNumber: 157,
                                 columnNumber: 37
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Home.js",
-                            lineNumber: 155,
+                            lineNumber: 156,
                             columnNumber: 33
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 154,
+                        lineNumber: 155,
                         columnNumber: 29
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "dsbFcD"
                     }, void 0, false, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 159,
+                        lineNumber: 160,
                         columnNumber: 29
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -36051,57 +36052,57 @@ const Body = ()=>{
                                                     resObj: restaurant
                                                 }, void 0, false, {
                                                     fileName: "src/components/Home.js",
-                                                    lineNumber: 171,
+                                                    lineNumber: 172,
                                                     columnNumber: 57
                                                 }, undefined)
                                             }, restaurant.info.id, false, {
                                                 fileName: "src/components/Home.js",
-                                                lineNumber: 166,
+                                                lineNumber: 167,
                                                 columnNumber: 53
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Home.js",
-                                            lineNumber: 165,
+                                            lineNumber: 166,
                                             columnNumber: 49
                                         }, undefined))
                                 }, void 0, false, {
                                     fileName: "src/components/Home.js",
-                                    lineNumber: 163,
+                                    lineNumber: 164,
                                     columnNumber: 41
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Home.js",
-                                lineNumber: 162,
+                                lineNumber: 163,
                                 columnNumber: 37
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Home.js",
-                            lineNumber: 161,
+                            lineNumber: 162,
                             columnNumber: 33
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Home.js",
-                        lineNumber: 160,
+                        lineNumber: 161,
                         columnNumber: 29
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Home.js",
-                lineNumber: 100,
+                lineNumber: 101,
                 columnNumber: 25
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/Home.js",
-            lineNumber: 98,
+            lineNumber: 99,
             columnNumber: 18
         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _unserviceableDefault.default), {}, void 0, false, {
             fileName: "src/components/Home.js",
-            lineNumber: 182,
+            lineNumber: 183,
             columnNumber: 20
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Home.js",
-        lineNumber: 96,
+        lineNumber: 97,
         columnNumber: 9
     }, undefined);
 };

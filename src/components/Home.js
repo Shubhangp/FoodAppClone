@@ -31,7 +31,8 @@ const Body = () => {
     // const RestaurantCardPromoted = withPromotedLabel(ReastaurentCard);
     const unserviceable = "type.googleapis.com/swiggy.seo.widgets.v1.SwiggyNotPresent";
     const favourite = "type.googleapis.com/swiggy.presentation.food.v2.FavouriteRestaurantInfoWithStyle";
-    const offer = "type.googleapis.com/swiggy.gandalf.widgets.v2.GridWidget";
+    const offer = "topical_banner";
+    const mind = "whats_on_your_mind";
     const chain = "top_brands_for_you";
     const listHead = "type.googleapis.com/swiggy.seo.widgets.v1.BasicContent"
 
@@ -49,15 +50,15 @@ const Body = () => {
             }
             console.log(json);
             SetUn(json?.data?.cards[0]?.card?.card["@type"])
-            if(json?.data?.cards[0]?.card?.card["@type"] != offer){
+            if(json?.data?.cards[0]?.card?.card?.id != offer){
                 setLatestOffer([])
-                setIsOffer(json?.data?.cards[0]?.card?.card["@type"])
+                setIsOffer(json?.data?.cards[0]?.card?.card?.id)
             }else{
                 setLatestOffer(json?.data?.cards[0]?.card?.card?.imageGridCards?.info)
-                setIsOffer(json?.data?.cards[0]?.card?.card["@type"])
+                setIsOffer(json?.data?.cards[0]?.card?.card?.id)
             }
             setMindDish(json?.data?.cards[1]?.card?.card)
-            setIsMindDish(json?.data?.cards[1]?.card?.card["@type"])
+            setIsMindDish(json?.data?.cards[1]?.card?.card?.id)
             if(json?.data?.cards[1]?.card?.card?.id === chain){
                 setChainRes(json?.data?.cards[1]?.card?.card)
                 setIsChainRes(json?.data?.cards[1]?.card?.card?.id) 
@@ -134,7 +135,7 @@ const Body = () => {
                                 : (<div></div>)
                             }
                             <div>
-                                {isMindDish === offer ?
+                                {isMindDish === mind ?
                                     (<div>
                                         <YourMind mindDish={mindDish} />
                                         <hr className="czePTO"></hr>

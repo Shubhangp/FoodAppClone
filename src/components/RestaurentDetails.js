@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useEffect } from "react";
+import React, { lazy, Suspense } from "react";
 import { useParams } from "react-router-dom";
 import useRestaurent from "../utils/useRestaurent"
 const RestaurentSearchByDish = lazy(() => import("./RestaurentSearchByDish"));
@@ -11,7 +11,8 @@ import ShimmerRestaurantPage from "./ShimmerRestaurantPage";
 import RestaurantMenuList from "./RestaurantMenuList";
 const RestaurentOutlet = lazy(() => import("./RestaurentOutlet"));
 const RestaurentNoOutlet = lazy(() => import("./RestaurentNoOutlet"));
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import UserLocation from "../utils/UserLocation";
 
 const RestaurantDetails = () => {
 
@@ -32,13 +33,21 @@ const RestaurantDetails = () => {
 
   const [btnOutlet, setBtnOutlet] = useState(false);
 
+  const { latitude, longitude } = useContext(UserLocation);
+
   useEffect(() => {
     fetchOutlet();
   }, [btnOutlet]);
 
   const fetchOutlet = async () => {
+    if(latitude == undefined && longitude == undefined) {
       const response = await fetch(`https://www.swiggy.com/dapi/menu/other-outlets?menuId=${resId}&lat=12.9351929&lng=77.62448069999999`);
       var dataOutlet = await response.json();
+    }else{
+      const response = await fetch(`https://www.swiggy.com/dapi/menu/other-outlets?menuId=${resId}&lat=${latitude}&lng=${longitude}`);
+      var dataOutlet = await response.json();
+    }
+      
       // console.log(dataOutlet);
       setOutlet(dataOutlet?.data?.otherOutlets);
   }

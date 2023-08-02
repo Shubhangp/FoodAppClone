@@ -589,8 +589,12 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _s = $RefreshSig$();
 const RestaurentOutlet = ({ outlet , setBtnOutlet , info  })=>{
+    _s();
     const { name , cloudinaryImageId  } = info?.info;
+    const navigate = (0, _reactRouterDom.useNavigate)();
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         id: "dialog",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -613,12 +617,12 @@ const RestaurentOutlet = ({ outlet , setBtnOutlet , info  })=>{
                                             src: `https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_240,h_240,c_fill/${cloudinaryImageId}`
                                         }, void 0, false, {
                                             fileName: "src/components/RestaurentOutlet.js",
-                                            lineNumber: 14,
+                                            lineNumber: 17,
                                             columnNumber: 33
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/RestaurentOutlet.js",
-                                        lineNumber: 13,
+                                        lineNumber: 16,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -626,7 +630,7 @@ const RestaurentOutlet = ({ outlet , setBtnOutlet , info  })=>{
                                         children: "Close change outlet modal"
                                     }, void 0, false, {
                                         fileName: "src/components/RestaurentOutlet.js",
-                                        lineNumber: 16,
+                                        lineNumber: 19,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -638,7 +642,7 @@ const RestaurentOutlet = ({ outlet , setBtnOutlet , info  })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/RestaurentOutlet.js",
-                                        lineNumber: 17,
+                                        lineNumber: 20,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -649,21 +653,23 @@ const RestaurentOutlet = ({ outlet , setBtnOutlet , info  })=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/RestaurentOutlet.js",
-                                        lineNumber: 18,
+                                        lineNumber: 21,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/RestaurentOutlet.js",
-                                lineNumber: 12,
+                                lineNumber: 15,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "RestaurantOutlet_list",
                                 children: outlet.map((name)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                         className: "RestaurantOutlet_listItem",
+                                        onClick: ()=>navigate("/restaurents/" + name?.id),
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "RestaurantOutlet_listItemTable",
+                                            onClick: ()=>window.location.reload(true),
                                             children: [
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     className: "RestaurantOutlet_listItemAddress",
@@ -674,7 +680,7 @@ const RestaurentOutlet = ({ outlet , setBtnOutlet , info  })=>{
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/RestaurentOutlet.js",
-                                                    lineNumber: 24,
+                                                    lineNumber: 27,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -685,14 +691,14 @@ const RestaurentOutlet = ({ outlet , setBtnOutlet , info  })=>{
                                                             children: "★"
                                                         }, void 0, false, {
                                                             fileName: "src/components/RestaurentOutlet.js",
-                                                            lineNumber: 26,
+                                                            lineNumber: 29,
                                                             columnNumber: 45
                                                         }, undefined),
                                                         name?.avgRatingString
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/RestaurentOutlet.js",
-                                                    lineNumber: 25,
+                                                    lineNumber: 28,
                                                     columnNumber: 41
                                                 }, undefined),
                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -700,34 +706,34 @@ const RestaurentOutlet = ({ outlet , setBtnOutlet , info  })=>{
                                                     children: name?.slaString
                                                 }, void 0, false, {
                                                     fileName: "src/components/RestaurentOutlet.js",
-                                                    lineNumber: 29,
+                                                    lineNumber: 32,
                                                     columnNumber: 41
                                                 }, undefined)
                                             ]
                                         }, void 0, true, {
                                             fileName: "src/components/RestaurentOutlet.js",
-                                            lineNumber: 23,
+                                            lineNumber: 26,
                                             columnNumber: 37
                                         }, undefined)
                                     }, name?.id, false, {
                                         fileName: "src/components/RestaurentOutlet.js",
-                                        lineNumber: 22,
+                                        lineNumber: 25,
                                         columnNumber: 33
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/components/RestaurentOutlet.js",
-                                lineNumber: 20,
+                                lineNumber: 23,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/RestaurentOutlet.js",
-                        lineNumber: 11,
+                        lineNumber: 14,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/RestaurentOutlet.js",
-                    lineNumber: 10,
+                    lineNumber: 13,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -735,21 +741,26 @@ const RestaurentOutlet = ({ outlet , setBtnOutlet , info  })=>{
                     onClick: ()=>setBtnOutlet(false)
                 }, void 0, false, {
                     fileName: "src/components/RestaurentOutlet.js",
-                    lineNumber: 36,
+                    lineNumber: 39,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/RestaurentOutlet.js",
-            lineNumber: 9,
+            lineNumber: 12,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/RestaurentOutlet.js",
-        lineNumber: 8,
+        lineNumber: 11,
         columnNumber: 9
     }, undefined);
 };
+_s(RestaurentOutlet, "CzcTeTziyjMsSrAVmHuCCb6+Bfg=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c = RestaurentOutlet;
 exports.default = RestaurentOutlet;
 var _c;
@@ -760,6 +771,6 @@ $RefreshReg$(_c, "RestaurentOutlet");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","kGXrF"], null, "parcelRequire8442")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}]},["1xC6H","kGXrF"], null, "parcelRequire8442")
 
 //# sourceMappingURL=RestaurentOutlet.1af6b175.js.map
