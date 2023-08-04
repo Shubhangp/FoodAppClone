@@ -823,7 +823,7 @@ $RefreshReg$(_c3, "RestaurantDetails");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../utils/useRestaurent":"Irxh3","1427721e75faf0f6":"bYQlU","./AddressRestaurant":"hEtMC","./RestaurantMenuHeader":"3BSSq","./RestaurentInfo":"15FqP","./RestaurantOffer":"1pVFR","./RestaurantVegBtn":"lzFjk","./ShimmerRestaurantPage":"WrQVg","./RestaurantMenuList":"24PDN","dbefa1322c17cd":"bGFE9","960cffd2f5b86da6":"be87t","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/UserLocation":"aVyyN"}],"Irxh3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../utils/useRestaurent":"Irxh3","1427721e75faf0f6":"bYQlU","./AddressRestaurant":"hEtMC","./RestaurantMenuHeader":"3BSSq","./RestaurentInfo":"15FqP","./RestaurantOffer":"1pVFR","./RestaurantVegBtn":"lzFjk","./ShimmerRestaurantPage":"WrQVg","./RestaurantMenuList":"24PDN","dbefa1322c17cd":"bGFE9","960cffd2f5b86da6":"be87t","../utils/UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"Irxh3":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7264 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

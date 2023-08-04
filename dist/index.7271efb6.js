@@ -43593,6 +43593,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
 var _shimmerRestaurantPage = require("./ShimmerRestaurantPage");
 var _shimmerRestaurantPageDefault = parcelHelpers.interopDefault(_shimmerRestaurantPage);
 var _s = $RefreshSig$();
@@ -43629,6 +43630,13 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
         setPlaceName(e.structured_formatting);
         setSearchLocation("");
     };
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const handleRender = ()=>{
+        navigate("/help");
+        setTimeout(()=>{
+            navigate("/");
+        }, 100);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: btnLocation ? "not_show_loction show_loction" : "not_show_loction",
         children: [
@@ -43641,7 +43649,7 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                 className: "FYlIl"
                             }, void 0, false, {
                                 fileName: "src/components/LocationSearch.js",
-                                lineNumber: 49,
+                                lineNumber: 59,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43656,7 +43664,7 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                 children: "sticky_sentinel sticky_sentinel--top"
                                             }, void 0, false, {
                                                 fileName: "src/components/LocationSearch.js",
-                                                lineNumber: 53,
+                                                lineNumber: 63,
                                                 columnNumber: 37
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43681,35 +43689,35 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                             strokeWidth: "1"
                                                                         }, void 0, false, {
                                                                             fileName: "src/components/LocationSearch.js",
-                                                                            lineNumber: 61,
+                                                                            lineNumber: 71,
                                                                             columnNumber: 57
                                                                         }, undefined)
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/LocationSearch.js",
-                                                                        lineNumber: 60,
+                                                                        lineNumber: 70,
                                                                         columnNumber: 53
                                                                     }, undefined)
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 59,
+                                                                    lineNumber: 69,
                                                                     columnNumber: 49
                                                                 }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "src/components/LocationSearch.js",
-                                                                lineNumber: 58,
+                                                                lineNumber: 68,
                                                                 columnNumber: 45
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                 className: "_2Joay"
                                                             }, void 0, false, {
                                                                 fileName: "src/components/LocationSearch.js",
-                                                                lineNumber: 65,
+                                                                lineNumber: 75,
                                                                 columnNumber: 45
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/components/LocationSearch.js",
-                                                        lineNumber: 57,
+                                                        lineNumber: 67,
                                                         columnNumber: 41
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43726,38 +43734,38 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                     onChange: (e)=>setSearchLocation(e.target.value)
                                                                 }, "input-text", false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 69,
+                                                                    lineNumber: 79,
                                                                     columnNumber: 49
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                     className: "_2EeI1 _26LFr"
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 77,
+                                                                    lineNumber: 87,
                                                                     columnNumber: 53
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                     className: "_1Cvlf _2tL9P"
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 78,
+                                                                    lineNumber: 88,
                                                                     columnNumber: 49
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/components/LocationSearch.js",
-                                                            lineNumber: 68,
+                                                            lineNumber: 78,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/LocationSearch.js",
-                                                        lineNumber: 67,
+                                                        lineNumber: 77,
                                                         columnNumber: 41
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/LocationSearch.js",
-                                                lineNumber: 56,
+                                                lineNumber: 66,
                                                 columnNumber: 37
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43768,16 +43776,17 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                 onClick: ()=>selectClick(plac),
                                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                     className: "_2peD4 _2peD45",
-                                                                    onClick: ()=>handleClick(),
+                                                                    onClick: ()=>handleRender(),
                                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                         className: "J80xC",
+                                                                        onClick: ()=>handleClick(),
                                                                         children: [
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                                 className: "icon-location",
                                                                                 children: "\uD83D\uDEA9"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/components/LocationSearch.js",
-                                                                                lineNumber: 89,
+                                                                                lineNumber: 99,
                                                                                 columnNumber: 65
                                                                             }, undefined),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43788,7 +43797,7 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                                         children: plac.terms[0].value
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/components/LocationSearch.js",
-                                                                                        lineNumber: 91,
+                                                                                        lineNumber: 101,
                                                                                         columnNumber: 69
                                                                                     }, undefined),
                                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43802,35 +43811,35 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                                         ]
                                                                                     }, void 0, true, {
                                                                                         fileName: "src/components/LocationSearch.js",
-                                                                                        lineNumber: 92,
+                                                                                        lineNumber: 102,
                                                                                         columnNumber: 69
                                                                                     }, undefined)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "src/components/LocationSearch.js",
-                                                                                lineNumber: 90,
+                                                                                lineNumber: 100,
                                                                                 columnNumber: 65
                                                                             }, undefined)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/components/LocationSearch.js",
-                                                                        lineNumber: 88,
+                                                                        lineNumber: 98,
                                                                         columnNumber: 61
                                                                     }, undefined)
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 87,
+                                                                    lineNumber: 97,
                                                                     columnNumber: 57
                                                                 }, undefined)
                                                             }, plac.place_id, false, {
                                                                 fileName: "src/components/LocationSearch.js",
-                                                                lineNumber: 86,
+                                                                lineNumber: 96,
                                                                 columnNumber: 53
                                                             }, undefined))
                                                     }, void 0, false, {
                                                         fileName: "src/components/LocationSearch.js",
-                                                        lineNumber: 84,
-                                                        columnNumber: 47
+                                                        lineNumber: 94,
+                                                        columnNumber: 48
                                                     }, undefined),
                                                     place == undefined || place.length == 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         children: [
@@ -43845,7 +43854,7 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                                 className: "icon-location-crosshair _13AY4"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/components/LocationSearch.js",
-                                                                                lineNumber: 107,
+                                                                                lineNumber: 117,
                                                                                 columnNumber: 61
                                                                             }, undefined),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43856,7 +43865,7 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                                         children: "Get current location"
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/components/LocationSearch.js",
-                                                                                        lineNumber: 109,
+                                                                                        lineNumber: 119,
                                                                                         columnNumber: 65
                                                                                     }, undefined),
                                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43864,29 +43873,29 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                                         children: "Using GPS"
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/components/LocationSearch.js",
-                                                                                        lineNumber: 112,
+                                                                                        lineNumber: 122,
                                                                                         columnNumber: 65
                                                                                     }, undefined)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "src/components/LocationSearch.js",
-                                                                                lineNumber: 108,
+                                                                                lineNumber: 118,
                                                                                 columnNumber: 61
                                                                             }, undefined)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/components/LocationSearch.js",
-                                                                        lineNumber: 106,
+                                                                        lineNumber: 116,
                                                                         columnNumber: 57
                                                                     }, undefined)
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
-                                                                    lineNumber: 105,
+                                                                    lineNumber: 115,
                                                                     columnNumber: 53
                                                                 }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "src/components/LocationSearch.js",
-                                                                lineNumber: 104,
+                                                                lineNumber: 114,
                                                                 columnNumber: 49
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43897,7 +43906,7 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                         children: "RECENT SEARCHES"
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/LocationSearch.js",
-                                                                        lineNumber: 120,
+                                                                        lineNumber: 130,
                                                                         columnNumber: 53
                                                                     }, undefined),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43909,7 +43918,7 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                                     className: "icon-recent _13AY4 _fgrt4"
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/components/LocationSearch.js",
-                                                                                    lineNumber: 125,
+                                                                                    lineNumber: 135,
                                                                                     columnNumber: 61
                                                                                 }, undefined),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43920,7 +43929,7 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                                             children: "Koramangala"
                                                                                         }, void 0, false, {
                                                                                             fileName: "src/components/LocationSearch.js",
-                                                                                            lineNumber: 127,
+                                                                                            lineNumber: 137,
                                                                                             columnNumber: 65
                                                                                         }, undefined),
                                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -43928,74 +43937,74 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                                             children: "Bengaluru, Karnataka, India"
                                                                                         }, void 0, false, {
                                                                                             fileName: "src/components/LocationSearch.js",
-                                                                                            lineNumber: 130,
+                                                                                            lineNumber: 140,
                                                                                             columnNumber: 65
                                                                                         }, undefined)
                                                                                     ]
                                                                                 }, void 0, true, {
                                                                                     fileName: "src/components/LocationSearch.js",
-                                                                                    lineNumber: 126,
+                                                                                    lineNumber: 136,
                                                                                     columnNumber: 61
                                                                                 }, undefined)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/components/LocationSearch.js",
-                                                                            lineNumber: 124,
+                                                                            lineNumber: 134,
                                                                             columnNumber: 57
                                                                         }, undefined)
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/LocationSearch.js",
-                                                                        lineNumber: 123,
+                                                                        lineNumber: 133,
                                                                         columnNumber: 53
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/components/LocationSearch.js",
-                                                                lineNumber: 119,
+                                                                lineNumber: 129,
                                                                 columnNumber: 49
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/components/LocationSearch.js",
-                                                        lineNumber: 103,
+                                                        lineNumber: 113,
                                                         columnNumber: 46
                                                     }, undefined) : ""
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/LocationSearch.js",
-                                                lineNumber: 82,
+                                                lineNumber: 92,
                                                 columnNumber: 37
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/LocationSearch.js",
-                                        lineNumber: 52,
+                                        lineNumber: 62,
                                         columnNumber: 33
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/LocationSearch.js",
-                                    lineNumber: 51,
+                                    lineNumber: 61,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/LocationSearch.js",
-                                lineNumber: 50,
+                                lineNumber: 60,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/LocationSearch.js",
-                        lineNumber: 48,
+                        lineNumber: 58,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/LocationSearch.js",
-                    lineNumber: 47,
+                    lineNumber: 57,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/LocationSearch.js",
-                lineNumber: 46,
+                lineNumber: 56,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -44003,17 +44012,21 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                 onClick: ()=>handleClick()
             }, void 0, false, {
                 fileName: "src/components/LocationSearch.js",
-                lineNumber: 147,
+                lineNumber: 157,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/LocationSearch.js",
-        lineNumber: 45,
+        lineNumber: 55,
         columnNumber: 9
     }, undefined);
 };
-_s(LocationSearch, "dh21ZR1ewUaCJCf0EqHL4DcwIBg=");
+_s(LocationSearch, "P2nfSmnnBbFrvksfF5sn2QAnfI8=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c = LocationSearch;
 exports.default = LocationSearch;
 var _c;
@@ -44024,7 +44037,7 @@ $RefreshReg$(_c, "LocationSearch");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ShimmerRestaurantPage":"WrQVg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"WrQVg":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ShimmerRestaurantPage":"WrQVg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"WrQVg":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$cc49 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import ShimmerRestaurantPage from "./ShimmerRestaurantPage";
 
 const LocationSearch = ({ handleClick, btnLocation, setLatlng, setPlaceName }) => {
@@ -41,6 +42,15 @@ const LocationSearch = ({ handleClick, btnLocation, setLatlng, setPlaceName }) =
         setSearchLocation("");
     }
 
+    const navigate = useNavigate();
+
+    const handleRender = () => {
+        navigate("/help");
+        setTimeout(() => {
+            navigate("/")
+        }, 100)
+    }
+
     return(
         <div className={btnLocation ? "not_show_loction show_loction" : "not_show_loction"}>
             <div id="overlay-sidebar-root">
@@ -81,11 +91,11 @@ const LocationSearch = ({ handleClick, btnLocation, setLatlng, setPlaceName }) =
                                     </div>
                                     <div className="_1boND">
                                         {place == undefined || place.length == 0 ? ("")                                        
-                                           : (<div>
+                                            : (<div>
                                                 {place.map((plac) => (
                                                     <div onClick={() => selectClick(plac)} key={plac.place_id}>
-                                                        <div className="_2peD4 _2peD45" onClick={() => handleClick()}>
-                                                            <div className="J80xC">
+                                                        <div className="_2peD4 _2peD45" onClick={() => handleRender()}>
+                                                            <div className="J80xC" onClick={() => handleClick()}>
                                                                 <div className="icon-location">&#128681;</div>
                                                                 <div className="_3eFzL">
                                                                     <div className="Ku2oK">{plac.terms[0].value}</div>
