@@ -9,6 +9,7 @@ import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
 import { Auth0Provider } from '@auth0/auth0-react';
 const Contact = lazy(() => import("./components/Contact"));
 const Search = lazy(() => import("./components/Search"));
+const Cart = lazy(() => import("./components/Cart"));
 import Starting from "./components/Starting";
 import UserLocation from "./utils/UserLocation";
 import { Provider } from "react-redux";
@@ -57,6 +58,10 @@ const appRouter = createBrowserRouter([
             {
                 path: "/search",
                 element: <Suspense fallback={<h1>Loading...</h1>}><Search /></Suspense>
+            },
+            {
+                path: "/cart",
+                element: <Suspense fallback={<h1>Loading</h1>}><Cart /></Suspense>
             }
         ],
         errorElement: <Error />
