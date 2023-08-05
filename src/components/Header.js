@@ -1,6 +1,7 @@
 import React from "react";
 import { LOGO_URL } from "../utils/constants";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { useAuth0 } from "@auth0/auth0-react";
 import useOnlineStatus from "../utils/useOnlineStatus";
 
@@ -10,6 +11,9 @@ const Header = ({ handleClick, navbar, placeName }) => {
 
     const onlineStatus = useOnlineStatus();
 
+    // Selector
+    const cartItems = useSelector((store) => store.cart.items);
+    console.log(cartItems);
     return(
         <header className={navbar ? "_76q0O WJj7x" : "_76q0O"}>
             <div className="global-nav">
@@ -44,7 +48,7 @@ const Header = ({ handleClick, navbar, placeName }) => {
                                             <svg className="_1GTCc _2MSid" viewBox="-1 0 37 32" height="20" width="20" fill="#686b78">
                                                 <path d="M4.438 0l-2.598 5.11-1.84 26.124h34.909l-1.906-26.124-2.597-5.11z"></path>
                                             </svg>
-                                            <span className="_2vS77">0</span></span><span>Cart</span>
+                                            <span className="_2vS77">{cartItems.length}</span></span><span>Cart</span>
                                         </Link>
                                     </div>
                                 </div>

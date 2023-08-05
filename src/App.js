@@ -11,6 +11,8 @@ const Contact = lazy(() => import("./components/Contact"));
 const Search = lazy(() => import("./components/Search"));
 import Starting from "./components/Starting";
 import UserLocation from "./utils/UserLocation";
+import { Provider } from "react-redux";
+import appStore from "./redux_utilis/appStore";
 
 const AppLayout = () => {
 
@@ -23,13 +25,15 @@ const AppLayout = () => {
     }
 
     return(
-        <UserLocation.Provider value={{latitude: latlng.lat, longitude: latlng.lng}}>
-            <div className="_3arMG">
-                <Header btnLocation={btnLocation} handleClick={handleClick} placeName={placeName} />
-                <LocationSearch btnLocation={btnLocation} handleClick={handleClick} setLatlng={setLatlng} setPlaceName={setPlaceName} />
-                <Outlet />
-            </div>
-        </UserLocation.Provider>
+        <Provider store={appStore}>
+            <UserLocation.Provider value={{latitude: latlng.lat, longitude: latlng.lng}}>
+                <div className="_3arMG">
+                    <Header btnLocation={btnLocation} handleClick={handleClick} placeName={placeName} />
+                    <LocationSearch btnLocation={btnLocation} handleClick={handleClick} setLatlng={setLatlng} setPlaceName={setPlaceName} />
+                    <Outlet />
+                </div>
+            </UserLocation.Provider>
+        </Provider>
     )
 }
 

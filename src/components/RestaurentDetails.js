@@ -76,7 +76,7 @@ const RestaurantDetails = () => {
   window.addEventListener('scroll', changeHeader);
   
   if(restaurant == null) return <ShimmerRestaurantPage />;
-  console.log(restaurant);
+  // console.log(restaurant);
 
   return (
     <div>
