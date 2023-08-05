@@ -18086,7 +18086,7 @@ $RefreshReg$(_c, "RestaurentMenuItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/vege.png":"fTd7S","../utils/nonveg.png":"dh0ap","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-redux":"bdVon","../redux_utilis/cartSlice":"5x6O7"}],"fTd7S":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/vege.png":"fTd7S","../utils/nonveg.png":"dh0ap","react-redux":"bdVon","../redux_utilis/cartSlice":"5x6O7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"fTd7S":[function(require,module,exports) {
 module.exports = require("6f1741854acc1ce3").getBundleURL("uZckO") + "vege.71093493.png" + "?" + Date.now();
 
 },{"6f1741854acc1ce3":"lgJ39"}],"dh0ap":[function(require,module,exports) {
