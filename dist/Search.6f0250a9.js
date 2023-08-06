@@ -621,7 +621,7 @@ const Search = ()=>{
             var data = await fetch(`https://www.swiggy.com/dapi/landing/PRE_SEARCH?lat=${latitude}&lng=${longitude}`);
             var json = await data.json();
         }
-        console.log(json);
+        // console.log(json);
         setPopularCusi(json?.data?.cards[1]?.card?.card?.imageGridCards?.info);
     };
     // console.log(popularCusi);
@@ -773,9 +773,9 @@ const Search = ()=>{
                                 searchText == "" ? "" : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     onClick: ()=>setSearchText(""),
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        class: "_3XUKB",
+                                        className: "_3XUKB",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            class: "jBKjW",
+                                            className: "jBKjW",
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
                                                 width: "19",
                                                 height: "19",

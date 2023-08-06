@@ -524,6 +524,12 @@ header svg:not(:root) {
   stroke: #1b1d2a;
 }
 
+._173fq {
+  fill: #60b246;
+  stroke-width: 2px;
+  stroke: #60b246;
+}
+
 ._2vS77 {
   font-size: 14px;
   font-weight: 600;
@@ -531,6 +537,10 @@ header svg:not(:root) {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+._173fq ~ ._2vS77 {
+  color: #fff;
 }
 
 .OnlineHedader {
@@ -3752,8 +3762,7 @@ b {
 ._3-bcQ {
   max-width: 1200px;
   min-width: 1200px;
-  margin-top: 31px;
-  margin-bottom: 150px;
+  margin: 31px auto 150px;
   display: flex;
   position: relative;
 }
@@ -3909,6 +3918,13 @@ b {
   box-shadow: 0 3px 5px #282c3f66;
 }
 
+._2q4J3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 ._2sMsA {
   width: 366px;
 }
@@ -4023,6 +4039,10 @@ b {
   position: relative;
 }
 
+._3SG03, ._33KRy {
+  flex-grow: 1;
+}
+
 ._3SG03 {
   align-items: flex-start;
   display: flex;
@@ -4039,8 +4059,23 @@ b {
   font-weight: 400;
 }
 
-._3SG03, ._33KRy {
-  flex-grow: 1;
+._23dMP {
+  color: #686b78;
+  margin-top: 2px;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 500;
+  display: block;
+  position: relative;
+}
+
+._23dMP:after {
+  content: "›";
+  color: #fc8019;
+  font-size: 17px;
+  position: absolute;
+  top: -5px;
+  left: 54px;
 }
 
 ._2bWmk {
@@ -4252,6 +4287,36 @@ b {
 
 ._3rlIu + ._3rlIu {
   margin-top: 10px;
+}
+
+._3sNvC {
+  cursor: pointer;
+  margin-left: 7px;
+  display: inline;
+  position: relative;
+  top: 4px;
+}
+
+._1Accg {
+  border-bottom: 1px solid #e9e9eb;
+  margin: 17px 0 15px;
+}
+
+.ZBf6d {
+  height: 60px;
+  min-height: 60px;
+  color: #282c3f;
+  z-index: 1;
+  background: #fff;
+  align-items: center;
+  padding: 0 30px;
+  font-weight: 600;
+  display: flex;
+}
+
+._3ZAW1 {
+  text-align: right;
+  flex: 1;
 }
 
 /*# sourceMappingURL=index.3a01df49.css.map */

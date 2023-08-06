@@ -27490,7 +27490,7 @@ const Header = ({ handleClick , navbar , placeName  })=>{
                                                         className: "_3yZyp",
                                                         children: [
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                                className: "_1GTCc _2MSid",
+                                                                className: cartItems.length == 0 ? "_1GTCc _2MSid" : "_1GTCc _173fq",
                                                                 viewBox: "-1 0 37 32",
                                                                 height: "20",
                                                                 width: "20",
@@ -46569,8 +46569,8 @@ var _reselect = require("reselect");
 // src/getDefaultMiddleware.ts
 var _reduxThunk = require("redux-thunk");
 var _reduxThunkDefault = parcelHelpers.interopDefault(_reduxThunk);
-var process = require("d6634cb3c203fa96");
 var global = arguments[3];
+var process = require("d6634cb3c203fa96");
 var __extends = undefined && undefined.__extends || function() {
     var extendStatics = function(d, b) {
         extendStatics = Object.setPrototypeOf || ({

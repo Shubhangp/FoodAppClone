@@ -45,7 +45,7 @@ const Header = ({ handleClick, navbar, placeName }) => {
                                 <div>
                                     <div className="_2CgXb">
                                         <Link className="_1T-E4" to="/checkout"><span className="_3yZyp">
-                                            <svg className="_1GTCc _2MSid" viewBox="-1 0 37 32" height="20" width="20" fill="#686b78">
+                                            <svg className={cartItems.length == 0 ? "_1GTCc _2MSid" : "_1GTCc _173fq"} viewBox="-1 0 37 32" height="20" width="20" fill="#686b78">
                                                 <path d="M4.438 0l-2.598 5.11-1.84 26.124h34.909l-1.906-26.124-2.597-5.11z"></path>
                                             </svg>
                                             <span className="_2vS77">{cartItems.length}</span></span><span>Cart</span>
