@@ -3095,7 +3095,7 @@ const appRouter = (0, _reactRouterDom.createBrowserRouter)([
                 }, undefined)
             },
             {
-                path: "/cart",
+                path: "/checkout",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react.Suspense), {
                     fallback: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                         children: "Loading"

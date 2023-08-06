@@ -1,4 +1,8 @@
 import React from "react";
+import vege from "../utils/vege.png";
+import offer from "../utils/offer.svg";
+import info from "../utils/info.svg";
+import location from "../utils/location.svg"
 
 const Cart = () => {
     return(
@@ -11,7 +15,7 @@ const Cart = () => {
                                 <div className="_2YrH-">Delivery address</div>
                                 <div className="C2lmo _3za0v">
                                     <div className="_2C3aj _1eJQw">
-                                        <span className="_1ZSwS icon-tickRound"></span>
+                                        <span className="_1ZSwS">&#10003;</span>
                                     </div>
                                 </div>
                             </div>
@@ -23,7 +27,9 @@ const Cart = () => {
                             </div>
                             <div className="_250uQ"></div>
                             <div className="_2b4pY">
-                                <span className="_1q8J4 icon-marker-checkout"></span>
+                                <span>
+                                    <img  className="_1q8J4" src={location} alt="" />
+                                </span>
                             </div>
                         </div>
                         <div>
@@ -33,7 +39,15 @@ const Cart = () => {
                                 </div>
                                 <button className="_3PNwl">Proceed to Pay</button>
                                 <div className="_2b4pY">
-                                    <span className="_1q8J4 icon-wallet-checkout"></span>
+                                    <span className="_1q8J4 icon-wallet-checkout">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
+                                            <g fill="#FFF">
+                                                <path d="M32.509 7.5a.5.5 0 0 0 .5-.5V5.335a1.64 1.64 0 0 0-1.638-1.638h-2.687l-.613-1.809a.5.5 0 0 0-.619-.318L12.899 5.994a.501.501 0 0 0 .292.957L27.28 2.667l1.343 3.965a.499.499 0 1 0 .947-.321l-.547-1.615h2.349c.352 0 .638.286.638.638V7c-.001.276.223.5.499.5z"/>
+                                                <path d="M36.5 15a.5.5 0 0 0 0 1c.351 0 .5.149.5.5v6c0 .351-.149.5-.5.5h-8c-.351 0-.5-.149-.5-.5v-5c0-.351.149-.5.5-.5h6a.5.5 0 0 0 .5-.5v-6c0-.911-.589-1.5-1.5-1.5H3c-1.233 0-2-.767-2-2s.767-2 2-2h5.076l-3.026.998a.5.5 0 1 0 .313.949L23.482.974a.5.5 0 1 0-.314-.95l-12.1 3.99C11.045 4.01 11.024 4 11 4H3C1.206 4 0 5.206 0 7v22c0 1.794 1.206 3 3 3h30.5c.911 0 1.5-.589 1.5-1.5v-5a.5.5 0 0 0-1 0v5c0 .351-.149.5-.5.5H3c-1.233 0-2-.767-2-2V9.312c.513.433 1.192.688 2 .688h30.5c.351 0 .5.149.5.5V16h-5.5c-.911 0-1.5.589-1.5 1.5v5c0 .911.589 1.5 1.5 1.5h8c.911 0 1.5-.589 1.5-1.5v-6c0-.911-.589-1.5-1.5-1.5z"/>
+                                                <circle cx="32" cy="20" r="1"/>
+                                            </g>
+                                        </svg>
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +73,7 @@ const Cart = () => {
                                         <div className="_2pdCL">
                                             <div className="_2bXOy">
                                                 <div className="_3SG03">
-                                                    <i className="styles_icon__m6Ujp _2MJB6 icon-NonVeg" role="presentation" aria-hidden="true"></i>
+                                                    <img className="_2MJB6" src={vege} />
                                                     <div className="_33KRy">Grilled Lamb Burger Combo
                                                         <button className="_23dMP">Customize</button>
                                                     </div>
@@ -72,14 +86,16 @@ const Cart = () => {
                                                             <div className="_2zAXs">1</div>
                                                         </div>
                                                         <div className="_1mx0r">
-                                                            <span className="_2W2U4">719.33</span>
+                                                            <span className="_2W2U4">₹719.33</span>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="_2JQh7">
-                                            <textarea className="aeGJF" maxLength="140"></textarea>
+                                            <div  className="aeGJF">
+                                                <textarea className="qqwqD" maxLength="140"></textarea>
+                                            </div>
                                             <div className="_2_0V3">Any suggestions? We will pass it on...</div>
                                             <svg className="_3iLcN" viewBox="0 0 32 32">
                                                 <path d="M7.031 14c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7l-0.031-1c0-7.732 6.268-14 14-14v4c-2.671 0-5.182 1.040-7.071 2.929-0.364 0.364-0.695 0.751-0.995 1.157 0.357-0.056 0.724-0.086 1.097-0.086zM25.031 14c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7l-0.031-1c0-7.732 6.268-14 14-14v4c-2.671 0-5.182 1.040-7.071 2.929-0.364 0.364-0.695 0.751-0.995 1.157 0.358-0.056 0.724-0.086 1.097-0.086z"></path>
@@ -90,7 +106,7 @@ const Cart = () => {
                                                 <div className="_3wdKC">
                                                     <label className="Checkbox_checkboxLabel__3HKUG">
                                                         <input type="checkbox" className="Checkbox_checkboxInput__16SSg" name="CUTLERY_INSTRUCTION_CHK_BOX" value="CUTLERY_INSTRUCTION_CHK_BOX" />
-                                                        <svg className="Checkbox_checkboxTick__TZzsL" viewBox="0 0 24 24">
+                                                        <svg className="Checkbox_checkboxTick__TZzsL Checkbox_checkboxTickShow__3-VyF" viewBox="0 0 24 24">
                                                             <path d="M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
                                                         </svg>
                                                     </label>
@@ -103,7 +119,7 @@ const Cart = () => {
                                         </div>
                                         <div className="_3PZFF">
                                             <div role="button" aria-label="Apply Coupon" className="_2aJip">
-                                                <i className="icon-offers-coupon _2W5PY"></i> Apply Coupon
+                                                <img className="_2W5PY" src={offer} alt="" /> Apply Coupon
                                             </div>
                                             <div className="_3e0Qi">Bill Details</div>
                                             <div className="_3rlIu">
@@ -121,7 +137,7 @@ const Cart = () => {
                                                 <div className="_2VV4a">
                                                     <div>Delivery Fee | 1.3 kms
                                                         <div className="_3sNvC">
-                                                            <span className="icon-info"></span>
+                                                            <img src={info} alt="" />
                                                         </div>
                                                     </div>
                                                 </div>

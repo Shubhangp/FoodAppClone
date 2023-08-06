@@ -589,6 +589,14 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _vegePng = require("../utils/vege.png");
+var _vegePngDefault = parcelHelpers.interopDefault(_vegePng);
+var _offerSvg = require("../utils/offer.svg");
+var _offerSvgDefault = parcelHelpers.interopDefault(_offerSvg);
+var _infoSvg = require("../utils/info.svg");
+var _infoSvgDefault = parcelHelpers.interopDefault(_infoSvg);
+var _locationSvg = require("../utils/location.svg");
+var _locationSvgDefault = parcelHelpers.interopDefault(_locationSvg);
 const Cart = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "nDVxx _340-t",
@@ -610,7 +618,7 @@ const Cart = ()=>{
                                                 children: "Delivery address"
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 11,
+                                                lineNumber: 15,
                                                 columnNumber: 33
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -618,26 +626,27 @@ const Cart = ()=>{
                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                     className: "_2C3aj _1eJQw",
                                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                        className: "_1ZSwS icon-tickRound"
+                                                        className: "_1ZSwS",
+                                                        children: "✓"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Cart.js",
-                                                        lineNumber: 14,
+                                                        lineNumber: 18,
                                                         columnNumber: 41
                                                     }, undefined)
                                                 }, void 0, false, {
                                                     fileName: "src/components/Cart.js",
-                                                    lineNumber: 13,
+                                                    lineNumber: 17,
                                                     columnNumber: 37
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 12,
+                                                lineNumber: 16,
                                                 columnNumber: 33
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Cart.js",
-                                        lineNumber: 10,
+                                        lineNumber: 14,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -648,7 +657,7 @@ const Cart = ()=>{
                                                 children: "Change"
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 19,
+                                                lineNumber: 23,
                                                 columnNumber: 33
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -656,7 +665,7 @@ const Cart = ()=>{
                                                 children: "home"
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 20,
+                                                lineNumber: 24,
                                                 columnNumber: 33
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -664,7 +673,7 @@ const Cart = ()=>{
                                                 children: "fd, WJPF+3QH, KHB Colony, Koramangala 4th Block, Koramangala, Bengaluru, Karnataka 560034, India"
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 21,
+                                                lineNumber: 25,
                                                 columnNumber: 33
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -672,40 +681,48 @@ const Cart = ()=>{
                                                 children: "26 MINS"
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 22,
+                                                lineNumber: 26,
                                                 columnNumber: 33
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Cart.js",
-                                        lineNumber: 18,
+                                        lineNumber: 22,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "_250uQ"
                                     }, void 0, false, {
                                         fileName: "src/components/Cart.js",
-                                        lineNumber: 24,
+                                        lineNumber: 28,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "_2b4pY",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                            className: "_1q8J4 icon-marker-checkout"
+                                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                className: "_1q8J4",
+                                                src: (0, _locationSvgDefault.default),
+                                                alt: ""
+                                            }, void 0, false, {
+                                                fileName: "src/components/Cart.js",
+                                                lineNumber: 31,
+                                                columnNumber: 37
+                                            }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Cart.js",
-                                            lineNumber: 26,
+                                            lineNumber: 30,
                                             columnNumber: 33
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Cart.js",
-                                        lineNumber: 25,
+                                        lineNumber: 29,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Cart.js",
-                                lineNumber: 9,
+                                lineNumber: 13,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -719,12 +736,12 @@ const Cart = ()=>{
                                                 children: "Choose payment method"
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 32,
+                                                lineNumber: 38,
                                                 columnNumber: 37
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Cart.js",
-                                            lineNumber: 31,
+                                            lineNumber: 37,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -732,43 +749,85 @@ const Cart = ()=>{
                                             children: "Proceed to Pay"
                                         }, void 0, false, {
                                             fileName: "src/components/Cart.js",
-                                            lineNumber: 34,
+                                            lineNumber: 40,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "_2b4pY",
                                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                className: "_1q8J4 icon-wallet-checkout"
+                                                className: "_1q8J4 icon-wallet-checkout",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    width: "38",
+                                                    height: "32",
+                                                    viewBox: "0 0 38 32",
+                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("g", {
+                                                        fill: "#FFF",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                d: "M32.509 7.5a.5.5 0 0 0 .5-.5V5.335a1.64 1.64 0 0 0-1.638-1.638h-2.687l-.613-1.809a.5.5 0 0 0-.619-.318L12.899 5.994a.501.501 0 0 0 .292.957L27.28 2.667l1.343 3.965a.499.499 0 1 0 .947-.321l-.547-1.615h2.349c.352 0 .638.286.638.638V7c-.001.276.223.5.499.5z"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Cart.js",
+                                                                lineNumber: 45,
+                                                                columnNumber: 49
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
+                                                                d: "M36.5 15a.5.5 0 0 0 0 1c.351 0 .5.149.5.5v6c0 .351-.149.5-.5.5h-8c-.351 0-.5-.149-.5-.5v-5c0-.351.149-.5.5-.5h6a.5.5 0 0 0 .5-.5v-6c0-.911-.589-1.5-1.5-1.5H3c-1.233 0-2-.767-2-2s.767-2 2-2h5.076l-3.026.998a.5.5 0 1 0 .313.949L23.482.974a.5.5 0 1 0-.314-.95l-12.1 3.99C11.045 4.01 11.024 4 11 4H3C1.206 4 0 5.206 0 7v22c0 1.794 1.206 3 3 3h30.5c.911 0 1.5-.589 1.5-1.5v-5a.5.5 0 0 0-1 0v5c0 .351-.149.5-.5.5H3c-1.233 0-2-.767-2-2V9.312c.513.433 1.192.688 2 .688h30.5c.351 0 .5.149.5.5V16h-5.5c-.911 0-1.5.589-1.5 1.5v5c0 .911.589 1.5 1.5 1.5h8c.911 0 1.5-.589 1.5-1.5v-6c0-.911-.589-1.5-1.5-1.5z"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Cart.js",
+                                                                lineNumber: 46,
+                                                                columnNumber: 49
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("circle", {
+                                                                cx: "32",
+                                                                cy: "20",
+                                                                r: "1"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Cart.js",
+                                                                lineNumber: 47,
+                                                                columnNumber: 49
+                                                            }, undefined)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "src/components/Cart.js",
+                                                        lineNumber: 44,
+                                                        columnNumber: 45
+                                                    }, undefined)
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Cart.js",
+                                                    lineNumber: 43,
+                                                    columnNumber: 41
+                                                }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 36,
+                                                lineNumber: 42,
                                                 columnNumber: 37
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Cart.js",
-                                            lineNumber: 35,
+                                            lineNumber: 41,
                                             columnNumber: 33
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Cart.js",
-                                    lineNumber: 30,
+                                    lineNumber: 36,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Cart.js",
-                                lineNumber: 29,
+                                lineNumber: 35,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Cart.js",
-                        lineNumber: 8,
+                        lineNumber: 12,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Cart.js",
-                    lineNumber: 7,
+                    lineNumber: 11,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -791,12 +850,12 @@ const Cart = ()=>{
                                             height: "50"
                                         }, void 0, false, {
                                             fileName: "src/components/Cart.js",
-                                            lineNumber: 46,
+                                            lineNumber: 60,
                                             columnNumber: 33
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Cart.js",
-                                        lineNumber: 45,
+                                        lineNumber: 59,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -807,7 +866,7 @@ const Cart = ()=>{
                                                 children: "Leon's - Burgers & Wings (Leon Grill)"
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 49,
+                                                lineNumber: 63,
                                                 columnNumber: 33
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -815,19 +874,19 @@ const Cart = ()=>{
                                                 children: "Koramangala"
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 50,
+                                                lineNumber: 64,
                                                 columnNumber: 33
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Cart.js",
-                                        lineNumber: 48,
+                                        lineNumber: 62,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Cart.js",
-                                lineNumber: 44,
+                                lineNumber: 58,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -839,7 +898,7 @@ const Cart = ()=>{
                                             className: "_3YMqW"
                                         }, void 0, false, {
                                             fileName: "src/components/Cart.js",
-                                            lineNumber: 55,
+                                            lineNumber: 69,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -850,7 +909,7 @@ const Cart = ()=>{
                                                         className: "_2zsON"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Cart.js",
-                                                        lineNumber: 58,
+                                                        lineNumber: 72,
                                                         columnNumber: 41
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -861,13 +920,12 @@ const Cart = ()=>{
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                     className: "_3SG03",
                                                                     children: [
-                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                                            className: "styles_icon__m6Ujp _2MJB6 icon-NonVeg",
-                                                                            role: "presentation",
-                                                                            "aria-hidden": "true"
+                                                                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                            className: "_2MJB6",
+                                                                            src: (0, _vegePngDefault.default)
                                                                         }, void 0, false, {
                                                                             fileName: "src/components/Cart.js",
-                                                                            lineNumber: 62,
+                                                                            lineNumber: 76,
                                                                             columnNumber: 53
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -879,19 +937,19 @@ const Cart = ()=>{
                                                                                     children: "Customize"
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/components/Cart.js",
-                                                                                    lineNumber: 64,
+                                                                                    lineNumber: 78,
                                                                                     columnNumber: 57
                                                                                 }, undefined)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/components/Cart.js",
-                                                                            lineNumber: 63,
+                                                                            lineNumber: 77,
                                                                             columnNumber: 53
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/components/Cart.js",
-                                                                    lineNumber: 61,
+                                                                    lineNumber: 75,
                                                                     columnNumber: 49
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -907,14 +965,14 @@ const Cart = ()=>{
                                                                                         children: "+"
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/components/Cart.js",
-                                                                                        lineNumber: 70,
+                                                                                        lineNumber: 84,
                                                                                         columnNumber: 61
                                                                                     }, undefined),
                                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                                         className: "_29Y5Z"
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/components/Cart.js",
-                                                                                        lineNumber: 71,
+                                                                                        lineNumber: 85,
                                                                                         columnNumber: 61
                                                                                     }, undefined),
                                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -922,61 +980,68 @@ const Cart = ()=>{
                                                                                         children: "1"
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/components/Cart.js",
-                                                                                        lineNumber: 72,
+                                                                                        lineNumber: 86,
                                                                                         columnNumber: 61
                                                                                     }, undefined)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "src/components/Cart.js",
-                                                                                lineNumber: 69,
+                                                                                lineNumber: 83,
                                                                                 columnNumber: 57
                                                                             }, undefined),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                                 className: "_1mx0r",
                                                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                                     className: "_2W2U4",
-                                                                                    children: "719.33"
+                                                                                    children: "₹719.33"
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/components/Cart.js",
-                                                                                    lineNumber: 75,
+                                                                                    lineNumber: 89,
                                                                                     columnNumber: 61
                                                                                 }, undefined)
                                                                             }, void 0, false, {
                                                                                 fileName: "src/components/Cart.js",
-                                                                                lineNumber: 74,
+                                                                                lineNumber: 88,
                                                                                 columnNumber: 57
                                                                             }, undefined)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/components/Cart.js",
-                                                                        lineNumber: 68,
+                                                                        lineNumber: 82,
                                                                         columnNumber: 53
                                                                     }, undefined)
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/Cart.js",
-                                                                    lineNumber: 67,
+                                                                    lineNumber: 81,
                                                                     columnNumber: 49
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/components/Cart.js",
-                                                            lineNumber: 60,
+                                                            lineNumber: 74,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Cart.js",
-                                                        lineNumber: 59,
+                                                        lineNumber: 73,
                                                         columnNumber: 41
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "_2JQh7",
                                                         children: [
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                 className: "aeGJF",
-                                                                maxLength: "140"
+                                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                                                    className: "qqwqD",
+                                                                    maxLength: "140"
+                                                                }, void 0, false, {
+                                                                    fileName: "src/components/Cart.js",
+                                                                    lineNumber: 97,
+                                                                    columnNumber: 49
+                                                                }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Cart.js",
-                                                                lineNumber: 82,
+                                                                lineNumber: 96,
                                                                 columnNumber: 45
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -984,7 +1049,7 @@ const Cart = ()=>{
                                                                 children: "Any suggestions? We will pass it on..."
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Cart.js",
-                                                                lineNumber: 83,
+                                                                lineNumber: 99,
                                                                 columnNumber: 45
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
@@ -994,18 +1059,18 @@ const Cart = ()=>{
                                                                     d: "M7.031 14c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7l-0.031-1c0-7.732 6.268-14 14-14v4c-2.671 0-5.182 1.040-7.071 2.929-0.364 0.364-0.695 0.751-0.995 1.157 0.357-0.056 0.724-0.086 1.097-0.086zM25.031 14c3.866 0 7 3.134 7 7s-3.134 7-7 7-7-3.134-7-7l-0.031-1c0-7.732 6.268-14 14-14v4c-2.671 0-5.182 1.040-7.071 2.929-0.364 0.364-0.695 0.751-0.995 1.157 0.358-0.056 0.724-0.086 1.097-0.086z"
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/Cart.js",
-                                                                    lineNumber: 85,
+                                                                    lineNumber: 101,
                                                                     columnNumber: 49
                                                                 }, undefined)
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Cart.js",
-                                                                lineNumber: 84,
+                                                                lineNumber: 100,
                                                                 columnNumber: 45
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/components/Cart.js",
-                                                        lineNumber: 81,
+                                                        lineNumber: 95,
                                                         columnNumber: 41
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1025,33 +1090,33 @@ const Cart = ()=>{
                                                                                 value: "CUTLERY_INSTRUCTION_CHK_BOX"
                                                                             }, void 0, false, {
                                                                                 fileName: "src/components/Cart.js",
-                                                                                lineNumber: 92,
+                                                                                lineNumber: 108,
                                                                                 columnNumber: 57
                                                                             }, undefined),
                                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("svg", {
-                                                                                className: "Checkbox_checkboxTick__TZzsL",
+                                                                                className: "Checkbox_checkboxTick__TZzsL Checkbox_checkboxTickShow__3-VyF",
                                                                                 viewBox: "0 0 24 24",
                                                                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
                                                                                     d: "M19 3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-9 14l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/components/Cart.js",
-                                                                                    lineNumber: 94,
+                                                                                    lineNumber: 110,
                                                                                     columnNumber: 61
                                                                                 }, undefined)
                                                                             }, void 0, false, {
                                                                                 fileName: "src/components/Cart.js",
-                                                                                lineNumber: 93,
+                                                                                lineNumber: 109,
                                                                                 columnNumber: 57
                                                                             }, undefined)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "src/components/Cart.js",
-                                                                        lineNumber: 91,
+                                                                        lineNumber: 107,
                                                                         columnNumber: 53
                                                                     }, undefined)
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/Cart.js",
-                                                                    lineNumber: 90,
+                                                                    lineNumber: 106,
                                                                     columnNumber: 49
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1062,7 +1127,7 @@ const Cart = ()=>{
                                                                             children: "Opt in for No-contact Delivery"
                                                                         }, void 0, false, {
                                                                             fileName: "src/components/Cart.js",
-                                                                            lineNumber: 99,
+                                                                            lineNumber: 115,
                                                                             columnNumber: 53
                                                                         }, undefined),
                                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1070,24 +1135,24 @@ const Cart = ()=>{
                                                                             children: "Unwell, or avoiding contact? Please select no-contact delivery. Partner will safely place the order outside your door (not for COD)"
                                                                         }, void 0, false, {
                                                                             fileName: "src/components/Cart.js",
-                                                                            lineNumber: 100,
+                                                                            lineNumber: 116,
                                                                             columnNumber: 53
                                                                         }, undefined)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "src/components/Cart.js",
-                                                                    lineNumber: 98,
+                                                                    lineNumber: 114,
                                                                     columnNumber: 49
                                                                 }, undefined)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "src/components/Cart.js",
-                                                            lineNumber: 89,
+                                                            lineNumber: 105,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     }, void 0, false, {
                                                         fileName: "src/components/Cart.js",
-                                                        lineNumber: 88,
+                                                        lineNumber: 104,
                                                         columnNumber: 41
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1098,18 +1163,20 @@ const Cart = ()=>{
                                                                 "aria-label": "Apply Coupon",
                                                                 className: "_2aJip",
                                                                 children: [
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                                                                        className: "icon-offers-coupon _2W5PY"
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                        className: "_2W5PY",
+                                                                        src: (0, _offerSvgDefault.default),
+                                                                        alt: ""
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Cart.js",
-                                                                        lineNumber: 106,
+                                                                        lineNumber: 122,
                                                                         columnNumber: 49
                                                                     }, undefined),
                                                                     " Apply Coupon"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/components/Cart.js",
-                                                                lineNumber: 105,
+                                                                lineNumber: 121,
                                                                 columnNumber: 45
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1117,7 +1184,7 @@ const Cart = ()=>{
                                                                 children: "Bill Details"
                                                             }, void 0, false, {
                                                                 fileName: "src/components/Cart.js",
-                                                                lineNumber: 108,
+                                                                lineNumber: 124,
                                                                 columnNumber: 45
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1129,12 +1196,12 @@ const Cart = ()=>{
                                                                             children: "Item Total"
                                                                         }, void 0, false, {
                                                                             fileName: "src/components/Cart.js",
-                                                                            lineNumber: 111,
+                                                                            lineNumber: 127,
                                                                             columnNumber: 53
                                                                         }, undefined)
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Cart.js",
-                                                                        lineNumber: 110,
+                                                                        lineNumber: 126,
                                                                         columnNumber: 49
                                                                     }, undefined),
                                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1144,7 +1211,7 @@ const Cart = ()=>{
                                                                             children: [
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
                                                                                     fileName: "src/components/Cart.js",
-                                                                                    lineNumber: 115,
+                                                                                    lineNumber: 131,
                                                                                     columnNumber: 57
                                                                                 }, undefined),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -1152,24 +1219,24 @@ const Cart = ()=>{
                                                                                     children: "719.33"
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/components/Cart.js",
-                                                                                    lineNumber: 116,
+                                                                                    lineNumber: 132,
                                                                                     columnNumber: 57
                                                                                 }, undefined)
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "src/components/Cart.js",
-                                                                            lineNumber: 114,
+                                                                            lineNumber: 130,
                                                                             columnNumber: 53
                                                                         }, undefined)
                                                                     }, void 0, false, {
                                                                         fileName: "src/components/Cart.js",
-                                                                        lineNumber: 113,
+                                                                        lineNumber: 129,
                                                                         columnNumber: 49
                                                                     }, undefined)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "src/components/Cart.js",
-                                                                lineNumber: 109,
+                                                                lineNumber: 125,
                                                                 columnNumber: 45
                                                             }, undefined),
                                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1182,83 +1249,9 @@ const Cart = ()=>{
                                                                                 "Delivery Fee | 1.3 kms",
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                                                     className: "_3sNvC",
-                                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                                        className: "icon-info"
-                                                                                    }, void 0, false, {
-                                                                                        fileName: "src/components/Cart.js",
-                                                                                        lineNumber: 124,
-                                                                                        columnNumber: 61
-                                                                                    }, undefined)
-                                                                                }, void 0, false, {
-                                                                                    fileName: "src/components/Cart.js",
-                                                                                    lineNumber: 123,
-                                                                                    columnNumber: 57
-                                                                                }, undefined)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "src/components/Cart.js",
-                                                                            lineNumber: 122,
-                                                                            columnNumber: 53
-                                                                        }, undefined)
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Cart.js",
-                                                                        lineNumber: 121,
-                                                                        columnNumber: 49
-                                                                    }, undefined),
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                        className: "_1I8bA",
-                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                            className: "",
-                                                                            children: [
-                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
-                                                                                    fileName: "src/components/Cart.js",
-                                                                                    lineNumber: 130,
-                                                                                    columnNumber: 57
-                                                                                }, undefined),
-                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                                    className: "ZH2UW",
-                                                                                    children: "27"
-                                                                                }, void 0, false, {
-                                                                                    fileName: "src/components/Cart.js",
-                                                                                    lineNumber: 131,
-                                                                                    columnNumber: 57
-                                                                                }, undefined)
-                                                                            ]
-                                                                        }, void 0, true, {
-                                                                            fileName: "src/components/Cart.js",
-                                                                            lineNumber: 129,
-                                                                            columnNumber: 53
-                                                                        }, undefined)
-                                                                    }, void 0, false, {
-                                                                        fileName: "src/components/Cart.js",
-                                                                        lineNumber: 128,
-                                                                        columnNumber: 49
-                                                                    }, undefined)
-                                                                ]
-                                                            }, void 0, true, {
-                                                                fileName: "src/components/Cart.js",
-                                                                lineNumber: 120,
-                                                                columnNumber: 45
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                className: "_1Accg"
-                                                            }, void 0, false, {
-                                                                fileName: "src/components/Cart.js",
-                                                                lineNumber: 135,
-                                                                columnNumber: 45
-                                                            }, undefined),
-                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                className: "_3rlIu",
-                                                                children: [
-                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                        className: "_2VV4a",
-                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                            children: [
-                                                                                "GST and Restaurant Charges",
-                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                                                    className: "_3sNvC",
-                                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
-                                                                                        className: "icon-info"
+                                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                                                        src: (0, _infoSvgDefault.default),
+                                                                                        alt: ""
                                                                                     }, void 0, false, {
                                                                                         fileName: "src/components/Cart.js",
                                                                                         lineNumber: 140,
@@ -1292,7 +1285,7 @@ const Cart = ()=>{
                                                                                 }, undefined),
                                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                                                     className: "ZH2UW",
-                                                                                    children: "70.62"
+                                                                                    children: "27"
                                                                                 }, void 0, false, {
                                                                                     fileName: "src/components/Cart.js",
                                                                                     lineNumber: 147,
@@ -1314,47 +1307,122 @@ const Cart = ()=>{
                                                                 fileName: "src/components/Cart.js",
                                                                 lineNumber: 136,
                                                                 columnNumber: 45
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "_1Accg"
+                                                            }, void 0, false, {
+                                                                fileName: "src/components/Cart.js",
+                                                                lineNumber: 151,
+                                                                columnNumber: 45
+                                                            }, undefined),
+                                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                className: "_3rlIu",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                        className: "_2VV4a",
+                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                            children: [
+                                                                                "GST and Restaurant Charges",
+                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                                    className: "_3sNvC",
+                                                                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                                        className: "icon-info"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "src/components/Cart.js",
+                                                                                        lineNumber: 156,
+                                                                                        columnNumber: 61
+                                                                                    }, undefined)
+                                                                                }, void 0, false, {
+                                                                                    fileName: "src/components/Cart.js",
+                                                                                    lineNumber: 155,
+                                                                                    columnNumber: 57
+                                                                                }, undefined)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "src/components/Cart.js",
+                                                                            lineNumber: 154,
+                                                                            columnNumber: 53
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Cart.js",
+                                                                        lineNumber: 153,
+                                                                        columnNumber: 49
+                                                                    }, undefined),
+                                                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                                        className: "_1I8bA",
+                                                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                            className: "",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {}, void 0, false, {
+                                                                                    fileName: "src/components/Cart.js",
+                                                                                    lineNumber: 162,
+                                                                                    columnNumber: 57
+                                                                                }, undefined),
+                                                                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                                                    className: "ZH2UW",
+                                                                                    children: "70.62"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "src/components/Cart.js",
+                                                                                    lineNumber: 163,
+                                                                                    columnNumber: 57
+                                                                                }, undefined)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "src/components/Cart.js",
+                                                                            lineNumber: 161,
+                                                                            columnNumber: 53
+                                                                        }, undefined)
+                                                                    }, void 0, false, {
+                                                                        fileName: "src/components/Cart.js",
+                                                                        lineNumber: 160,
+                                                                        columnNumber: 49
+                                                                    }, undefined)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "src/components/Cart.js",
+                                                                lineNumber: 152,
+                                                                columnNumber: 45
                                                             }, undefined)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "src/components/Cart.js",
-                                                        lineNumber: 104,
+                                                        lineNumber: 120,
                                                         columnNumber: 41
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                         className: "_3DPdG"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Cart.js",
-                                                        lineNumber: 152,
+                                                        lineNumber: 168,
                                                         columnNumber: 41
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 57,
+                                                lineNumber: 71,
                                                 columnNumber: 37
                                             }, undefined)
                                         }, void 0, false, {
                                             fileName: "src/components/Cart.js",
-                                            lineNumber: 56,
+                                            lineNumber: 70,
                                             columnNumber: 33
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                             className: "_1v28S _2Cjz6"
                                         }, void 0, false, {
                                             fileName: "src/components/Cart.js",
-                                            lineNumber: 155,
+                                            lineNumber: 171,
                                             columnNumber: 33
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Cart.js",
-                                    lineNumber: 54,
+                                    lineNumber: 68,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Cart.js",
-                                lineNumber: 53,
+                                lineNumber: 67,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1364,7 +1432,7 @@ const Cart = ()=>{
                                         children: "TO PAY"
                                     }, void 0, false, {
                                         fileName: "src/components/Cart.js",
-                                        lineNumber: 159,
+                                        lineNumber: 175,
                                         columnNumber: 29
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1372,13 +1440,13 @@ const Cart = ()=>{
                                         children: "817"
                                     }, void 0, false, {
                                         fileName: "src/components/Cart.js",
-                                        lineNumber: 160,
+                                        lineNumber: 176,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Cart.js",
-                                lineNumber: 158,
+                                lineNumber: 174,
                                 columnNumber: 25
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1399,7 +1467,7 @@ const Cart = ()=>{
                                                         height: "48"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Cart.js",
-                                                        lineNumber: 166,
+                                                        lineNumber: 182,
                                                         columnNumber: 41
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -1408,13 +1476,13 @@ const Cart = ()=>{
                                                         children: "Review your order and address details to avoid cancellations"
                                                     }, void 0, false, {
                                                         fileName: "src/components/Cart.js",
-                                                        lineNumber: 167,
+                                                        lineNumber: 183,
                                                         columnNumber: 41
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 165,
+                                                lineNumber: 181,
                                                 columnNumber: 37
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1426,36 +1494,36 @@ const Cart = ()=>{
                                                             children: "Note:"
                                                         }, void 0, false, {
                                                             fileName: "src/components/Cart.js",
-                                                            lineNumber: 171,
+                                                            lineNumber: 187,
                                                             columnNumber: 45
                                                         }, undefined),
                                                         " If you cancel within 60 seconds of placing your order, a 100% refund will be issued. No refund for cancellations made after 60 seconds.",
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                             fileName: "src/components/Cart.js",
-                                                            lineNumber: 171,
+                                                            lineNumber: 187,
                                                             columnNumber: 199
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
                                                             fileName: "src/components/Cart.js",
-                                                            lineNumber: 171,
+                                                            lineNumber: 187,
                                                             columnNumber: 205
                                                         }, undefined),
                                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
                                                             children: "Avoid cancellation as it leads to food wastage."
                                                         }, void 0, false, {
                                                             fileName: "src/components/Cart.js",
-                                                            lineNumber: 172,
+                                                            lineNumber: 188,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "src/components/Cart.js",
-                                                    lineNumber: 170,
+                                                    lineNumber: 186,
                                                     columnNumber: 41
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 169,
+                                                lineNumber: 185,
                                                 columnNumber: 37
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -1469,50 +1537,50 @@ const Cart = ()=>{
                                                     children: "Read cancellation policy"
                                                 }, void 0, false, {
                                                     fileName: "src/components/Cart.js",
-                                                    lineNumber: 176,
+                                                    lineNumber: 192,
                                                     columnNumber: 41
                                                 }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Cart.js",
-                                                lineNumber: 175,
+                                                lineNumber: 191,
                                                 columnNumber: 37
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Cart.js",
-                                        lineNumber: 164,
+                                        lineNumber: 180,
                                         columnNumber: 33
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Cart.js",
-                                    lineNumber: 163,
+                                    lineNumber: 179,
                                     columnNumber: 29
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/components/Cart.js",
-                                lineNumber: 162,
+                                lineNumber: 178,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Cart.js",
-                        lineNumber: 43,
+                        lineNumber: 57,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Cart.js",
-                    lineNumber: 42,
+                    lineNumber: 56,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Cart.js",
-            lineNumber: 6,
+            lineNumber: 10,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Cart.js",
-        lineNumber: 5,
+        lineNumber: 9,
         columnNumber: 9
     }, undefined);
 };
@@ -1526,6 +1594,18 @@ $RefreshReg$(_c, "Cart");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["1xC6H","k8hhB"], null, "parcelRequire8442")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/location.svg":"aPZSF","../utils/vege.png":"2dEox","../utils/offer.svg":"fzxmc","../utils/info.svg":"2Vzin"}],"aPZSF":[function(require,module,exports) {
+module.exports = require("564efc4a7d00d87").getBundleURL("j8fUQ") + "location.2f3b5aa7.svg" + "?" + Date.now();
+
+},{"564efc4a7d00d87":"lgJ39"}],"2dEox":[function(require,module,exports) {
+module.exports = require("bf5883f89f535156").getBundleURL("j8fUQ") + "vege.71093493.png" + "?" + Date.now();
+
+},{"bf5883f89f535156":"lgJ39"}],"fzxmc":[function(require,module,exports) {
+module.exports = require("313e5b8d4164d9d0").getBundleURL("j8fUQ") + "offer.f5aa96f9.svg" + "?" + Date.now();
+
+},{"313e5b8d4164d9d0":"lgJ39"}],"2Vzin":[function(require,module,exports) {
+module.exports = require("c1619809bc9fab39").getBundleURL("j8fUQ") + "info.251964a8.svg" + "?" + Date.now();
+
+},{"c1619809bc9fab39":"lgJ39"}]},["1xC6H","k8hhB"], null, "parcelRequire8442")
 
 //# sourceMappingURL=Cart.9e76ab78.js.map
