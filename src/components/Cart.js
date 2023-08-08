@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { addItem } from "../redux_utilis/cartSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { addItem, clearCart } from "../redux_utilis/cartSlice";
 import Coupon from "./Cupon";
 import offer from "../utils/offer.svg";
 import info from "../utils/info.svg";
@@ -14,16 +14,19 @@ const Cart = () => {
     const navigate = useNavigate();
     const [selCupon, setSelCupon] = useState("");
     const [btnCupon, setBtnCupon] = useState(false);
-
+    const [clicked, setClicked] = useState(false);
+    const [tPrice, setTPrice] = useState([]);
+    console.log(tPrice);
     const cartItems = useSelector((store) => store.cart.items);
     console.log(cartItems);
-    const [clicked, setClicked] = useState(false);
+    const dispatch = useDispatch();
+    const handleCheckOut = () => {
+        dispatch(clearCart());
+    }
 
     function handleClose(){
         setBtnCupon(btnCupon => !btnCupon);
     }
-
-    let itemCon;
 
     return(
         <div className="cupon">
@@ -45,7 +48,7 @@ const Cart = () => {
                                         <div className="_1IPhI">Change</div>
                                         <div className="_2kejs">home</div>
                                         <div className="_1QRRt">fd, WJPF+3QH, KHB Colony, Koramangala 4th Block, Koramangala, Bengaluru, Karnataka 560034, India</div>
-                                        <div className="_1__JV">26 MINS</div>
+                                        <div className="_1__JV">{cartItems[0].info.sla.slaString}</div>
                                     </div>
                                     <div className="_250uQ"></div>
                                     <div className="_2b4pY">
@@ -59,7 +62,7 @@ const Cart = () => {
                                         <div className="F8Sye">
                                             <div className="_2YrH-">Choose payment method</div>
                                         </div>
-                                        <button className="_3PNwl">Proceed to Pay</button>
+                                        <button className="_3PNwl" onClick={handleCheckOut}>Proceed to Pay</button>
                                         <div className="_2b4pY">
                                             <span className="_2q4J3">
                                                 <img src={wallet} alt="" />
@@ -73,11 +76,11 @@ const Cart = () => {
                             <div className="_1LDW5">
                                 <button className="_1mJeT">
                                     <span className="_1dcmE">
-                                        <img className="" imageurl="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_100,h_100,c_fill/r4ufflqojich0r29efvc" imageid="" alt="img renderer" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_100,h_100,c_fill/r4ufflqojich0r29efvc" width="50" height="50" />
+                                        <img className="" imageurl={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_100,h_100,c_fill/${cartItems[0].info.cloudinaryImageId}`} imageid="" alt="img renderer" src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_100,h_100,c_fill/${cartItems[0].info.cloudinaryImageId}`} width="50" height="50" />
                                     </span>
                                     <span className="u1PgV">
-                                        <div className="V7Usk">Leon's - Burgers &amp; Wings (Leon Grill)</div>
-                                        <div className="_2ofXa">Koramangala</div>
+                                        <div className="V7Usk">{cartItems[0].info.name}</div>
+                                        <div className="_2ofXa">{cartItems[0].info.areaName}</div>
                                     </span>
                                 </button>
                                 <div className="_1A195">
@@ -87,9 +90,9 @@ const Cart = () => {
                                             <div>
                                                 <div className="_2zsON"></div>
                                                 <div className="_2pdCL">
-                                                    {cartItems.map ((item) =>
-                                                        <div className="_2bXOy" key={item.id}>
-                                                            <CartItem item={item} itemCon={itemCon} />
+                                                    {cartItems.map ((item, index) =>
+                                                        <div className="_2bXOy" key={item.item.id}>
+                                                            <CartItem item={item.item} tPrice={tPrice} setTPrice={setTPrice} index={index} />
                                                         </div>
                                                     )}
                                                 </div>
@@ -140,13 +143,13 @@ const Cart = () => {
                                                         <div className="_1I8bA">
                                                             <span className="">
                                                                 <span></span>
-                                                                <span className="ZH2UW">719.33</span>
+                                                                <span className="ZH2UW">₹{tPrice*cartItems.length}</span>
                                                             </span>
                                                         </div>
                                                     </div>
                                                     <div className="_3rlIu">
                                                         <div className="_2VV4a">
-                                                            <div>Delivery Fee | 1.3 kms
+                                                            <div>Delivery Fee | {cartItems[0].info.sla.lastMileTravel} kms
                                                                 <div className="_3sNvC">
                                                                     <img src={info} alt="" />
                                                                 </div>
@@ -155,7 +158,7 @@ const Cart = () => {
                                                         <div className="_1I8bA">
                                                             <span className="">
                                                                 <span></span>
-                                                                <span className="ZH2UW">27</span>
+                                                                <span className="ZH2UW">₹{cartItems[0].info.feeDetails.totalFee/100}</span>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -173,7 +176,7 @@ const Cart = () => {
                                                                 <div className="_1I8bA">
                                                                     <span className="">
                                                                         <span></span>
-                                                                        <span className="ZH2UW  _green">-100</span>
+                                                                        <span className="ZH2UW  _green">-₹100</span>
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -191,7 +194,7 @@ const Cart = () => {
                                                         <div className="_1I8bA">
                                                             <span className="">
                                                                 <span></span>
-                                                                <span className="ZH2UW">70.62</span>
+                                                                <span className="ZH2UW">₹{Math.round((tPrice*cartItems.length*5)/100)}</span>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -204,7 +207,10 @@ const Cart = () => {
                                 </div>
                                 <div className="ZBf6d">
                                     <div>TO PAY</div>
-                                    <div className="_3ZAW1">817</div>
+                                    {selCupon == "" ?
+                                    (<div className="_3ZAW1">₹{Math.round((tPrice*cartItems.length*5)/100) + cartItems[0].info.feeDetails.totalFee/100 + tPrice*cartItems.length}</div>)
+                                    :(<div className="_3ZAW1">₹{Math.round((tPrice*cartItems.length*5)/100) + cartItems[0].info.feeDetails.totalFee/100 + tPrice*cartItems.length - 100}</div>)
+                                    }
                                 </div>
                             </div>
                         </div>

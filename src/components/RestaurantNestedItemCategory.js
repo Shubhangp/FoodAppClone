@@ -2,7 +2,7 @@ import React from "react";
 import RestaurantNestedItemCategoryMenu from "./RestaurantNestedItemCategoryMenu";
 
 
-const RestaurantNestedItemCategory = ({ nestedCategory, btnVeg }) => {
+const RestaurantNestedItemCategory = ({ nestedCategory, btnVeg, info }) => {
 
   
   return (
@@ -15,7 +15,7 @@ const RestaurantNestedItemCategory = ({ nestedCategory, btnVeg }) => {
       <div>
         {nestedCategory.categories.map((category, index) => (
           <div key={index}>
-            <RestaurantNestedItemCategoryMenu itemCategory={category} btnVeg={btnVeg} />
+            <RestaurantNestedItemCategoryMenu itemCategory={category} btnVeg={btnVeg} info={info} />
           </div>
         ))}
       </div>

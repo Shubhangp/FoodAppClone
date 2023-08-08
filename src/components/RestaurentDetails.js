@@ -98,7 +98,7 @@ const RestaurantDetails = () => {
           <RestaurentInfo info = {restaurant} showOutlet={showOutlet} outlet = {outlet} />
           <RestaurantOffer offer = {restaurant.offer} />
           <RestaurantVegBtn vegClick={vegClick} btnVeg={btnVeg} />
-          <RestaurantMenuList menu={restaurant.menu} btnVeg={btnVeg} />
+          <RestaurantMenuList menu={restaurant.menu} btnVeg={btnVeg} info={restaurant.info} />
         </div>
       </div>
       { outlet == undefined ? 

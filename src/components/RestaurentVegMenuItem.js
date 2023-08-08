@@ -1,16 +1,25 @@
 import React, { useState } from "react";
 import vege from "../utils/vege.png";
 import nonveg from "../utils/nonveg.png";
+import { useDispatch } from "react-redux";
+import { addItem } from "../redux_utilis/cartSlice";
 
-const RestaurentVegMenuItem = ({ item, itemLength, index }) => {
+const RestaurentVegMenuItem = ({ item, itemLength, index, info }) => {
     const [count, setCount] = useState(0);
 
     if(count < 0) {
         setCount(0);
     }
 
-    // console.log(index);
-    // console.log(item.isVeg);
+    const modifyItem = {info : info, item: item};
+
+    const dispatch = useDispatch();
+
+    const handleAddItem = (modifyItem) => {
+        // Dispatch an action
+        dispatch(addItem(modifyItem));
+        setCount(count +1);
+    }
 
     const { name, description, price, defaultPrice, imageId, itemAttribute, isBestseller } = item;
 
@@ -51,9 +60,7 @@ const RestaurentVegMenuItem = ({ item, itemLength, index }) => {
                                                 
                                             </div>
                                             <div className="_2zAXs _18lJJ"> {count} </div>
-                                            <div className="_1ds9T _2Thnf" onClick={() => {
-                                                setCount(count +1);
-                                                }}>
+                                            <div className="_1ds9T _2Thnf" onClick={() => () => handleAddItem (modifyItem)}>
                                                 +
                                             </div>
                                         </div>

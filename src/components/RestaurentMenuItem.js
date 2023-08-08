@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { lazy, Suspense, useState } from "react";
 import vege from "../utils/vege.png";
 import nonveg from "../utils/nonveg.png";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addItem } from "../redux_utilis/cartSlice";
 
-const RestaurentMenuItem = ({ item, itemLength, index }) => {
+const RestaurentMenuItem = ({ item, itemLength, index, info }) => {
     const [count, setCount] = useState(0);
 
     if(count < 0) {
@@ -14,14 +14,20 @@ const RestaurentMenuItem = ({ item, itemLength, index }) => {
     // console.log(item);
 
     const { name, description, price, defaultPrice, imageId, itemAttribute, isBestseller } = item;
+    const modifyItem = {info : info, item: item};
+
+    const cartItems = useSelector((store) => store.cart.items);
 
     const dispatch = useDispatch();
-
-    const handleAddItem = (item) => {
-        // Dispatch an action
-        dispatch(addItem(item));
-        setCount(count +1);
-    }
+    const handleAddItem = (modifyItem) => {
+        if(cartItems.length == 0 || cartItems[0].info.id == info.id) {
+            // Dispatch an action
+            dispatch(addItem(modifyItem));
+            setCount(count +1);
+        }else if(cartItems[0].info.id != info.id){
+            alert("Please placed order for cart item");
+        }
+    } 
 
     return (<div className="menu">
                 <div>
@@ -59,7 +65,7 @@ const RestaurentMenuItem = ({ item, itemLength, index }) => {
                                             
                                         </div>
                                         <div className="_2zAXs _18lJJ"> {count} </div>
-                                        <div className="_1ds9T _2Thnf" onClick={() => handleAddItem (item)}>
+                                        <div className="_1ds9T _2Thnf" onClick={() => handleAddItem (modifyItem)}>
                                             +
                                         </div>
                                     </div>

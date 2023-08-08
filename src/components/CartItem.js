@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import vege from "../utils/vege.png";
 import nonveg from "../utils/nonveg.png";
 
-const CartItem = ({ item, itemCon }) => {
+const CartItem = ({ item, tPrice, setTPrice, index }) => {
     const [count, setCount] = useState(1);
 
     if(count < 0) {
         setCount(0);
     }
+
+    setTPrice(item.price/100 * count || item.defaultPrice/100 * count);
 
     return(
         <div className="_2bXOy2">
@@ -29,7 +31,7 @@ const CartItem = ({ item, itemCon }) => {
                         <div className="_2zAXs">{count}</div>
                     </div>
                     <div className="_1mx0r">
-                        <span className="_2W2U4">₹{item.price/100 || item.defaultPrice/100 * count}</span>
+                        <span className="_2W2U4">₹{tPrice}</span>
                     </div>
                 </div>
             </div>

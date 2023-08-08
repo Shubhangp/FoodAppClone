@@ -3,7 +3,7 @@ import RestaurentMenuItem from "./RestaurentMenuItem";
 import RestaurentVegMenuItem from "./RestaurentVegMenuItem";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
-const RestaurantNestedItemCategoryMenu = ({ itemCategory, btnVeg }) => {
+const RestaurantNestedItemCategoryMenu = ({ itemCategory, btnVeg, info }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleView = () => {
@@ -43,8 +43,8 @@ const RestaurantNestedItemCategoryMenu = ({ itemCategory, btnVeg }) => {
         <div>
           {itemCategory.itemCards.map((item, index) => (<div key={item.card.info.id}>
               { btnVeg ?
-                (<RestaurentVegMenuItem item={item.card.info} itemLength = {lengthmenu.length} index = {index - lengthindex.length}  />)
-                : (<RestaurentMenuItem item={item.card.info} />)
+                (<RestaurentVegMenuItem item={item.card.info}  info={info} itemLength = {lengthmenu.length} index = {index - lengthindex.length}  />)
+                : (<RestaurentMenuItem item={item.card.info}  info={info} />)
               }
             </div>
           ))}
