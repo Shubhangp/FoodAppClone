@@ -45154,7 +45154,7 @@ const LocationSearch = ({ handleClick , btnLocation , setLatlng , setPlaceName  
                                                                 }, void 0, false, {
                                                                     fileName: "src/components/LocationSearch.js",
                                                                     lineNumber: 87,
-                                                                    columnNumber: 53
+                                                                    columnNumber: 49
                                                                 }, undefined),
                                                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                                                     className: "_1Cvlf _2tL9P"
@@ -46569,8 +46569,8 @@ var _reselect = require("reselect");
 // src/getDefaultMiddleware.ts
 var _reduxThunk = require("redux-thunk");
 var _reduxThunkDefault = parcelHelpers.interopDefault(_reduxThunk);
-var global = arguments[3];
 var process = require("d6634cb3c203fa96");
+var global = arguments[3];
 var __extends = undefined && undefined.__extends || function() {
     var extendStatics = function(d, b) {
         extendStatics = Object.setPrototypeOf || ({

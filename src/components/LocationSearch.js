@@ -84,7 +84,7 @@ const LocationSearch = ({ handleClick, btnLocation, setLatlng, setPlaceName }) =
                                                     key="input-text"
                                                     onChange = {(e) => setSearchLocation(e.target.value)} 
                                                 />
-                                                    <div className="_2EeI1 _26LFr"></div>
+                                                <div className="_2EeI1 _26LFr"></div>
                                                 <label className="_1Cvlf _2tL9P"></label>
                                             </div>
                                         </div>
