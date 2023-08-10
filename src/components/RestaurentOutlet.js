@@ -7,6 +7,12 @@ const RestaurentOutlet = ({ outlet, setBtnOutlet, info }) => {
 
     const navigate = useNavigate()
 
+    const handleReload = () => {
+        setTimeout(() => {
+            window.location.reload(true)
+        }, 200);
+    }
+
     return(
         <div id="dialog">
             <div>
@@ -23,7 +29,7 @@ const RestaurentOutlet = ({ outlet, setBtnOutlet, info }) => {
                         <div className="RestaurantOutlet_list">
                             {outlet.map((name) =>(
                                 <button className="RestaurantOutlet_listItem" key={name?.id} onClick={() => navigate("/restaurents/" + name?.id)}>
-                                    <div className="RestaurantOutlet_listItemTable" onClick={() => window.location.reload(true)}>
+                                    <div className="RestaurantOutlet_listItemTable" onClick={handleReload}>
                                         <div className="RestaurantOutlet_listItemAddress">{name?.locality}, {name?.area}</div>
                                         <div className="RestaurantOutlet_listItemRatingf">
                                             <span className="RestaurantOutlet_listItemRatingIcon icon-star">★</span>
