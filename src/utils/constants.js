@@ -12,6 +12,6 @@ export const MAIN_API = "https://www.swiggy.com/dapi/restaurants/list/v5?";
 
 export const Lat = "lat=12.9351929&";
 
-export const Lng = "lng=77.62448069999999";
+export const Lng = "lng=77.62448069999999"; 
 
 export const PAGE_TYPE = "&page_type=DESKTOP_WEB_LISTING";

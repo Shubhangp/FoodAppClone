@@ -30,8 +30,6 @@ const useRestaurent = (resId) => {
         }
       })
 
-      // console.log(res_data);
-
       const modifiedData = {
         info : res_data.data.cards[0].card.card.info,
         offer: res_data.data.cards[1].card.card.gridElements.infoWithStyle.offers,

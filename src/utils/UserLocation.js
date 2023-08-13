@@ -1,5 +1,6 @@
 import { createContext } from "react";
 
+
 const UserLocation = createContext({
     latitude: "",
     longitude: ""

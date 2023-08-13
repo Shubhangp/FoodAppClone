@@ -860,7 +860,6 @@ const useRestaurent = (resId)=>{
             const menu = menuItemsList.map((item)=>{
                 if (item.card.card["@type"] === itemCategory || item.card.card["@type"] === NestedItemCategory) return item.card.card;
             });
-            // console.log(res_data);
             const modifiedData = {
                 info: res_data.data.cards[0].card.card.info,
                 offer: res_data.data.cards[1].card.card.gridElements.infoWithStyle.offers,
