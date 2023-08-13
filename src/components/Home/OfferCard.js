@@ -1,5 +1,5 @@
 import React from "react";
-import { OFF_URL } from "../utils/constants";
+import { OFF_URL } from "../../utils/constants";
 
 const OfferCard = ({ latestOffer }) => {
 

@@ -1,16 +1,15 @@
 import React, { lazy, Suspense, useState } from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/Header";
-import Body from "./components/Home";
-import Error from "./components/Error";
-const RestaurantDetails = lazy(() => import("./components/RestaurentDetails"));
-import LocationSearch from "./components/LocationSearch";
 import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import Header from "./components/Header/Header";
+const LocationSearch = lazy(() => import("./components/Location/LocationSearch"));
+import Body from "./components/Home/Home";
+const RestaurantDetails = lazy(() => import("./components/ResMenu/RestaurentDetails"));
+const Search = lazy(() => import("./components/Search/Search"));
+const Contact = lazy(() => import("./components/Help/Contact"));
+const Cart = lazy(() => import("./components/Cart/Cart"));
+import Error from "./components/Error/Error";
 import { Auth0Provider } from '@auth0/auth0-react';
-const Contact = lazy(() => import("./components/Contact"));
-const Search = lazy(() => import("./components/Search"));
-const Cart = lazy(() => import("./components/Cart"));
-import Starting from "./components/Starting";
 import UserLocation from "./utils/UserLocation";
 import { Provider } from "react-redux";
 import appStore from "./redux_utilis/appStore";
@@ -30,7 +29,9 @@ const AppLayout = () => {
             <UserLocation.Provider value={{latitude: latlng.lat, longitude: latlng.lng}}>
                 <div className="_3arMG">
                     <Header btnLocation={btnLocation} handleClick={handleClick} placeName={placeName} />
-                    <LocationSearch btnLocation={btnLocation} handleClick={handleClick} setLatlng={setLatlng} setPlaceName={setPlaceName} />
+                    <Suspense fallback={<h1></h1>}>
+                        <LocationSearch btnLocation={btnLocation} handleClick={handleClick} setLatlng={setLatlng} setPlaceName={setPlaceName} />
+                    </Suspense>
                     <Outlet />
                 </div>
             </UserLocation.Provider>
@@ -45,23 +46,23 @@ const appRouter = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Suspense fallback={<h1>Loading...</h1>}><Body /></Suspense>
-            },
-            {
-                path: "/help",
-                element: <Suspense fallback={<h1>Loading...</h1>}><Contact /></Suspense>
+                element: <Suspense fallback={<h1></h1>}><Body /></Suspense>
             },
             {
                 path: "/restaurents/:resId",
-                element: <Suspense fallback={<h1>Loading...</h1>}><RestaurantDetails /></Suspense>
+                element: <Suspense fallback={<h1></h1>}><RestaurantDetails /></Suspense>
             },
             {
                 path: "/search",
-                element: <Suspense fallback={<h1>Loading...</h1>}><Search /></Suspense>
+                element: <Suspense fallback={<h1></h1>}><Search /></Suspense>
+            },
+            {
+                path: "/help",
+                element: <Suspense fallback={<h1></h1>}><Contact /></Suspense>
             },
             {
                 path: "/checkout",
-                element: <Suspense fallback={<h1>Loading</h1>}><Cart /></Suspense>
+                element: <Suspense fallback={<h1></h1>}><Cart /></Suspense>
             }
         ],
         errorElement: <Error />

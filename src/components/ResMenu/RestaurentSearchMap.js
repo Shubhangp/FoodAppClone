@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import vege from "../utils/vege.png";
-import nonveg from "../utils/nonveg.png";
+import vege from "../../utils/vege.png";
+import nonveg from "../../utils/nonveg.png";
 
 const RestaurentSearchMap = ({ item }) => {
 

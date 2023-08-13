@@ -2,8 +2,8 @@ import React, { useEffect, useState, useContext } from "react";
 import SearchByPopularCui from "./SearchByPopularCui";
 import SearchSuggest from "./SearchSuggest";
 import SearchBy from "./SearchBy";
-import UserLocation from "../utils/UserLocation";
-import { Lat, Lng } from "../utils/constants";
+import UserLocation from "../../utils/UserLocation";
+import { Lat, Lng } from "../../utils/constants";
 
 const Search = () => {
 

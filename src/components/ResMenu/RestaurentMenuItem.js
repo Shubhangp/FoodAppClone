@@ -1,8 +1,8 @@
 import React, { lazy, Suspense, useState } from "react";
-import vege from "../utils/vege.png";
-import nonveg from "../utils/nonveg.png";
+import vege from "../../utils/vege.png";
+import nonveg from "../../utils/nonveg.png";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem } from "../redux_utilis/cartSlice";
+import { addItem } from "../../redux_utilis/cartSlice";
 
 const RestaurentMenuItem = ({ item, itemLength, index, info }) => {
     const [count, setCount] = useState(0);

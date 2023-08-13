@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 import { useParams } from "react-router-dom";
-import useRestaurent from "../utils/useRestaurent"
+import useRestaurent from "../../utils/useRestaurent"
 const RestaurentSearchByDish = lazy(() => import("./RestaurentSearchByDish"));
 import AddressRestaurant from "./AddressRestaurant";
 import RestaurantMenuHeader from "./RestaurantMenuHeader";
@@ -12,7 +12,7 @@ import RestaurantMenuList from "./RestaurantMenuList";
 const RestaurentOutlet = lazy(() => import("./RestaurentOutlet"));
 const RestaurentNoOutlet = lazy(() => import("./RestaurentNoOutlet"));
 import { useState, useEffect, useContext } from "react";
-import UserLocation from "../utils/UserLocation";
+import UserLocation from "../../utils/UserLocation";
 
 const RestaurantDetails = () => {
 

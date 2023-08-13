@@ -1,5 +1,5 @@
 import React from "react";
-import { CDN_URL } from "../utils/constants";
+import { CDN_URL } from "../../utils/constants";
 import QuickView from "./QuickView";
 
 const ReastaurentCard = (props) => {

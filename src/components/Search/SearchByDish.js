@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import vege from "../utils/vege.png";
-import nonveg from "../utils/nonveg.png";
+import vege from "../../utils/vege.png";
+import nonveg from "../../utils/nonveg.png";
 
 const SearchByDish = ({ searchByData }) => {
-    // console.log(searchByData);
 
     return searchByData == undefined? (
         ""

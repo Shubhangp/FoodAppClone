@@ -1,5 +1,5 @@
 import React from "react";
-import { OFFER_IMG } from "../utils/constants";
+import { OFFER_IMG } from "../../utils/constants";
 
 const RestaurantOfferList = (props) => {
 

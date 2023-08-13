@@ -1,9 +1,9 @@
 import React from "react";
-import { LOGO_URL } from "../utils/constants";
+import { LOGO_URL } from "../../utils/constants";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useAuth0 } from "@auth0/auth0-react";
-import useOnlineStatus from "../utils/useOnlineStatus";
+import useOnlineStatus from "../../utils/useOnlineStatus";
 
 const Header = ({ handleClick, navbar, placeName }) => {
 

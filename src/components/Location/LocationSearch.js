@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ShimmerRestaurantPage from "./ShimmerRestaurantPage";
 
 const LocationSearch = ({ handleClick, btnLocation, setLatlng, setPlaceName }) => {
 

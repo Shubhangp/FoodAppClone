@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem, clearCart } from "../redux_utilis/cartSlice";
+import { addItem, clearCart } from "../../redux_utilis/cartSlice";
 import Coupon from "./Cupon";
-import offer from "../utils/offer.svg";
-import info from "../utils/info.svg";
-import location from "../utils/location.svg";
-import wallet from "../utils/wallet.svg";
+import offer from "../../utils/offer.svg";
+import info from "../../utils/info.svg";
+import location from "../../utils/location.svg";
+import wallet from "../../utils/wallet.svg";
 import CartItem from "./CartItem";
 
 const Cart = () => {
