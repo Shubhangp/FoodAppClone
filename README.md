@@ -1,18 +1,24 @@
-# Food Ordering App
+# Swiggy Clone
 
-<video src="./src/utils/SwiggyClone.mp4">
+## Components
+* Header
+* Location
+* Home
+* Search
+* Help
+* Cart
+* Restaurant Menu
 
- * Header
- * -logo
- * -Nav items
- * Body
- * -SearchBar
- * -Restaurent COntainer
- *  -Restaurent Card
-       -Image
-       -Name of Res, Star Rating, cuisine, timer
- * Footer
- * -Copyright
- * -Links
- * -Address
- * -Contact
+## Library and Bundler
+I made this project using React Library and bundler- I had used is Parcel.
+### Additional Library-
+* react-dom
+* react-router-dom
+* react-icons
+* react-loader-spinner
+* react-redux
+* @reduxjs/toolkit
+* @auth0/auth0-react
+
+## API
+I had used Swiggy Live Api which is provided by Swiggy.
