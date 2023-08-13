@@ -1,5 +1,7 @@
 # Food Ordering App
 
+<video src="./src/utils/SwiggyClone.mp4">
+
  * Header
  * -logo
  * -Nav items
