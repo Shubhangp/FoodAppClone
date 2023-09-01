@@ -2,6 +2,10 @@
 
 If you want to visit Swiggy Clone please use CROS extension in your browser [Try here](https://swiggyclonebyshubhang.netlify.app/)
 
+## Video of Website
+
+[![SC2 Video](doc/SC2_youtube.PNG)](https://www.youtube.com/watch?v=--b-9HrKK6w "SC2 Mini game - Click to Watch!")
+
 ## Components
 * Header
 * Location
