@@ -4,7 +4,7 @@ If you want to visit Swiggy Clone please use CROS extension in your browser [Try
 
 ## Video of Website
 
-<video src='./src/utils/SwiggyClone.mp4' width=180/>
+[![Video](https://img.youtube.com/vi/YOUR_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=XysBHR9snm0)
 
 ## Components
 * Header
