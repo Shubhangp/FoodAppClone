@@ -143,8 +143,8 @@
     }
   }
 })({"1xC6H":[function(require,module,exports) {
-var Refresh = require("b1de192c664f450e");
-var ErrorOverlay = require("8b8ece1aedf4b6b5");
+var Refresh = require("a96cc7cfab572667");
+var ErrorOverlay = require("3b46a9325dab1651");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -163,7 +163,7 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"b1de192c664f450e":"786KC","8b8ece1aedf4b6b5":"1dldy"}],"8lDHK":[function(require,module,exports) {
+},{"a96cc7cfab572667":"786KC","3b46a9325dab1651":"1dldy"}],"8lDHK":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -1660,12 +1660,12 @@ $RefreshReg$(_c, "SearchByDish");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../utils/vege.png":"m6FZ0","../../utils/nonveg.png":"6xFyr","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"m6FZ0":[function(require,module,exports) {
-module.exports = require("6f7781f3e9005542").getBundleURL("8DKvG") + "vege.71093493.png" + "?" + Date.now();
+module.exports = require("bb13d61dc30e28c1").getBundleURL("8DKvG") + "vege.71093493.png" + "?" + Date.now();
 
-},{"6f7781f3e9005542":"lgJ39"}],"6xFyr":[function(require,module,exports) {
-module.exports = require("cf97c994b2dfbf43").getBundleURL("8DKvG") + "nonveg.d18220d5.png" + "?" + Date.now();
+},{"bb13d61dc30e28c1":"lgJ39"}],"6xFyr":[function(require,module,exports) {
+module.exports = require("1d7a7cd3231555e7").getBundleURL("8DKvG") + "nonveg.d18220d5.png" + "?" + Date.now();
 
-},{"cf97c994b2dfbf43":"lgJ39"}],"leIh8":[function(require,module,exports) {
+},{"1d7a7cd3231555e7":"lgJ39"}],"leIh8":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fce5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;

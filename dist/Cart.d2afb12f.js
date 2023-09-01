@@ -143,8 +143,8 @@
     }
   }
 })({"1xC6H":[function(require,module,exports) {
-var Refresh = require("b1de192c664f450e");
-var ErrorOverlay = require("8b8ece1aedf4b6b5");
+var Refresh = require("a96cc7cfab572667");
+var ErrorOverlay = require("3b46a9325dab1651");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -163,7 +163,7 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"b1de192c664f450e":"786KC","8b8ece1aedf4b6b5":"1dldy"}],"4zZZ1":[function(require,module,exports) {
+},{"a96cc7cfab572667":"786KC","3b46a9325dab1651":"1dldy"}],"4zZZ1":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -2041,18 +2041,18 @@ $RefreshReg$(_c, "Coupon");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3uut2":[function(require,module,exports) {
-module.exports = require("a941f65c824ac0ab").getBundleURL("1Om3a") + "offer.f5aa96f9.svg" + "?" + Date.now();
+module.exports = require("47882b575c16a678").getBundleURL("1Om3a") + "offer.f5aa96f9.svg" + "?" + Date.now();
 
-},{"a941f65c824ac0ab":"lgJ39"}],"d7deZ":[function(require,module,exports) {
-module.exports = require("91feb5607313b6c3").getBundleURL("1Om3a") + "info.251964a8.svg" + "?" + Date.now();
+},{"47882b575c16a678":"lgJ39"}],"d7deZ":[function(require,module,exports) {
+module.exports = require("da94cb590d2b157e").getBundleURL("1Om3a") + "info.251964a8.svg" + "?" + Date.now();
 
-},{"91feb5607313b6c3":"lgJ39"}],"92wb8":[function(require,module,exports) {
-module.exports = require("1d8cfec83bd8a447").getBundleURL("1Om3a") + "location.2f3b5aa7.svg" + "?" + Date.now();
+},{"da94cb590d2b157e":"lgJ39"}],"92wb8":[function(require,module,exports) {
+module.exports = require("195918bbf67b46f2").getBundleURL("1Om3a") + "location.2f3b5aa7.svg" + "?" + Date.now();
 
-},{"1d8cfec83bd8a447":"lgJ39"}],"lBA6n":[function(require,module,exports) {
-module.exports = require("8f29ce60dce80051").getBundleURL("1Om3a") + "wallet.301dfe32.svg" + "?" + Date.now();
+},{"195918bbf67b46f2":"lgJ39"}],"lBA6n":[function(require,module,exports) {
+module.exports = require("f472782c3d6e928d").getBundleURL("1Om3a") + "wallet.301dfe32.svg" + "?" + Date.now();
 
-},{"8f29ce60dce80051":"lgJ39"}],"ebZsa":[function(require,module,exports) {
+},{"f472782c3d6e928d":"lgJ39"}],"ebZsa":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$a278 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -2210,11 +2210,11 @@ $RefreshReg$(_c, "CartItem");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils/vege.png":"5XoyE","../../utils/nonveg.png":"9nWiX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5XoyE":[function(require,module,exports) {
-module.exports = require("ec2d8211b686fc4f").getBundleURL("1Om3a") + "vege.71093493.png" + "?" + Date.now();
+module.exports = require("2e0ab7cd3ffd2dc7").getBundleURL("1Om3a") + "vege.71093493.png" + "?" + Date.now();
 
-},{"ec2d8211b686fc4f":"lgJ39"}],"9nWiX":[function(require,module,exports) {
-module.exports = require("e8af0229993297b8").getBundleURL("1Om3a") + "nonveg.d18220d5.png" + "?" + Date.now();
+},{"2e0ab7cd3ffd2dc7":"lgJ39"}],"9nWiX":[function(require,module,exports) {
+module.exports = require("c6d57658f664bf99").getBundleURL("1Om3a") + "nonveg.d18220d5.png" + "?" + Date.now();
 
-},{"e8af0229993297b8":"lgJ39"}]},["1xC6H","4zZZ1"], null, "parcelRequire8442")
+},{"c6d57658f664bf99":"lgJ39"}]},["1xC6H","4zZZ1"], null, "parcelRequire8442")
 
 //# sourceMappingURL=Cart.d2afb12f.js.map

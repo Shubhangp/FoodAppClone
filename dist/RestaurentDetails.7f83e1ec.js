@@ -143,8 +143,8 @@
     }
   }
 })({"1xC6H":[function(require,module,exports) {
-var Refresh = require("b1de192c664f450e");
-var ErrorOverlay = require("8b8ece1aedf4b6b5");
+var Refresh = require("a96cc7cfab572667");
+var ErrorOverlay = require("3b46a9325dab1651");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -163,7 +163,7 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"b1de192c664f450e":"786KC","8b8ece1aedf4b6b5":"1dldy"}],"8sOkM":[function(require,module,exports) {
+},{"a96cc7cfab572667":"786KC","3b46a9325dab1651":"1dldy"}],"8sOkM":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -609,11 +609,11 @@ var _restaurantMenuListDefault = parcelHelpers.interopDefault(_restaurantMenuLis
 var _userLocation = require("../../utils/UserLocation");
 var _userLocationDefault = parcelHelpers.interopDefault(_userLocation);
 var _s = $RefreshSig$();
-const RestaurentSearchByDish = /*#__PURE__*/ (0, _react.lazy)(()=>require("7764c4b68f400fc5"));
+const RestaurentSearchByDish = /*#__PURE__*/ (0, _react.lazy)(()=>require("461484b7e1971e7a"));
 _c = RestaurentSearchByDish;
-const RestaurentOutlet = /*#__PURE__*/ (0, _react.lazy)(()=>require("91ccf8ca70dfb41e"));
+const RestaurentOutlet = /*#__PURE__*/ (0, _react.lazy)(()=>require("9df55a3de0a0c61a"));
 _c1 = RestaurentOutlet;
-const RestaurentNoOutlet = /*#__PURE__*/ (0, _react.lazy)(()=>require("12a04d611d46e24d"));
+const RestaurentNoOutlet = /*#__PURE__*/ (0, _react.lazy)(()=>require("7eadf6f182f491ab"));
 _c2 = RestaurentNoOutlet;
 const RestaurantDetails = ()=>{
     _s();
@@ -824,7 +824,7 @@ $RefreshReg$(_c3, "RestaurantDetails");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../utils/useRestaurent":"Irxh3","7764c4b68f400fc5":"76w1D","./AddressRestaurant":"9EbNq","./RestaurantMenuHeader":"dcGxc","./RestaurentInfo":"eTMQp","./RestaurantOffer":"2Aa52","./RestaurantVegBtn":"iTMfk","./ShimmerRestaurantPage":"9Oux0","./RestaurantMenuList":"1zd9R","91ccf8ca70dfb41e":"3fnZ7","12a04d611d46e24d":"eiAC0","../../utils/UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"Irxh3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../utils/useRestaurent":"Irxh3","461484b7e1971e7a":"76w1D","./AddressRestaurant":"9EbNq","./RestaurantMenuHeader":"dcGxc","./RestaurentInfo":"eTMQp","./RestaurantOffer":"2Aa52","./RestaurantVegBtn":"iTMfk","./ShimmerRestaurantPage":"9Oux0","./RestaurantMenuList":"1zd9R","9df55a3de0a0c61a":"3fnZ7","7eadf6f182f491ab":"eiAC0","../../utils/UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"Irxh3":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$7264 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -882,12 +882,12 @@ exports.default = useRestaurent;
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react":"21dqq","./constants":"hB8jg","./UserLocation":"aVyyN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"76w1D":[function(require,module,exports) {
-module.exports = require("c636a5f1e664db56")(require("5bf712cfa46ededf").getBundleURL("cpNFP") + "RestaurentSearchByDish.220a3d3c.js" + "?" + Date.now()).catch((err)=>{
+module.exports = require("5706f3a97462d9")(require("37d76aa9dde131fc").getBundleURL("cpNFP") + "RestaurentSearchByDish.220a3d3c.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
 }).then(()=>module.bundle.root("g4agY"));
 
-},{"c636a5f1e664db56":"61B45","5bf712cfa46ededf":"lgJ39"}],"9EbNq":[function(require,module,exports) {
+},{"5706f3a97462d9":"61B45","37d76aa9dde131fc":"lgJ39"}],"9EbNq":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$078d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -18786,12 +18786,12 @@ $RefreshReg$(_c, "RestaurentMenuItem");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils/vege.png":"37Ue1","../../utils/nonveg.png":"iyafM","react-redux":"bdVon","../../redux_utilis/cartSlice":"5x6O7","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"37Ue1":[function(require,module,exports) {
-module.exports = require("d55317559a220109").getBundleURL("cpNFP") + "vege.71093493.png" + "?" + Date.now();
+module.exports = require("5c2501f621191535").getBundleURL("cpNFP") + "vege.71093493.png" + "?" + Date.now();
 
-},{"d55317559a220109":"lgJ39"}],"iyafM":[function(require,module,exports) {
-module.exports = require("90b0a11d451d81be").getBundleURL("cpNFP") + "nonveg.d18220d5.png" + "?" + Date.now();
+},{"5c2501f621191535":"lgJ39"}],"iyafM":[function(require,module,exports) {
+module.exports = require("e1c8039248c33401").getBundleURL("cpNFP") + "nonveg.d18220d5.png" + "?" + Date.now();
 
-},{"90b0a11d451d81be":"lgJ39"}],"1wD1t":[function(require,module,exports) {
+},{"e1c8039248c33401":"lgJ39"}],"1wD1t":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3fff = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -19259,17 +19259,17 @@ $RefreshReg$(_c, "RestaurantNestedItemCategoryMenu");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./RestaurentMenuItem":"j20sb","./RestaurentVegMenuItem":"1wD1t","react-icons/sl":"42kOd","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3fnZ7":[function(require,module,exports) {
-module.exports = require("b0609f0a5e7e30b3")(require("c06d7359ee4220fb").getBundleURL("cpNFP") + "RestaurentOutlet.257554c2.js" + "?" + Date.now()).catch((err)=>{
+module.exports = require("2e4da4493150801a")(require("46726a776022fc2d").getBundleURL("cpNFP") + "RestaurentOutlet.257554c2.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
 }).then(()=>module.bundle.root("8BBUF"));
 
-},{"b0609f0a5e7e30b3":"61B45","c06d7359ee4220fb":"lgJ39"}],"eiAC0":[function(require,module,exports) {
-module.exports = require("5b47dacbe291950d")(require("28acbde4b7b9ca06").getBundleURL("cpNFP") + "RestaurentNoOutlet.2ea219ad.js" + "?" + Date.now()).catch((err)=>{
+},{"2e4da4493150801a":"61B45","46726a776022fc2d":"lgJ39"}],"eiAC0":[function(require,module,exports) {
+module.exports = require("a30d1254da7728d6")(require("7c326f512ecbb036").getBundleURL("cpNFP") + "RestaurentNoOutlet.2ea219ad.js" + "?" + Date.now()).catch((err)=>{
     delete module.bundle.cache[module.id];
     throw err;
 }).then(()=>module.bundle.root("6zYr7"));
 
-},{"5b47dacbe291950d":"61B45","28acbde4b7b9ca06":"lgJ39"}]},["1xC6H","8sOkM"], null, "parcelRequire8442")
+},{"a30d1254da7728d6":"61B45","7c326f512ecbb036":"lgJ39"}]},["1xC6H","8sOkM"], null, "parcelRequire8442")
 
 //# sourceMappingURL=RestaurentDetails.7f83e1ec.js.map

@@ -1,5 +1,7 @@
 # Swiggy Clone
 
+If you want to visit Swiggy Clone please use CROS extension in your browser [Try here](https://swiggyclonebyshubhang.netlify.app/)
+
 ## Components
 * Header
 * Location
