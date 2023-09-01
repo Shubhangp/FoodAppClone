@@ -4,7 +4,7 @@ If you want to visit Swiggy Clone please use CROS extension in your browser [Try
 
 ## Video of Website
 
-[![SC2 Video](doc/SC2_youtube.PNG)](https://www.youtube.com/watch?v=--b-9HrKK6w "SC2 Mini game - Click to Watch!")
+<video src='./src/utils/SwiggyClone.mp4' width=180/>
 
 ## Components
 * Header
